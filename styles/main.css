@@ -444,6 +444,14 @@ body {
 .post-detail .post .post-info .post-tag {
   padding: 8px 16px;
 }
+.post-detail .post .post-content a {
+  color: #006CFF;
+  transition: all 0.3s;
+}
+.post-detail .post .post-content a:hover {
+  color: #0061e6;
+  border-bottom: 1px dotted #0061e6;
+}
 .post-detail .post .post-content img {
   display: block;
   box-shadow: 0 0 30px #eee;
