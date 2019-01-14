@@ -1,63 +1,81 @@
+
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="description" content="" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Hello Hve Notes | Hve Notes</title>
-<link rel="shortcut icon" href="http://fehey.com/favicon.ico">
-<link rel="stylesheet" href="http://fehey.com/styles/main.css">
+    
+<meta charset="utf-8" >
 
+<title>Hello Hve Notes | Hve Notes</title>
+<meta name="description" content="温故而知新">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="shortcut icon" href="hve-notes.github.io/favicon.ico">
+<link rel="stylesheet" href="hve-notes.github.io/styles/main.css">
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
 
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="http://fehey.com">
-  <img class="avatar" src="http://fehey.com/images/avatar.png" alt="" width="80px" height="80px">
-  </a>
-  <h1 class="site-title">
-    Hve Notes
-  </h1>
-  <p class="site-description">
-    温故而知新
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="http://fehey.com" class="menu">
-          首页
-        </a>
-      
-    
-      
-        <a href="https://github.com/hve-notes/hve-notes" class="menu" target="_blank">
-          Github
-        </a>
-      
-    
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="hve-notes.github.io">
+        <img class="avatar" src="hve-notes.github.io/images/avatar.png" alt="" width="32px" height="32px">
+      </a>
+      <a href="hve-notes.github.io">
+        <h1 class="site-title">Hve Notes</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
   </div>
 </div>
 
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
       
+        
+          <a href="http://fehey.com" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a class="menu purple-link" href="https://github.com/hve-notes/hve-notes" class="menu" target="_blank">
+            Github
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
         <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              Hello Hve Notes
-            </h2>
-            <div class="post-info">
-              <time class="post-time">
-                · December 12o 2018, am ·
-              </time>
+          <h2 class="post-title">Hello Hve Notes</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> December 12o 2018, am</span>
+            <span>
+              <i class="icon-pricetags-outline"></i>
               
-                <a href="http://fehey.com/tag/hve" class="post-tags">
+                <a href="hve-notes.github.io/tag/hve">
                   # Hve
                 </a>
               
-            </div>
-            <div class="post-content">
-              <p>👏 欢迎使用 <strong>Hve</strong> ！  </p>
+            </span>
+          </div>
+          <div class="post-content">
+            <p>👏 欢迎使用 <strong>Hve</strong> ！  </p>
 <p>🌈 <strong>Hve</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ... </p>
 <h4 id="-">在这里👇</h4>
 <p>📝  你可以使用最酷的 <code>Markdown</code> 语法，进行快速创作<br>🌉  你可以在文章的任意位置插入图片和文章封面图<br>🏷️  你可以对文章进行标签分组<br>📋 你可以自定义菜单，甚至可以创建外部链接菜单</p>
@@ -66,23 +84,22 @@
 <p>尽情发挥你的才华吧！</p>
 <p>😘 Enjoy~</p>
 
-            </div>
-          </article>
+          </div>
         </div>
-    
-        
-          <div class="next-post">
-            <div class="next">下一篇</div>
-            <a href="http://fehey.com/post/hve-notes-zhu-ye-shang-xian-la">
-              <h3 class="post-title">
-                Hve Notes 主页上线啦
-              </h3>
-            </a>
-          </div>  
-        
 
         
-          <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+          <div class="next-post">
+            <a class="purple-link" href="hve-notes.github.io/post/hve-notes-zhu-ye-shang-xian-la">
+              <h3 class="post-title">
+                下一篇：Hve Notes 主页上线啦
+              </h3>
+            </a>
+          </div>
+          
+      </div>
+      
+      
+        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
 <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 
 <div id="gitalk-container"></div>
@@ -102,17 +119,28 @@
   gitalk.render('gitalk-container')
 
 </script>
-        
-    
-        <div class="site-footer">
+      
+
+      <div class="site-footer">
+  <div class="slogan">温故而知新</div>
   Powered by Hve Notes
 </div>
 
-<script>
-  hljs.initHighlightingOnLoad()
+
+    </div>
+    <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
 </script>
 
-      </div>
-    </div>
+
   </body>
 </html>
