@@ -383,6 +383,10 @@ body {
   font-size: 18px;
   padding: 8px 16px;
 }
+.site-header .avatar {
+  margin-bottom: 24px;
+  border-radius: 50%;
+}
 .post-container .post {
   padding: 24px 32px;
 }
@@ -479,6 +483,35 @@ body {
   padding: 1em;
   border-radius: 5px;
   line-height: 1.375;
+}
+.post-detail .post .post-content blockquote {
+  background: #f3f5f7;
+  padding: 16px;
+  border-left: 2px solid #006cff;
+  margin-bottom: 16px;
+}
+.post-detail .post .post-content blockquote p {
+  margin-bottom: 0;
+}
+.post-detail .post .post-content table {
+  border-collapse: collapse;
+  margin: 1rem 0;
+  display: block;
+  overflow-x: auto;
+}
+.post-detail .post .post-content tr {
+  border-top: 1px solid #dfe2e5;
+}
+.post-detail .post .post-content td,
+.post-detail .post .post-content th {
+  border: 1px solid #dfe2e5;
+  padding: 0.6em 1em;
+}
+.post-detail .post .post-content ul,
+.post-detail .post .post-content ol {
+  padding-left: 24px;
+  line-height: 1.725;
+  margin-bottom: 16px;
 }
 .next-post {
   text-align: center;
