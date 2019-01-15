@@ -525,6 +525,9 @@ body {
 .next-post .post-title {
   font-size: 18px;
 }
+#gitalk-container {
+  padding: 24px 32px;
+}
 .current-tag-container .title {
   text-align: center;
   font-size: 18px;
