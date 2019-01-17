@@ -1,63 +1,89 @@
+
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="description" content="" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+<meta charset="utf-8" >
+
 <title>2018 年终总结 | Hve Notes</title>
+<meta name="description" content="温故而知新">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
 <link rel="shortcut icon" href="https://hve-notes.github.io/favicon.ico">
 <link rel="stylesheet" href="https://hve-notes.github.io/styles/main.css">
 
+
+  
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/disqusjs@1.1/dist/disqusjs.css" />
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
 
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://hve-notes.github.io">
-  <img class="avatar" src="https://hve-notes.github.io/images/avatar.png" alt="" width="80px" height="80px">
-  </a>
-  <h1 class="site-title">
-    Hve Notes
-  </h1>
-  <p class="site-description">
-    温故而知新
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="http://fehey.com" class="menu">
-          首页
-        </a>
-      
-    
-      
-        <a href="https://github.com/EryouHao" class="menu" target="_blank">
-          Github
-        </a>
-      
-    
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://hve-notes.github.io">
+        <img class="avatar" src="https://hve-notes.github.io/images/avatar.png" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://hve-notes.github.io">
+        <h1 class="site-title">Hve Notes</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
   </div>
 </div>
 
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
       
+        
+          <a href="http://fehey.com" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a class="menu purple-link" href="https://github.com/EryouHao" class="menu" target="_blank">
+            Github
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
         <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              2018 年终总结
-            </h2>
-            <div class="post-info">
-              <time class="post-time">
-                · January 15o 2019, am ·
-              </time>
+          <h2 class="post-title">2018 年终总结</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> January 15o 2019, am</span>
+            <span>
+              <i class="icon-pricetags-outline"></i>
               
-                <a href="https://hve-notes.github.io/tag/nian-zhong-zong-jie" class="post-tags">
+                <a href="https://hve-notes.github.io/tag/nian-zhong-zong-jie">
                   # 年终总结
                 </a>
               
-            </div>
-            <div class="post-content">
-              <p>📃又到了一年一度的<strong>年终总结</strong>，这是参加工作的第一个完整年。</p>
+            </span>
+          </div>
+          <div class="post-content">
+            <p>📃又到了一年一度的<strong>年终总结</strong>，这是参加工作的第一个完整年。</p>
 <!-- more -->
 
 <p>🥺这一年总体来说，<strong>滑水较多</strong>，产出较少，尤其是文字方面，可怜巴巴。读过不少文章，写过不少代码，需提升、待吸收的知识一把一把。</p>
@@ -72,55 +98,70 @@
 <p><em>接下来说说，对于刚刚到来的 2019 的一些想法。</em></p>
 <p>🧐保持不断学习，保持好奇心。<br>✍️用心做好每一个个人项目，比如 <a href="https://github.com/hve-notes/hve-notes">Hve Notes</a><br>🗞努力提升英语水平，能够在第一次英文介绍自己的时候，说出 「Vue点儿JS」还是有点尴尬😅<br>💻更新自己的技术栈<br>👻结交新朋友<br>💏照顾好亲人和女票<br>🍲争取做好每一道菜，像写好每一行代码一样<br>🏃运动</p>
 
-            </div>
-          </article>
+          </div>
         </div>
-    
+
         
           <div class="next-post">
-            <div class="next">下一篇</div>
-            <a href="https://hve-notes.github.io/post/hello-hve">
+            <a class="purple-link" href="https://hve-notes.github.io/post/hello-hve">
               <h3 class="post-title">
-                Hello Hve Notes
+                下一篇：Hello Hve Notes
               </h3>
             </a>
-          </div>  
+          </div>
+          
+      </div>
+
+      
         
 
         
-          
-
-          
-            <link rel="stylesheet" href="https://unpkg.com/disqusjs@1.1/dist/disqusjs.css">
-<script src="https://unpkg.com/disqusjs@1.1/dist/disqus.js"></script>
-
-<div id="disqus_thread"></div>
-
-<script>
-
-var options = {
-  shortname: 'hve-notes',
-  apikey: 'Dme6Hy8bOI2wogDrC0DAKkwNlkXKhSMManrEUlpfYQR8d1pMd8rhay6ZobUtdY8V',
-}
-if ('') {
-  options.api = ''
-}
-var dsqjs = new DisqusJS(options)
-
-</script>
-
-          
+          <div id="disqus_thread"></div>
         
-    
-        <div class="site-footer">
+      
+
+      <div class="site-footer">
+  <div class="slogan">温故而知新</div>
   Powered by Hve Notes
 </div>
 
-<script>
-  hljs.initHighlightingOnLoad()
+
+    </div>
+    <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
 </script>
 
-      </div>
-    </div>
+
+  
+  
+
+  
+    <script src="https://unpkg.com/disqusjs@1.1/dist/disqus.js"></script>
+    <script>
+
+    var options = {
+      shortname: 'hve-notes',
+      apikey: 'Dme6Hy8bOI2wogDrC0DAKkwNlkXKhSMManrEUlpfYQR8d1pMd8rhay6ZobUtdY8V',
+    }
+    if ('') {
+      options.api = ''
+    }
+    var dsqjs = new DisqusJS(options)
+
+    </script>
+  
+
+
+
+
   </body>
 </html>
