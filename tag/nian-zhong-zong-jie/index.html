@@ -1,136 +1,90 @@
-
-<!DOCTYPE html>
 <html>
   <head>
-    
-<meta charset="utf-8" >
-
+  <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>年终总结 | Hve Notes</title>
-<meta name="description" content="温故而知新">
+<link rel="shortcut icon" href="http://fehey.com/favicon.ico">
+<link rel="stylesheet" href="http://fehey.com/styles/main.css">
 
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-
-<link rel="shortcut icon" href="https://fehey.com/hve-next/favicon.ico">
-<link rel="stylesheet" href="https://fehey.com/hve-next/styles/main.css">
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-
 
   </head>
   <body>
-    <div id="app" class="main">
-      <div class="site-header-container">
-  <div class="site-header">
-    <div class="left">
-      <a href="https://fehey.com/hve-next">
-        <img class="avatar" src="https://fehey.com/hve-next/images/avatar.png" alt="" width="32px" height="32px">
-      </a>
-      <a href="https://fehey.com/hve-next">
-        <h1 class="site-title">Hve Notes</h1>
-      </a>
-    </div>
-    <div class="right">
-      <transition name="fade">
-        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
-      </transition>
-    </div>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="http://fehey.com">
+  <img class="avatar" src="http://fehey.com/images/avatar.png" alt="" width="80px" height="80px">
+  </a>
+  <h1 class="site-title">
+    Hve Notes
+  </h1>
+  <p class="site-description">
+    温故而知新
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="http://fehey.com" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="https://github.com/EryouHao" class="menu" target="_blank">
+          Github
+        </a>
+      
+    
   </div>
 </div>
-
-<transition name="fade">
-  <div class="menu-container" style="display: none;" v-show="menuVisible">
-    <div class="menu-list">
-      
-        
-          <a href="http://fehey.com" class="menu purple-link">
-            首页
-          </a>
-        
-      
-        
-          <a class="menu purple-link" href="https://github.com/EryouHao" class="menu" target="_blank">
-            Github
-          </a>
-        
-      
-    </div>
-  </div>
-</transition>
-
-
-      <div class="content-container">
 
         <div class="current-tag-container">
-          <h2 class="title">
-            <i class="icon icon-pricetags-outline"></i> 年终总结
-          </h2> 
+            <h2 class="title">
+                标签：#年终总结
+            </h2> 
         </div>
-
-        
-<section class="post-item">
-    <div class="content">
-      <a href="https://fehey.com/hve-next/post/2018-nian-zhong-zong-jie">
+        <div class="post-container">
+  
+    <article class="post">
+      <a href="http://fehey.com/post/2018-nian-zhong-zong-jie">
         <h2 class="post-title">2018 年终总结</h2>
       </a>
-      <div class="post-abstract">
-        <p>📃又到了一年一度的<strong>年终总结</strong>，这是参加工作的第一个完整年。</p>
-
-      </div>
       <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> January 15o 2019, am</span>
-        <span>
-          <i class="icon icon-pricetags-outline"></i>
-          
-            <a href="https://fehey.com/hve-next/tag/nian-zhong-zong-jie">
-              # 年终总结
-            </a>
-          
-        </span>
+        <time class="post-time">
+          · January 15o 2019, am ·
+        </time>
+        
+          <a href="http://fehey.com/tag/nian-zhong-zong-jie" class="post-tag">
+            # 年终总结
+          </a>
+        
       </div>
-    </div>
-    
-      <a href="https://fehey.com/hve-next/post/2018-nian-zhong-zong-jie">
-        <div class="feature-container" style="background-image: url('https://fehey.com/hve-next/post-images/2018-nian-zhong-zong-jie.png')">
-        </div>
-      </a>
-    
-  </section>
+      
+        <a href="http://fehey.com/post/2018-nian-zhong-zong-jie" class="post-feature-image" style="background-image: url('http://fehey.com/post-images/2018-nian-zhong-zong-jie.png')">
+        </a>
+      
+      <p class="post-abstract"><p>📃又到了一年一度的<strong>年终总结</strong>，这是参加工作的第一个完整年。</p>
+</p>
+    </article>
+  
+</div>
 
-
-<div class="pagination-container">
+        <div class="pagination-container">
   
   
 </div>
 
-
-      </div>
-
-      <div class="site-footer">
-  <div class="slogan">温故而知新</div>
+        <div class="site-footer">
   Powered by Hve Notes
 </div>
 
-
-    </div>
-    <script type="application/javascript">
-
-hljs.initHighlightingOnLoad()
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
-
+<script>
+  hljs.initHighlightingOnLoad()
 </script>
 
-
-
-
+      </div>
+    </div>
   </body>
 </html>
