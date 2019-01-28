@@ -345,7 +345,7 @@ h6,
 table,
 tr,
 td {
-  font-weight: lighter;
+  font-weight: normal;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -363,6 +363,8 @@ body {
 }
 .main .main-content {
   flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 .site-header {
   padding: 48px 0;
@@ -378,14 +380,19 @@ body {
 .site-header .menu-container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .site-header .menu-container a.menu {
-  font-size: 18px;
+  font-size: 16px;
   padding: 8px 16px;
+  flex-shrink: 0;
 }
 .site-header .avatar {
   margin-bottom: 24px;
   border-radius: 50%;
+}
+.post-container {
+  flex: 1;
 }
 .post-container .post {
   padding: 24px 32px;
@@ -393,7 +400,7 @@ body {
 .post-container .post .post-title {
   font-size: 24px;
   text-align: center;
-  padding: 24px;
+  padding: 24px 0;
 }
 .post-container .post .post-info {
   text-align: center;
@@ -419,7 +426,7 @@ body {
   width: 100%;
 }
 .post-container .post .post-abstract {
-  padding: 24px;
+  padding: 24px 0;
 }
 .pagination-container {
   padding: 24px 32px 32px;
@@ -430,6 +437,20 @@ body {
 }
 .pagination-container .next-page {
   float: right;
+}
+@media (max-width: 600px) {
+  .post-container .post {
+    padding: 16px 16px;
+  }
+  .post-container .post .post-title {
+    padding: 16px 0;
+  }
+  .post-container .post .post-abstract {
+    padding: 16px 0;
+  }
+}
+.post-detail {
+  flex: 1;
 }
 .post-detail .post {
   padding: 24px 32px;
@@ -528,6 +549,48 @@ body {
 #gitalk-container,
 #disqus_thread {
   padding: 24px 32px;
+}
+@media (max-width: 600px) {
+  .post-detail .post {
+    padding: 16px;
+  }
+  .post-detail .post .post-title {
+    font-size: 24px;
+    padding: 16px 0;
+  }
+}
+.archives-container {
+  padding: 32px;
+  flex: 1;
+}
+.archives-container .year {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 16px;
+}
+.archives-container .post {
+  padding: 16px 0;
+}
+.archives-container .post .post-title {
+  font-size: 16px;
+}
+.archives-container .post .post-title small {
+  font-size: 80%;
+}
+@media (max-width: 600px) {
+  .archives-container {
+    padding: 16px;
+  }
+}
+.tags-container {
+  padding: 32px 32px;
+  flex: 1;
+}
+.tags-container .tag {
+  display: inline-block;
+  padding: 4px 8px;
+  margin-right: 8px;
+  background: #eee;
 }
 .current-tag-container .title {
   text-align: center;
