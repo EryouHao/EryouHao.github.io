@@ -316,7 +316,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, opensans, Optima, 'Microsoft Yahei', sans-serif;
   font-size: 14px;
   color: #333;
-  background: #fdfdfd;
+  background: #f3f7f9;
 }
 a {
   color: #333;
@@ -350,20 +350,16 @@ td {
   margin: 0;
   padding: 0;
 }
-body {
-  background: #fdfdfd;
-}
 .main {
   max-width: 800px;
   min-height: 100vh;
   margin: 0 auto;
   background: #fff;
-  display: flex;
-  flex-direction: column;
 }
 .main .main-content {
   flex: 1;
   display: flex;
+  min-height: 100vh;
   flex-direction: column;
 }
 .site-header {
@@ -421,9 +417,13 @@ body {
   overflow: hidden;
   background-size: cover;
   background-position: center;
+  transition: all 0.3s;
 }
 .post-container .post .post-feature-image img {
   width: 100%;
+}
+.post-container .post .post-feature-image:hover {
+  transform: scale(1.0382);
 }
 .post-container .post .post-abstract {
   padding: 24px 0;
@@ -567,6 +567,7 @@ body {
   font-size: 24px;
   font-weight: bold;
   margin-top: 16px;
+  color: #0061e6;
 }
 .archives-container .post {
   padding: 16px 0;
@@ -590,7 +591,7 @@ body {
   display: inline-block;
   padding: 4px 8px;
   margin-right: 8px;
-  background: #eee;
+  background: #d1dbe0;
 }
 .current-tag-container .title {
   text-align: center;
