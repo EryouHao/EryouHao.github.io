@@ -428,6 +428,24 @@ td {
 .post-container .post .post-abstract {
   padding: 24px 0;
 }
+.post-container .post .post-abstract strong {
+  font-weight: bolder;
+}
+.post-container .post .post-abstract a {
+  color: #006CFF;
+  transition: all 0.3s;
+}
+.post-container .post .post-abstract a:hover {
+  color: #0061e6;
+  border-bottom: 1px dotted #0061e6;
+}
+.post-container .post .post-abstract code {
+  padding: 0 3px;
+  margin: 0 2px;
+  background: rgba(195, 195, 195, 0.41);
+  font-size: 0.9em;
+  border-radius: 2px;
+}
 .pagination-container {
   padding: 24px 32px 32px;
   overflow: hidden;
@@ -535,6 +553,9 @@ td {
   padding-left: 24px;
   line-height: 1.725;
   margin-bottom: 16px;
+}
+.post-detail .post .post-content strong {
+  font-weight: bolder;
 }
 .next-post {
   text-align: center;
