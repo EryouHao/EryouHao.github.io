@@ -304,9 +304,7 @@ time,
 mark,
 audio,
 video {
-  font-size: 100%;
   border: 0;
-  font: inherit;
   vertical-align: baseline;
 }
 html {
@@ -325,9 +323,6 @@ a {
 }
 a:hover {
   color: #006CFF;
-}
-ul li {
-  list-style: none;
 }
 body,
 div,
@@ -514,6 +509,7 @@ td {
   background: rgba(195, 195, 195, 0.41);
   font-size: 0.9em;
   border-radius: 2px;
+  display: inline-block;
 }
 .post-detail .post .post-content pre {
   margin-bottom: 24px;
@@ -554,8 +550,14 @@ td {
   line-height: 1.725;
   margin-bottom: 16px;
 }
-.post-detail .post .post-content strong {
-  font-weight: bolder;
+.post-detail .post .post-content h1,
+.post-detail .post .post-content h2,
+.post-detail .post .post-content h3,
+.post-detail .post .post-content h4,
+.post-detail .post .post-content h5,
+.post-detail .post .post-content h6 {
+  margin: 16px 0;
+  font-weight: bold;
 }
 .next-post {
   text-align: center;
