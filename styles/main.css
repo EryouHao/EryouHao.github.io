@@ -559,6 +559,9 @@ td {
   margin: 16px 0;
   font-weight: bold;
 }
+.post-detail .post .post-content h1 {
+  font-size: 24px;
+}
 .next-post {
   text-align: center;
   padding: 24px 32px;
