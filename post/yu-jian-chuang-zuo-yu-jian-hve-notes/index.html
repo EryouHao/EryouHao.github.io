@@ -1,81 +1,99 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="description" content="" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>遇见创作，遇见Hve Notes | Hve Notes</title>
-<link rel="shortcut icon" href="https://fehey.com/favicon.ico">
-<link rel="stylesheet" href="https://fehey.com/styles/main.css">
+    <meta charset="utf-8" >
 
+<title>遇见创作，遇见Hve Notes | Hve Notes</title>
+<meta name="description" content="温故而知新">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="shortcut icon" href="https://fehey.com/hve-notes-theme-simple/favicon.ico">
+<link rel="stylesheet" href="https://fehey.com/hve-notes-theme-simple/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://fehey.com">
-  <img class="avatar" src="https://fehey.com/images/avatar.png" alt="" width="80px" height="80px">
-  </a>
-  <h1 class="site-title">
-    Hve Notes
-  </h1>
-  <p class="site-description">
-    温故而知新
-  </p>
-  <div class="menu-container">
-    
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://fehey.com/hve-notes-theme-simple">
+        <img src="https://fehey.com/hve-notes-theme-simple/images/avatar.png" class="site-logo">
+        <h1 class="site-title">海岛心hey</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
       
-        <a href="http://fehey.com" class="menu">
-          首页
-        </a>
+        
+          <a href="http://fehey.com" class="site-nav">
+            首页
+          </a>
+        
       
-    
+        
+          <a href="http://fehey.com/archives" class="site-nav">
+            归档
+          </a>
+        
       
-        <a href="http://fehey.com/archives" class="menu">
-          归档
-        </a>
+        
+          <a href="http://fehey.com/tags" class="site-nav">
+            标签
+          </a>
+        
       
-    
+        
+          <a href="http://fehey.com/post/about/" class="site-nav">
+            关于
+          </a>
+        
       
-        <a href="http://fehey.com/tags" class="menu">
-          标签
-        </a>
+        
+          <a href="https://github.com/EryouHao" class="site-nav" target="_blank">
+            Github
+          </a>
+        
       
-    
-      
-        <a href="http://fehey.com/post/about/" class="menu">
-          关于
-        </a>
-      
-    
-      
-        <a href="https://github.com/EryouHao" class="menu" target="_blank">
-          Github
-        </a>
-      
-    
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="site-description">
+      温故而知新
+    </div>
+    <div class="site-footer">
+      Powered by Hve Notes
+    </div>
   </div>
 </div>
 
-      
-        <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              遇见创作，遇见Hve Notes
-            </h2>
-            <div class="post-info">
-              <time class="post-time">
-                · 2019-01-13 ·
-              </time>
-              
-                <a href="https://fehey.com/tag/hve" class="post-tags">
-                  # Hve
-                </a>
-              
-            </div>
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">遇见创作，遇见Hve Notes</h2>
+            <div class="post-date">2019-01-12</div>
+            
+              <div class="feature-container" style="background-image: url('https://fehey.com/hve-notes-theme-simple/post-images/yu-jian-chuang-zuo-yu-jian-hve-notes.png')">
+              </div>
+            
             <div class="post-content">
               <p>作为一个技术人，你是否喜欢创作，或是怀念过往又或是畅想未来，或是总结技术又或是记录生活？</p>
 <!-- more -->
@@ -105,57 +123,82 @@
 <p>如果您觉得此项目还不错，欢迎 <a href="https://github.com/hve-notes/hve-notes">Star</a> 支持作者，也欢迎体验之后提出您最宝贵的建议到 <a href="https://github.com/hve-notes/hve-notes/issues">Issue</a></p>
 
             </div>
-          </article>
+            
+              <div class="tag-container">
+                
+                  <a href="https://fehey.com/hve-notes-theme-simple/tag/hve" class="tag">
+                    Hve
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://fehey.com/hve-notes-theme-simple/post/2018-nian-zhong-zong-jie">
+                  <h3 class="post-title">
+                    2018 年终总结
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
         </div>
-    
-        
-          <div class="next-post">
-            <div class="next">下一篇</div>
-            <a href="https://fehey.com/post/2018-nian-zhong-zong-jie">
-              <h3 class="post-title">
-                2018 年终总结
-              </h3>
-            </a>
-          </div>  
-        
-
-        
-          
-            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-
-<div id="gitalk-container"></div>
-
-<script>
-
-  var gitalk = new Gitalk({
-    clientID: 'd92da8e33c82c229d9b4',
-    clientSecret: '861947e68c7afff00e919fbf7dff8a105c365d33',
-    repo: 'EryouHao.github.io',
-    owner: 'EryouHao',
-    admin: ['EryouHao'],
-    id: location.pathname,      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false  // Facebook-like distraction free mode
-  })
-
-  gitalk.render('gitalk-container')
-
-</script>
-
-          
-
-          
-        
-    
-        <div class="site-footer">
-  Powered by <a href="https://github.com/hve-notes/hve-notes" target="_blank" style="color: #1067de;">Hve Notes</a>
-</div>
-
-<script>
-  hljs.initHighlightingOnLoad()
-</script>
-
       </div>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+  
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'd92da8e33c82c229d9b4',
+        clientSecret: '861947e68c7afff00e919fbf7dff8a105c365d33',
+        repo: 'hve-notes-theme-simple',
+        owner: 'EryouHao',
+        admin: ['EryouHao'],
+        id: location.pathname,      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
   </body>
 </html>

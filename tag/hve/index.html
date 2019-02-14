@@ -1,160 +1,180 @@
+<!DOCTYPE html>
 <html>
   <head>
-  <meta charset="utf-8" />
-<meta name="description" content="" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Hve | Hve Notes</title>
-<link rel="shortcut icon" href="https://fehey.com/favicon.ico">
-<link rel="stylesheet" href="https://fehey.com/styles/main.css">
+    <meta charset="utf-8" >
 
+<title>Hve | Hve Notes</title>
+<meta name="description" content="温故而知新">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="shortcut icon" href="https://fehey.com/hve-notes-theme-simple/favicon.ico">
+<link rel="stylesheet" href="https://fehey.com/hve-notes-theme-simple/styles/main.css">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://fehey.com">
-  <img class="avatar" src="https://fehey.com/images/avatar.png" alt="" width="80px" height="80px">
-  </a>
-  <h1 class="site-title">
-    Hve Notes
-  </h1>
-  <p class="site-description">
-    温故而知新
-  </p>
-  <div class="menu-container">
-    
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://fehey.com/hve-notes-theme-simple">
+        <img src="https://fehey.com/hve-notes-theme-simple/images/avatar.png" class="site-logo">
+        <h1 class="site-title">海岛心hey</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
       
-        <a href="http://fehey.com" class="menu">
-          首页
-        </a>
+        
+          <a href="http://fehey.com" class="site-nav">
+            首页
+          </a>
+        
       
-    
+        
+          <a href="http://fehey.com/archives" class="site-nav">
+            归档
+          </a>
+        
       
-        <a href="http://fehey.com/archives" class="menu">
-          归档
-        </a>
+        
+          <a href="http://fehey.com/tags" class="site-nav">
+            标签
+          </a>
+        
       
-    
+        
+          <a href="http://fehey.com/post/about/" class="site-nav">
+            关于
+          </a>
+        
       
-        <a href="http://fehey.com/tags" class="menu">
-          标签
-        </a>
+        
+          <a href="https://github.com/EryouHao" class="site-nav" target="_blank">
+            Github
+          </a>
+        
       
-    
-      
-        <a href="http://fehey.com/post/about/" class="menu">
-          关于
-        </a>
-      
-    
-      
-        <a href="https://github.com/EryouHao" class="menu" target="_blank">
-          Github
-        </a>
-      
-    
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="site-description">
+      温故而知新
+    </div>
+    <div class="site-footer">
+      Powered by Hve Notes
+    </div>
   </div>
 </div>
 
-        <div class="current-tag-container">
-            <h2 class="title">
-                标签：#Hve
-            </h2> 
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <h2 class="current-tag">标签: Hve</h2>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://fehey.com/hve-notes-theme-simple/post/yu-jian-chuang-zuo-yu-jian-hve-notes">
+                  <h2 class="post-title">遇见创作，遇见Hve Notes</h2>
+                </a>
+                <div class="post-date">
+                  2019-01-12
+                </div>
+                <div class="post-abstract">
+                  <p>作为一个技术人，你是否喜欢创作，或是怀念过往又或是畅想未来，或是总结技术又或是记录生活？</p>
+
+                </div>
+              </div>
+              
+                <a class="right" href="https://fehey.com/hve-notes-theme-simple/post/yu-jian-chuang-zuo-yu-jian-hve-notes">
+                  <div class="feature-container" style="background-image: url('https://fehey.com/hve-notes-theme-simple/post-images/yu-jian-chuang-zuo-yu-jian-hve-notes.png')">
+                  </div>
+                </a>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://fehey.com/hve-notes-theme-simple/post/hve-notes-zhu-ye-shang-xian-la">
+                  <h2 class="post-title">Hve Notes 主页上线啦</h2>
+                </a>
+                <div class="post-date">
+                  2018-12-30
+                </div>
+                <div class="post-abstract">
+                  <p>铛铛铛，喜大普奔，Hve Notes 主页上线啦！  </p>
+
+                </div>
+              </div>
+              
+                <a class="right" href="https://fehey.com/hve-notes-theme-simple/post/hve-notes-zhu-ye-shang-xian-la">
+                  <div class="feature-container" style="background-image: url('https://fehey.com/hve-notes-theme-simple/post-images/hve-notes-zhu-ye-shang-xian-la.png')">
+                  </div>
+                </a>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://fehey.com/hve-notes-theme-simple/post/hello-hve">
+                  <h2 class="post-title">Hello Hve Notes</h2>
+                </a>
+                <div class="post-date">
+                  2018-12-10
+                </div>
+                <div class="post-abstract">
+                  <p>👏 欢迎使用 <strong>Hve</strong> ！  </p>
+
+                </div>
+              </div>
+              
+                <a class="right" href="https://fehey.com/hve-notes-theme-simple/post/hello-hve">
+                  <div class="feature-container" style="background-image: url('https://fehey.com/hve-notes-theme-simple/post-images/hello-hve.png')">
+                  </div>
+                </a>
+              
+            </article>
+          
+
+          <div class="pagination-container">
+  
+  
+</div>
+
         </div>
-        <div class="post-container">
-  
-    <article class="post">
-      <a href="https://fehey.com/post/yu-jian-chuang-zuo-yu-jian-hve-notes">
-        <h2 class="post-title">遇见创作，遇见Hve Notes</h2>
-      </a>
-      <div class="post-info">
-        <time class="post-time">
-          · 2019-01-13 ·
-        </time>
-        
-          <a href="https://fehey.com/tag/hve" class="post-tag">
-            # Hve
-          </a>
-        
-      </div>
-      
-        <a href="https://fehey.com/post/yu-jian-chuang-zuo-yu-jian-hve-notes" class="post-feature-image" style="background-image: url('https://fehey.com/post-images/yu-jian-chuang-zuo-yu-jian-hve-notes.png')">
-        </a>
-      
-      <div class="post-abstract">
-        <p>作为一个技术人，你是否喜欢创作，或是怀念过往又或是畅想未来，或是总结技术又或是记录生活？</p>
-
-      </di>
-    </article>
-  
-    <article class="post">
-      <a href="https://fehey.com/post/hve-notes-zhu-ye-shang-xian-la">
-        <h2 class="post-title">Hve Notes 主页上线啦</h2>
-      </a>
-      <div class="post-info">
-        <time class="post-time">
-          · 2018-12-31 ·
-        </time>
-        
-          <a href="https://fehey.com/tag/hve" class="post-tag">
-            # Hve
-          </a>
-        
-      </div>
-      
-        <a href="https://fehey.com/post/hve-notes-zhu-ye-shang-xian-la" class="post-feature-image" style="background-image: url('https://fehey.com/post-images/hve-notes-zhu-ye-shang-xian-la.png')">
-        </a>
-      
-      <div class="post-abstract">
-        <p>铛铛铛，喜大普奔，Hve Notes 主页上线啦！  </p>
-
-      </di>
-    </article>
-  
-    <article class="post">
-      <a href="https://fehey.com/post/hello-hve">
-        <h2 class="post-title">Hello Hve Notes</h2>
-      </a>
-      <div class="post-info">
-        <time class="post-time">
-          · 2018-12-10 ·
-        </time>
-        
-          <a href="https://fehey.com/tag/hve" class="post-tag">
-            # Hve
-          </a>
-        
-      </div>
-      
-        <a href="https://fehey.com/post/hello-hve" class="post-feature-image" style="background-image: url('https://fehey.com/post-images/hello-hve.png')">
-        </a>
-      
-      <div class="post-abstract">
-        <p>👏 欢迎使用 <strong>Hve</strong> ！  </p>
-
-      </di>
-    </article>
-  
-</div>
-
-        <div class="pagination-container">
-  
-  
-</div>
-
-        <div class="site-footer">
-  Powered by <a href="https://github.com/hve-notes/hve-notes" target="_blank" style="color: #1067de;">Hve Notes</a>
-</div>
-
-<script>
-  hljs.initHighlightingOnLoad()
-</script>
-
       </div>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
   </body>
 </html>
