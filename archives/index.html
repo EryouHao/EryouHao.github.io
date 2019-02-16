@@ -1,199 +1,159 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" >
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Hve Notes</title>
+<link rel="shortcut icon" href="https://fehey.com/favicon.ico">
+<link rel="stylesheet" href="https://fehey.com/styles/main.css">
 
-<title>文章归档 | Hve Notes</title>
-<meta name="description" content="温故而知新">
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-<link rel="shortcut icon" href="http://fehey.coding.me/favicon.ico">
-<link rel="stylesheet" href="http://fehey.coding.me/styles/main.css">
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
 
 
   </head>
   <body>
-    <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="http://fehey.coding.me">
-        <img src="http://fehey.coding.me/images/avatar.png" class="site-logo">
-        <h1 class="site-title">海岛心hey</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
-    </div>
-    <div>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://fehey.com">
+  <img class="avatar" src="https://fehey.com/images/avatar.png" alt="" width="80px" height="80px">
+  </a>
+  <h1 class="site-title">
+    Hve Notes
+  </h1>
+  <p class="site-description">
+    温故而知新
+  </p>
+  <div class="menu-container">
+    
       
-        
-          <a href="https://fehey.com" class="site-nav">
-            首页
-          </a>
-        
+        <a href="https://fehey.com" class="menu">
+          首页
+        </a>
       
-        
-          <a href="https://fehey.com/archives" class="site-nav">
-            归档
-          </a>
-        
+    
       
-        
-          <a href="https://fehey.com/tags" class="site-nav">
-            标签
-          </a>
-        
+        <a href="https://fehey.com/archives" class="menu">
+          归档
+        </a>
       
-        
-          <a href="https://fehey.com/post/about/" class="site-nav">
-            关于
-          </a>
-        
+    
       
-        
-          <a href="https://github.com/EryouHao" class="site-nav" target="_blank">
-            Github
-          </a>
-        
+        <a href="https://fehey.com/tags" class="menu">
+          标签
+        </a>
       
-    </div>
-  </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="site-description">
-      温故而知新
-    </div>
-    <div class="site-footer">
-      Powered by Hve Notes
-    </div>
+    
+      
+        <a href="https://fehey.com/post/about/" class="menu">
+          关于
+        </a>
+      
+    
+      
+        <a href="https://github.com/EryouHao" class="menu" target="_blank">
+          Github
+        </a>
+      
+    
   </div>
 </div>
 
+    
+        
 
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          
+<div class="archives-container">
+  
+    <h2 class="year">2019</h2>
+    
+      
+        <article class="post">
+          <a href="https://fehey.com/post/markdown-yu-fa-jian-dan-jiao-cheng">
+            <h2 class="post-title">
+              Markdown 语法简单教程
+              <small>2019-01-28</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+      
+        <article class="post">
+          <a href="https://fehey.com/post/yu-jian-chuang-zuo-yu-jian-hve-notes">
+            <h2 class="post-title">
+              遇见创作，遇见Hve Notes
+              <small>2019-01-14</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+      
+        <article class="post">
+          <a href="https://fehey.com/post/2018-nian-zhong-zong-jie">
+            <h2 class="post-title">
+              2018 年终总结
+              <small>2019-01-14</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+      
+        <article class="post">
+          <a href="https://fehey.com/post/hve-notes-zhu-ye-shang-xian-la">
+            <h2 class="post-title">
+              Hve Notes 主页上线啦
+              <small>2019-01-01</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+      
+    
+  
+    <h2 class="year">2018</h2>
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <article class="post">
+          <a href="https://fehey.com/post/hello-hve">
+            <h2 class="post-title">
+              Hello Hve Notes
+              <small>2018-12-12</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+  
+</div>
 
-          <h2 class="archives-title">文章归档</h2>
-          <div class="archives-container">
-            
-              <h2 class="year" data-aos="fade-in" data-aos-delay="500">2019</h2>
-              
-                
-                  <article class="post">
-                    <a href="http://fehey.coding.me/post/ce-shi-coding-wen-zhang">
-                      <h2 class="post-title">
-                        测试Coding文章
-                      </h2>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="http://fehey.coding.me/post/markdown-yu-fa-jian-dan-jiao-cheng">
-                      <h2 class="post-title">
-                        Markdown 语法简单教程
-                      </h2>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="http://fehey.coding.me/post/yu-jian-chuang-zuo-yu-jian-hve-notes">
-                      <h2 class="post-title">
-                        遇见创作，遇见Hve Notes
-                      </h2>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="http://fehey.coding.me/post/2018-nian-zhong-zong-jie">
-                      <h2 class="post-title">
-                        2018 年终总结
-                      </h2>
-                    </a>
-                  </article>
-                
-              
-                
-              
-                
-              
-            
-              <h2 class="year" data-aos="fade-in" data-aos-delay="500">2018</h2>
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-                  <article class="post">
-                    <a href="http://fehey.coding.me/post/hve-notes-zhu-ye-shang-xian-la">
-                      <h2 class="post-title">
-                        Hve Notes 主页上线啦
-                      </h2>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="http://fehey.coding.me/post/hello-hve">
-                      <h2 class="post-title">
-                        Hello Hve Notes
-                      </h2>
-                    </a>
-                  </article>
-                
-              
-            
-          </div>
-
-          <div class="pagination-container">
+    
+        <div class="pagination-container">
   
   
 </div>
 
-        </div>
-      </div>
-    </div>
+    
+        <div class="site-footer">
+  Powered by Hve Notes
+</div>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-<script type="application/javascript">
-
-AOS.init();
-
-hljs.initHighlightingOnLoad()
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
-
+<script>
+  hljs.initHighlightingOnLoad()
 </script>
 
-
-
-
+      </div>
+    </div>
   </body>
 </html>
