@@ -1,0 +1,162 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Hve Notes 小白上手教程 | Hve Notes</title>
+<link rel="shortcut icon" href="https://fehey.com/favicon.ico">
+<link rel="stylesheet" href="https://fehey.com/styles/main.css">
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://fehey.com">
+  <img class="avatar" src="https://fehey.com/images/avatar.png" alt="" width="80px" height="80px">
+  </a>
+  <h1 class="site-title">
+    Hve Notes
+  </h1>
+  <p class="site-description">
+    温故而知新
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="https://fehey.com" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="https://fehey.com/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="https://fehey.com/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="https://fehey.com/post/about/" class="menu">
+          关于
+        </a>
+      
+    
+      
+        <a href="https://github.com/EryouHao" class="menu" target="_blank">
+          Github
+        </a>
+      
+    
+  </div>
+</div>
+
+      
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              Hve Notes 小白上手教程
+            </h2>
+            <div class="post-info">
+              <time class="post-time">
+                · 2019-02-15 ·
+              </time>
+              
+            </div>
+            <div class="post-content">
+              <p>如果你使用过 <strong>Hexo</strong> 等工具基于 <strong>Github</strong> 做个人博客，那么恭喜你，你可以很轻松的上手使用<strong>Hve Notes</strong><br>如果你以前没有使用过，那么希望这篇文章可以帮助你顺利的完成博客搭建。话不多说，Let&#39;s Go!</p>
+<!-- more -->
+
+<h2 id="-">准备工作</h2>
+<blockquote>
+<p>由于 Github 和 Coding 的步骤差不多，下面就以 Github 为例来操作一下</p>
+</blockquote>
+<p><strong>必须：确保你已经安装过 <a href="https://git-scm.com/downloads">Git</a> 和 <a href="https://hvenotes.fehey.com/">Hve Notes</a></strong></p>
+<p>首先你需要一个 <a href="http://github.com">Github</a> 账号，如果没有的话，快去注册一个吧！</p>
+<p>登录 Github，然后进入到 <a href="https://github.com/settings/tokens/new">这里</a> 创建一个 <strong>Token</strong>，勾选上 <strong>repo</strong> 的相关权限即可，下面是对应的截图示例：<br><img src="https://fehey.com/post-images/1550403256560.png" alt="Github Personal access tokesn"></p>
+<p>生成之后你可以复制 <strong>Token</strong> 到你可以再次找到的某个地方，因为一旦你关了这个网页就再也不会看到它了，稍后会在软件中使用</p>
+<p><img src="https://fehey.com/post-images/1550403732691.png" alt="Token示例"></p>
+<p>接下来你需要创建一个仓库，用来存放博客构建后的静态文件。我们建议你创建仓库名为 <strong>用户名.github.io</strong> 的仓库，因为 Github 会默认将此仓库设置成 <a href="https://pages.github.com/">Github Pages</a> 可访问类型，若不是用此命名的仓库，则不能默认使用 Github Pages，所以请认真确认。例如我的 Github 用户名为 <strong>EryouHao</strong>，则仓库名为 <strong>EryouHao.github.io</strong>。使用这种方式还有一个好处是，在没有自定义域名的情况下，使你的博客域名更短。当然如果想使用其他仓库来存放博客静态文件的话，也不是不可以，只不过，存放之后，若没有设置自定义域名，则访问地址将变成 <code>https://用户名.github.io/blog</code> （blog 为仓库名）这种二级目录的形式。</p>
+<h2 id="-">开始使用</h2>
+<p>打开 <strong>Hve Notes</strong> 进入到<strong>配置</strong>页面，然后按照下面示例，输入相关配置并保存</p>
+<p><img src="https://fehey.com/post-images/1550405739647.png" alt="配置示例"></p>
+<p>在不开启文章评论的情况下，到此为止，你已经可以点击预览，点击同步进行博客部署啦，快去试试看吧！（当然在不同步的情况下）</p>
+<h2 id="-">开启文章评论</h2>
+<p><strong>Hve Notes</strong> 目前提供了 <a href="https://github.com/gitalk/gitalk/blob/master/readme-cn.md">Gitalk</a> 和 <a href="">Disqus</a> 两种评论系统支持。</p>
+<blockquote>
+<p>Gitalk 是一个基于 GitHub Issue 和 Preact 开发的评论插件。如果你博客使用的是 Gitalk 的话，建议你可以选择 Gitalk 来作为评论插件。</p>
+</blockquote>
+<p>你可以按照 <a href="https://github.com/gitalk/gitalk/blob/master/readme-cn.md">Gitalk 的文档</a> 进行相关字段配置，或者按照下面的步骤操作。</p>
+<p>首先你需要有一个 <strong>Github OAuth Application</strong>，点击<a href="https://github.com/settings/applications/new">这里</a>创建，字段填写可以参照下图</p>
+<p><img src="https://fehey.com/post-images/1550455713413.png" alt="Github OAuth"></p>
+<p>创建完成后可将 <strong>Client ID</strong> 和 <strong>Client Secret</strong>复制一下，保存到本地</p>
+<p><img src="https://fehey.com/post-images/1550455918492.png" alt=""></p>
+<p>接下来就可以去应用里面填写对应的信息，并开启评论</p>
+<p><img src="https://fehey.com/post-images/1550456148809.png" alt=""></p>
+<p>这样评论插件就设置好了，在预览时会在文章页显示评论模块，但不会显示具体的评论信息，因为这个是本地预览，而 <strong>Github OAuth</strong> 设置的域名为线上的域名。待博客同步到线上时就可以显示啦！</p>
+<p>快快开始你的创作吧！</p>
+
+            </div>
+          </article>
+        </div>
+    
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://fehey.com/post/markdown-yu-fa-jian-dan-jiao-cheng">
+              <h3 class="post-title">
+                Markdown 语法简单教程
+              </h3>
+            </a>
+          </div>  
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: 'd32f26feaa6fb3f5f4c0',
+    clientSecret: '155ee9e5b67d2a3c6b38680be835b3ecee225a0e',
+    repo: 'EryouHao.github.io',
+    owner: 'EryouHao',
+    admin: ['EryouHao'],
+    id: location.pathname,      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+    
+        <div class="site-footer">
+  Powered by Hve Notes
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+      </div>
+    </div>
+  </body>
+</html>
