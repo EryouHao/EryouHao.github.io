@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://fehey.com</id>
     <title>海岛心hey</title>
-    <updated>2019-04-23T11:39:09.076Z</updated>
+    <updated>2019-04-23T11:48:13.659Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://fehey.com"/>
     <link rel="self" href="https://fehey.com/atom.xml"/>
@@ -15,7 +15,7 @@
         <id>https://fehey.com/post/meet-gridea</id>
         <link href="https://fehey.com/post/meet-gridea">
         </link>
-        <updated>2019-04-11T10:48:57.000Z</updated>
+        <updated>2019-04-23T10:48:57.000Z</updated>
         <content type="html"><![CDATA[<p>想当时，博客兴起的年代，成千上万的人挑选各种平台去搭建一个属于自己的博客。从新浪博客、博客园到 Wordpress、Hexo，越来越多的人选择了静态博客，越来越趋于轻量化。</p>
 <p>今天，为大家带来了一款用心打造的产品——<strong>Gridea</strong>。</p>
 <h2 id="是什么">是什么？</h2>
