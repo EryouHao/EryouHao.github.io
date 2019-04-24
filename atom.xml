@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://fehey.com</id>
     <title>海岛心hey</title>
-    <updated>2019-04-24T07:17:00.787Z</updated>
+    <updated>2019-04-24T07:24:49.638Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://fehey.com"/>
     <link rel="self" href="https://fehey.com/atom.xml"/>
@@ -16,6 +16,38 @@
         <link href="https://fehey.com/post/meet-gridea">
         </link>
         <updated>2019-04-23T10:48:57.000Z</updated>
+        <content type="html"><![CDATA[<p>想当时，博客兴起的年代，成千上万的人挑选各种平台去搭建一个属于自己的博客。从新浪博客、博客园到 Wordpress、Hexo，越来越多的人选择了静态博客，越来越趋于轻量化。</p>
+<p>今天，为大家带来了一款用心打造的产品——<strong>Gridea</strong>。</p>
+<h2 id="是什么">是什么？</h2>
+<p>Gridea 是一个简单的（Easy），开源的(Open Source)、强大的（Powerful）静态博客写作客户端。目前已具备了博客所需的基本功能，并且还在不断完善。</p>
+<h2 id="都有啥">都有啥？</h2>
+<blockquote>
+<p>你最需要的，我们都准备了</p>
+</blockquote>
+<h3 id="markdown">Markdown</h3>
+<p>Gridea 提供了 Markdown 编辑体验，你可以专注内容，其他的，交给 Gridea 就够了，无需关心样式与排版。</p>
+<h3 id="封面图">封面图</h3>
+<p>一篇用心的创作，怎么能不搭配一个封面图来锦上添花呢？有！Gridea 支持文章设置封面图，即使是外链图也不成问题。</p>
+<h3 id="自定义标签">自定义标签</h3>
+<p>我们更建议使用标签来为文章进行归类，以你最喜欢的方式：编程、旅行、读书笔记... 我们并没有同时提供<strong>标签</strong>和<strong>类别</strong>两层分类关系，画繁为简，不必纠结。</p>
+<h3 id="自定义菜单">自定义菜单</h3>
+<p>我们开发了自定义菜单功能，同时贴心地准备了主页、归档、标签列表等快捷选择。当然，你也可以创建外部菜单到互联网的任何一个地方。</p>
+<h3 id="多主题">多主题</h3>
+<p>目前，我们内置了 4 款主题，制作精良、耐看，更有趣的是，我们为每款主题设置了丰富的自定义配置字段，稍加配置，遇见大不同</p>
+<h3 id="跨设备">跨设备</h3>
+<p>或许你工作使用 Mac，生活使用 Windows，这都不是事儿，Gridea 全都支持！同时支持更改源文件夹，利用 OneDrive、Dropbox 等同步工具，跨设备管理博客轻而易举！什么，你喜欢用 Linux？再等等，稍后就来</p>
+<h3 id="多平台">多平台</h3>
+<p>大部分情况下你用 Github Pages 来托管博客就够了，但我们同时提供了 Coding Pages 的支持。若你想部署在自己的服务器，可将构建后的网站上传到任意地方。我想，未来会将这一过程变得更加流畅</p>
+<h3 id="多评论">多评论</h3>
+<p>Gridea 内置了 Gitalk 和 Disqus 两个评论系统，你可以任选其一，利用评论结交更多朋友吧！</p>
+<h3 id="多语言">多语言</h3>
+<p>是的，我们贴心地为你内置了中文简体和 English 两种语言。</p>
+<h2 id="就这些">就这些？</h2>
+<p>不止这些，还有一些你可能期待的（主题包含）：Katex 公式、Google Analytics、社交链接、TOC...，心动了吗？快快下载体验吧。</p>
+<p>当然 Gridea 还很年轻，有很多不足的地方，但请相信，它会不停向前。未来，它一定会成为爱创作的你离不开的伙伴。</p>
+<h2 id="下一步计划呢">下一步计划呢？</h2>
+<p>插件系统、主题市场、RSS等等。</p>
+]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Gridea 小白上手教程]]></title>
@@ -28,6 +60,37 @@
 ]]></summary>
         <content type="html"><![CDATA[<p>如果你使用过 <strong>Hexo</strong> 等工具基于 <strong>Github</strong> 做个人博客，那么恭喜你，你可以很轻松的上手使用<strong>Gridea</strong>
 如果你以前没有使用过，那么希望这篇文章可以帮助你顺利的完成博客搭建。话不多说，Let's Go!</p>
+<!-- more -->
+<p style="color: #e03131; font-size 18px;">由于项目之前叫做 Hve Notes，所以截图还是旧版软件，但不影响使用，各位小伙伴先将就咯</p>
+<h2 id="准备工作">准备工作</h2>
+<blockquote>
+<p>由于 Github 和 Coding 的步骤差不多，下面就以 Github 为例来操作一下</p>
+</blockquote>
+<p><strong>必须：确保你已经安装过 <a href="https://git-scm.com/downloads">Git</a> 和 <a href="https://hvenotes.fehey.com/">Hve Notes</a></strong></p>
+<p>首先你需要一个 <a href="http://github.com">Github</a> 账号，如果没有的话，快去注册一个吧！</p>
+<p>登录 Github，然后进入到 <a href="https://github.com/settings/tokens/new">这里</a> 创建一个 <strong>Token</strong>，勾选上 <strong>repo</strong> 的相关权限即可，下面是对应的截图示例：
+<img src="https://fehey.com/post-images/1550403256560.png" alt="Github Personal access tokesn"></p>
+<p>生成之后你可以复制 <strong>Token</strong> 到你可以再次找到的某个地方，因为一旦你关了这个网页就再也不会看到它了，稍后会在软件中使用</p>
+<p><img src="https://fehey.com/post-images/1550403732691.png" alt="Token示例"></p>
+<p>接下来你需要创建一个仓库，用来存放博客构建后的静态文件。我们建议你创建仓库名为 <strong>用户名.github.io</strong> 的仓库，因为 Github 会默认将此仓库设置成 <a href="https://pages.github.com/">Github Pages</a> 可访问类型，若不是用此命名的仓库，则不能默认使用 Github Pages，所以请认真确认。例如我的 Github 用户名为 <strong>EryouHao</strong>，则仓库名为 <strong>EryouHao.github.io</strong>。使用这种方式还有一个好处是，在没有自定义域名的情况下，使你的博客域名更短。当然如果想使用其他仓库来存放博客静态文件的话，也不是不可以，只不过，存放之后，若没有设置自定义域名，则访问地址将变成 <code>https://用户名.github.io/blog</code> （blog 为仓库名）这种二级目录的形式。</p>
+<h2 id="开始使用">开始使用</h2>
+<p>打开 <strong>Hve Notes</strong> 进入到<strong>配置</strong>页面，然后按照下面示例，输入相关配置并保存</p>
+<p><img src="https://fehey.com/post-images/1550405739647.png" alt="配置示例"></p>
+<p>在不开启文章评论的情况下，到此为止，你已经可以点击预览，点击同步进行博客部署啦，快去试试看吧！（当然在不同步的情况下）</p>
+<h2 id="开启文章评论">开启文章评论</h2>
+<p><strong>Hve Notes</strong> 目前提供了 <a href="https://github.com/gitalk/gitalk/blob/master/readme-cn.md">Gitalk</a> 和 <a href="">Disqus</a> 两种评论系统支持。</p>
+<blockquote>
+<p>Gitalk 是一个基于 GitHub Issue 和 Preact 开发的评论插件。如果你博客使用的是 Gitalk 的话，建议你可以选择 Gitalk 来作为评论插件。</p>
+</blockquote>
+<p>你可以按照 <a href="https://github.com/gitalk/gitalk/blob/master/readme-cn.md">Gitalk 的文档</a> 进行相关字段配置，或者按照下面的步骤操作。</p>
+<p>首先你需要有一个 <strong>Github OAuth Application</strong>，点击<a href="https://github.com/settings/applications/new">这里</a>创建，字段填写可以参照下图</p>
+<p><img src="https://fehey.com/post-images/1550455713413.png" alt="Github OAuth"></p>
+<p>创建完成后可将 <strong>Client ID</strong> 和 <strong>Client Secret</strong>复制一下，保存到本地</p>
+<p><img src="https://fehey.com/post-images/1550455918492.png" alt=""></p>
+<p>接下来就可以去应用里面填写对应的信息，并开启评论</p>
+<p><img src="https://fehey.com/post-images/1550456148809.png" alt=""></p>
+<p>这样评论插件就设置好了，在预览时会在文章页显示评论模块，但不会显示具体的评论信息，因为这个是本地预览，而 <strong>Github OAuth</strong> 设置的域名为线上的域名。待博客同步到线上时就可以显示啦！</p>
+<p>快快开始你的创作吧！</p>
 ]]></content>
     </entry>
     <entry>
@@ -36,6 +99,109 @@
         <link href="https://fehey.com/post/markdown-yu-fa-jian-dan-jiao-cheng">
         </link>
         <updated>2019-01-24T21:45:08.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="1-斜体和粗体">1. 斜体和粗体</h3>
+<p>使用 * 和 ** 表示斜体和粗体。</p>
+<p>示例：</p>
+<p>这是 <em>斜体</em>，这是 <strong>粗体</strong>。</p>
+<h3 id="2-标题">2. 标题</h3>
+<p>使用 #加空格表示一级标题，同理，##加空格表示二级标题</p>
+<h1 id="一级标题">一级标题</h1>
+<h2 id="二级标题">二级标题</h2>
+<h3 id="三级标题">三级标题</h3>
+<h4 id="四级标题">四级标题</h4>
+<h5 id="五级标题">五级标题</h5>
+<h6 id="六级标题">六级标题</h6>
+<h3 id="3-外链接">3. 外链接</h3>
+<p>使用 [描述](链接地址) 为文字增加外链接。</p>
+<p>示例：</p>
+<p>这是去往 <a href="http://hvenotes.fehey.com">Hve Notes 主页</a> 的链接。</p>
+<h3 id="4-无序列表">4. 无序列表</h3>
+<p>使用 - 表示无序列表。</p>
+<p>示例：</p>
+<ul>
+<li>无序列表项 一</li>
+<li>无序列表项 二</li>
+<li>无序列表项 三</li>
+</ul>
+<h3 id="5-有序列表">5. 有序列表</h3>
+<p>使用数字和点表示有序列表。</p>
+<p>示例：</p>
+<ol>
+<li>有序列表项 一</li>
+<li>有序列表项 二</li>
+<li>有序列表项 三</li>
+</ol>
+<h3 id="6-文字引用">6. 文字引用</h3>
+<p>使用 &gt; 表示文字引用。</p>
+<p>示例：</p>
+<blockquote>
+<p>野火烧不尽，春风吹又生。</p>
+</blockquote>
+<h3 id="7-行内代码块">7. 行内代码块</h3>
+<p>使用 `代码` 表示行内代码块。</p>
+<p>示例：</p>
+<p>让我们聊聊 <code>html</code>。</p>
+<h3 id="8-代码块">8.  代码块</h3>
+<p>使用 四个缩进空格 或 ``` 表示代码块。</p>
+<p>示例：</p>
+<pre><code>这是一个代码块，此行左侧有四个不可见的空格。
+</code></pre>
+<h3 id="9-插入图像">9.  插入图像</h3>
+<p>使用 ![描述](图片链接地址) 插入图像。</p>
+<p>示例：</p>
+<p><img src="https://avatars3.githubusercontent.com/u/46315806?s=200&amp;v=4" alt="我的头像"></p>
+<h2 id="测试代码">测试代码</h2>
+<pre><code class="language-javascript">function hello() {
+	var username = 'xiaoming';
+	var age = 18;
+	console.log('Hello World');
+}
+hello()
+</code></pre>
+<h2 id="表格示例">表格示例</h2>
+<table>
+<thead>
+<tr>
+<th>一个普通标题</th>
+<th>一个普通标题</th>
+<th>一个普通标题</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>短文本</td>
+<td>中等文本</td>
+<td>稍微长一点的文本</td>
+</tr>
+<tr>
+<td>稍微长一点的文本</td>
+<td>短文本</td>
+<td>中等文本</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">左对齐标题</th>
+<th style="text-align:right">右对齐标题</th>
+<th style="text-align:center">居中对齐标题</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">短文本</td>
+<td style="text-align:right">中等文本</td>
+<td style="text-align:center">稍微长一点的文本</td>
+</tr>
+<tr>
+<td style="text-align:left">稍微长一点的文本</td>
+<td style="text-align:right">短文本</td>
+<td style="text-align:center">中等文本</td>
+</tr>
+</tbody>
+</table>
+]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[遇见创作，遇见Hve Notes]]></title>
@@ -46,6 +212,33 @@
         <summary type="html"><![CDATA[<p>作为一个技术人，你是否喜欢创作，或是怀念过往又或是畅想未来，或是总结技术又或是记录生活？</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>作为一个技术人，你是否喜欢创作，或是怀念过往又或是畅想未来，或是总结技术又或是记录生活？</p>
+<!-- more -->
+<p>诚然，现在有很多平台或技术社区，里面有很多人每天都在分享，或是读书笔记又或是项目实践，或是面试经历又或是年终总结。</p>
+<p>技术社区或平台固然很热闹，但是有一些东西，又想记录在某个地方，只给有缘人。所以这正是个人博客存在的原因之一吧。你可以在自己的博客中记录各种各样的内容，电影影评、旅行日记、编程踩坑经历等等。</p>
+<p>基于此，你可能使用过或正在使用一些流行的工具如 <strong>Hexo</strong>、<strong>Jekyll</strong> 等静态博客网站生成器，又或者是 <strong>Gatsby</strong> 这种新型的 Web 构建工具。不过，你可能在寻找或者期待这样一种工具，可以更便捷地来管理博客和更舒适的编辑内容，于是今天的主角—— <strong>Hve Notes</strong> 诞生了！</p>
+<p>下面奉上介绍给各位喜欢创作的朋友</p>
+<p>👏  欢迎使用 <strong>Hve Notes</strong> ！</p>
+<p>Github: <a href="https://github.com/hve-notes/hve-notes">Hve Notes</a><br>
+项目主页: <a href="http://hvenotes.fehey.com/">Hve Notes</a><br>
+示例网站: <a href="http://fehey.com/">示例网站一</a> <a href="http://hve-notes.github.io">示例网站二</a></p>
+<p>✍️  <strong>Hve Notes</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+<h2 id="特性">特性👇</h2>
+<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
+<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
+<p>🏷️  你可以对文章进行标签分组</p>
+<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
+<p>💻  你可以在 <strong>𝖶𝗂𝗇𝖽𝗈𝗐𝗌</strong> 或 <strong>𝖬𝖺𝖼𝖮𝖲</strong> 设备上使用此客户端</p>
+<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
+<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
+<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
+<p>🌁  你可以任意使用应用内默认主题或任意第三方主题</p>
+<p>🌱 当然 <strong>Hve Notes</strong> 还很年轻，有很多不足，但请相信，它会不停向前🏃</p>
+<p>未来，它一定会成为你离不开的伙伴</p>
+<p>尽情发挥你的才华吧！</p>
+<p>😘 Enjoy~</p>
+<p>目前，<strong>Hve Notes</strong> 已经更新到了 v0.7.0 版本，基本已经可以满足日常使用。当然还有很大的成长空间，例如文章和标签的 <code>slug</code> 格式定制和可编辑，个性化的页面增加与配置，赋予用户更强的扩展能力，更丰富的主题等等。</p>
+<p>在此，也欢迎感兴趣的朋友可以加入我们，提出建议或共同开发，也欢迎加入我们的 <a href="https://t.me/joinchat/IDY0ahRqb8NPodv95BNpBg">Telegram 群组</a></p>
+<p>如果您觉得此项目还不错，欢迎 <a href="https://github.com/hve-notes/hve-notes">Star</a> 支持作者，也欢迎体验之后提出您最宝贵的建议到 <a href="https://github.com/hve-notes/hve-notes/issues">Issue</a></p>
 ]]></content>
     </entry>
     <entry>
@@ -57,6 +250,25 @@
         <summary type="html"><![CDATA[<p>📃又到了一年一度的<strong>年终总结</strong>，这是参加工作的第一个完整年。</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>📃又到了一年一度的<strong>年终总结</strong>，这是参加工作的第一个完整年。</p>
+<!-- more -->
+<p>🥺这一年总体来说，<strong>滑水较多</strong>，产出较少，尤其是文字方面，可怜巴巴。读过不少文章，写过不少代码，需提升、待吸收的知识一把一把。</p>
+<p>🏫毕业快两年了，这一年多来遇到了许多贵人，使我成长了很多，对事情的看法和对世界的认知也清晰了很多。单是技术方面也不像从前那么迷茫与焦虑，学会了循序渐进，稳扎稳打，时间总会给准备的人最好的答案。</p>
+<p><em>说说这一年的经历吧，除了在公司做的工作以外，当然公司的工作也锻炼了很多其他的东西。</em></p>
+<p>⏱有一部分时间里，在思考使用 Vue.js 在工程化的最佳实践，如何组织前端项目代码，如何组织组件，如何抽象，如何管理依赖等等。</p>
+<p>⏱有一部分时间里，写了一个“烂尾”的 Vue.js 组件库：<a href="https://github.com/EryouHao/live">Live UI</a>，实现了<strong>14</strong>个常用的 UI 组件，虽然部分组件可能存在 bug，但是每实现一个新组件，总能学到一些新东西也是极好的。对 Vue.js 的理解又加深了一些，能够思考如何提供 API，哪些 API 是这个组件最需要提供给用户使用的过程也是不错的。</p>
+<p>⏱有一部分时间里，写了一个 VSCode 浅色主题：<a href="https://github.com/EryouHao/brackets-light-pro">Brackets Light Pro</a>，当然这个 Repo 始于 2017，截止此文写作时已经有了 <strong>12,456 installs</strong> 和 <strong>28,544 downloads</strong>，很早就把主力编辑器换成了 VSCode，自己又比较偏好浅色主题，尤其是我大部分编程时间都在白天，所以就写了这样一个主题，希望你也喜欢「比心」。</p>
+<p>⏱有一部分时间里，写了一个静态博客写作客户端：<a href="https://github.com/hve-notes/hve-notes">Hve Notes</a> 。是的，这篇文章的创作即使用此工具完成。这是一个可以使用 <code>Markdown</code> 来进行记录生活、心情、知识、笔记、创意的跨平台（Windows &amp; MacOS）工具。这大概是目前为止对我来说实现程度最高的一个开源项目吧，写代码、写文档、设计 Logo、打包发版、写主题，处理反馈等等，在一个编程新手的阶段来体验与尝试自己感兴趣的东西，也算是一种幸福吧。</p>
+<p>⏱有一部分时间里，学习和实践新技术。使用 <code>TypeScript</code> + <code>Egg</code>  + <code>Vue</code> + <code>TypeORM</code> + <code>PostgreSQL</code> + <code>Puppeteer</code> 写了一个小全栈项目。从新知识的学习到写点实际的东西，从开发到部署上线，整套开发体验还算不错，对于工程化的实践又多了一些。另外将自己的获取和学习主渠道更多地向国外倾斜，Twitter，Youtube，Medium，还有其他地一些网站、个博等等，蛮不错。</p>
+<p>⏱有一部分时间里，关注与练习设计。在推特上关注了 <strong>Steve Schoger</strong>，个人觉得他的一些 Tips 很简单也很实用。可能在这之后或之前，更加关心前端Web 设计。尤其是在一些 UI 设计并不重的场合，比如一些内部使用的中后台系统，去尝试和融入自己的一点点学习，甚至将 UI 设计师的设计稿进行二次设计然后进行“设计交流”（好像最后气氛变成了投票和战队，这不是我想要的），这些尝试个人感觉还是蛮好的，不断试错，不断提升。</p>
+<p><em>接下来说说，对于刚刚到来的 2019 的一些想法。</em></p>
+<p>🧐保持不断学习，保持好奇心。
+✍️用心做好每一个个人项目，比如 <a href="https://github.com/hve-notes/hve-notes">Hve Notes</a>
+🗞努力提升英语水平，能够在第一次英文介绍自己的时候，说出 「Vue点儿JS」还是有点尴尬😅
+💻更新自己的技术栈
+👻结交新朋友
+💏照顾好亲人和女票
+🍲争取做好每一道菜，像写好每一行代码一样
+🏃运动</p>
 ]]></content>
     </entry>
     <entry>
@@ -68,6 +280,13 @@
         <summary type="html"><![CDATA[<p>铛铛铛，喜大普奔，Hve Notes 主页上线啦！</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>铛铛铛，喜大普奔，Hve Notes 主页上线啦！</p>
+<!-- more -->
+<p>📢小二，上链接<br>
+<a href="http://hvenotes.fehey.com/">Hve Notes</a></p>
+<p>主页网站 用了 <a href="https://vuepress.vuejs.org/zh/">Vuepress</a> 快速搭建，搭配了 <a href="http://fehey.com/live/">Live UI</a> 一起食用</p>
+<p>你可以再这里找到文档，快速上手 Hve Notes</p>
+<p>未来，即将丰富的主题、备份同步等功能都将更新在文档中</p>
+<p>😘 Enjoy~</p>
 ]]></content>
     </entry>
     <entry>
@@ -79,6 +298,17 @@
         <summary type="html"><![CDATA[<p>👏 欢迎使用 <strong>Hve</strong> ！</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>👏 欢迎使用 <strong>Hve</strong> ！</p>
+<!-- more -->
+<p>🌈 <strong>Hve</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+<h4 id="在这里">在这里👇</h4>
+<p>📝  你可以使用最酷的 <code>Markdown</code> 语法，进行快速创作<br>
+🌉  你可以在文章的任意位置插入图片和文章封面图
+🏷️  你可以对文章进行标签分组
+📋 你可以自定义菜单，甚至可以创建外部链接菜单</p>
+<p>🌱 当然 <strong>Hve</strong> 还很年轻，有很多不足，但请相信，它会不停向前🏃</p>
+<p>未来，它一定会成为你离不开的伙伴</p>
+<p>尽情发挥你的才华吧！</p>
+<p>😘 Enjoy~</p>
 ]]></content>
     </entry>
 </feed>
