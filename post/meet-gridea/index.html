@@ -174,7 +174,7 @@
     repo: 'EryouHao.github.io',
     owner: 'EryouHao',
     admin: ['EryouHao'],
-    id: (location.pathname).split("/").pop().substring(0, 49),      // Ensure uniqueness and length less than 50
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
     distractionFreeMode: false  // Facebook-like distraction free mode
   })
 
