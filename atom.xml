@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://fehey.com</id>
     <title>海岛心hey</title>
-    <updated>2019-05-05T09:15:50.251Z</updated>
+    <updated>2019-06-05T09:43:10.283Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://fehey.com"/>
     <link rel="self" href="https://fehey.com/atom.xml"/>
@@ -66,7 +66,8 @@
 <blockquote>
 <p>由于 Github 和 Coding 的步骤差不多，下面就以 Github 为例来操作一下</p>
 </blockquote>
-<p><strong>必须：确保你已经安装过 <a href="https://git-scm.com/downloads">Git</a> 和 <a href="https://hvenotes.fehey.com/">Hve Notes</a></strong></p>
+<p><strong>必须：确保你已经安装过 <a href="https://git-scm.com/downloads">Git</a> 和 <a href="https://gridea.dev/">Gridea</a></strong>
+<strong>注意：同步会覆盖掉仓库的文件，若仓库内有需要备份的，请手动备份</strong></p>
 <p>首先你需要一个 <a href="http://github.com">Github</a> 账号，如果没有的话，快去注册一个吧！</p>
 <p>登录 Github，然后进入到 <a href="https://github.com/settings/tokens/new">这里</a> 创建一个 <strong>Token</strong>，勾选上 <strong>repo</strong> 的相关权限即可，下面是对应的截图示例：
 <img src="https://fehey.com/post-images/1550403256560.png" alt="Github Personal access tokesn"></p>

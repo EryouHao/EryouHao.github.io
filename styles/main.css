@@ -314,7 +314,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, opensans, Optima, 'Microsoft Yahei', sans-serif;
   font-size: 16px;
   color: #333;
-  letter-spacing: 1.0382;
+  letter-spacing: 0.05em;
 }
 a {
   color: #333;
@@ -460,11 +460,15 @@ td {
   border-bottom: 1px dotted #0061e6;
 }
 .post-container .post .post-abstract code {
-  padding: 0 3px;
-  margin: 0 2px;
-  background: rgba(195, 195, 195, 0.41);
-  font-size: 0.9em;
-  border-radius: 2px;
+  font-family: monospace;
+  font-size: inherit;
+  background-color: rgba(0, 0, 0, 0.06);
+  padding: 0 2px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 2px 2px;
+  line-height: initial;
+  word-wrap: break-word;
+  text-indent: 0;
 }
 .pagination-container {
   padding: 24px 32px 32px;
@@ -519,7 +523,7 @@ td {
   color: #5E5E5E;
 }
 .post-detail .post .post-info .post-tag {
-  padding: 8px 16px;
+  padding: 8px 8px;
 }
 .post-detail .post .post-content a {
   color: #006CFF;
@@ -540,16 +544,19 @@ td {
   line-height: 1.725;
   margin-bottom: 24px;
   font-size: 16px;
-  letter-spacing: 1.0382;
+  letter-spacing: 0.05em;
 }
 .post-detail .post .post-content p code,
 .post-detail .post .post-content li code {
-  padding: 0 3px;
-  margin: 0 2px;
-  background: rgba(195, 195, 195, 0.41);
-  font-size: 0.9em;
-  border-radius: 2px;
-  display: inline-block;
+  font-family: monospace;
+  font-size: inherit;
+  background-color: rgba(0, 0, 0, 0.06);
+  padding: 0 2px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 2px 2px;
+  line-height: initial;
+  word-wrap: break-word;
+  text-indent: 0;
 }
 .post-detail .post .post-content pre {
   margin-bottom: 24px;
@@ -673,7 +680,7 @@ td {
 .tags-container .tag {
   display: inline-block;
   padding: 4px 8px;
-  margin-right: 8px;
+  margin: 0 8px 8px 0;
   background: #d1dbe0;
 }
 .current-tag-container .title {
