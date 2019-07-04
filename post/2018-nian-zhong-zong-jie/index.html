@@ -1,10 +1,10 @@
 <html>
   <head>
     <meta charset="utf-8" />
-<meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>2018 年终总结 | 海岛心hey</title>
-<link rel="shortcut icon" href="https://fehey.com/favicon.ico?v=1561535149030">
+<meta name="description" content="Every 🐦 has an 🦅's dream." />
+<link rel="shortcut icon" href="https://fehey.com/favicon.ico?v=1562228495154">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://fehey.com/styles/main.css">
@@ -13,15 +13,6 @@
 <script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
 
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113307620-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-113307620-1');
-</script>
-
 
   </head>
   <body>
@@ -29,7 +20,7 @@
       <div class="main-content">
         <div class="site-header">
   <a href="https://fehey.com">
-  <img class="avatar" src="https://fehey.com/images/avatar.png?v=1561535149030" alt="">
+  <img class="avatar" src="https://fehey.com/images/avatar.png?v=1562228495154" alt="">
   </a>
   <h1 class="site-title">
     海岛心hey
@@ -67,34 +58,17 @@
   <div class="social-container">
     
       
-        <a href="https://github.com/EryouHao" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
+    
       
     
       
-        <a href="https://twitter.com/EryouHao" target="_blank">
-          <i class="fab fa-twitter"></i>
-        </a>
-      
     
-      
-        <a href="https://www.weibo.com/u/3799576961" target="_blank">
-          <i class="fab fa-weibo"></i>
-        </a>
-      
-    
-      
-        <a href="https://www.zhihu.com/people/hao-er-you/activities" target="_blank">
-          <i class="fab fa-zhihu"></i>
-        </a>
       
     
       
     
   </div>
 </div>
-
 
         <div class="post-detail">
           <article class="post">
@@ -115,8 +89,9 @@
               <div class="post-feature-image" style="background-image: url('https://fehey.com/post-images/2018-nian-zhong-zong-jie.png')">
               </div>
             
-            <div class="post-content">
-              <p>📃又到了一年一度的<strong>年终总结</strong>，这是参加工作的第一个完整年。</p>
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>📃又到了一年一度的<strong>年终总结</strong>，这是参加工作的第一个完整年。</p>
 <!-- more -->
 <p>🥺这一年总体来说，<strong>滑水较多</strong>，产出较少，尤其是文字方面，可怜巴巴。读过不少文章，写过不少代码，需提升、待吸收的知识一把一把。</p>
 <p>🏫毕业快两年了，这一年多来遇到了许多贵人，使我成长了很多，对事情的看法和对世界的认知也清晰了很多。单是技术方面也不像从前那么迷茫与焦虑，学会了循序渐进，稳扎稳打，时间总会给准备的人最好的答案。</p>
@@ -137,6 +112,10 @@
 🍲争取做好每一道菜，像写好每一行代码一样<br>
 🏃运动</p>
 
+              </div>
+              <div class="toc-container">
+                
+              </div>
             </div>
           </article>
         </div>
@@ -187,6 +166,44 @@
 
 <script>
   hljs.initHighlightingOnLoad()
+
+  let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+  // This should probably be throttled.
+  // Especially because it triggers during smooth scrolling.
+  // https://lodash.com/docs/4.17.10#throttle
+  // You could do like...
+  // window.addEventListener("scroll", () => {
+  //    _.throttle(doThatStuff, 100);
+  // });
+  // Only not doing it here to keep this Pen dependency-free.
+
+  window.addEventListener("scroll", event => {
+    let fromTop = window.scrollY;
+
+    mainNavLinks.forEach((link, index) => {
+      let section = document.getElementById(decodeURI(link.hash).substring(1));
+      let nextSection = null
+      if (mainNavLinks[index + 1]) {
+        nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+      }
+      console.log('section.offsetHeight', section.offsetHeight);
+      if (section.offsetTop <= fromTop) {
+        if (nextSection) {
+          if (nextSection.offsetTop > fromTop) {
+            link.classList.add("current");
+          } else {
+            link.classList.remove("current");    
+          }
+        } else {
+          link.classList.add("current");
+        }
+      } else {
+        link.classList.remove("current");
+      }
+    });
+  });
+
 </script>
 
       </div>
