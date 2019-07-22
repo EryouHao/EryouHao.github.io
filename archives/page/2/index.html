@@ -1,96 +1,280 @@
 <html>
   <head>
     <meta charset="utf-8" />
-<meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Hve Notes</title>
-<link rel="shortcut icon" href="/Users/haoeryou/Documents/hve-notes/output/favicon.ico">
-<link rel="stylesheet" href="/Users/haoeryou/Documents/hve-notes/output/styles/main.css">
+<title>海岛心hey</title>
+<meta name="description" content="Every 🐦 has an 🦅's dream." />
+<link rel="shortcut icon" href="/Users/haoeryou/OneDrive/hve-notes-source/hve-notes/output/favicon.ico?v=1563794317201">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link href="https://cdn.remixicon.com/releases/v1.3.1/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<link rel="stylesheet" href="/Users/haoeryou/OneDrive/hve-notes-source/hve-notes/output/styles/main.css">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113307620-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-113307620-1');
+</script>
+
 
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="/Users/haoeryou/Documents/hve-notes/output">
-  <img class="avatar" src="/Users/haoeryou/Documents/hve-notes/output/images/avatar.png" alt="" width="80px" height="80px">
-  </a>
-  <h1 class="site-title">
-    Hve Notes
-  </h1>
-  <p class="site-description">
-    温故而知新
-  </p>
-  <div class="menu-container">
+    <div id="app" class="main px-4 flex flex-col lg:flex-row">
+      <div id="sidebar" class="sidebar-wrapper lg:static lg:w-1/4">
+  <div class="lg:sticky top-0">
+    <div class="sidebar-content">
+      <div class="flex lg:block p-4 lg:px-0 items-center fixed lg:static lg:block top-0 right-0 left-0 bg-white z-50">
+        <i class="remixicon-menu-2-line lg:mt-4 text-2xl cursor-pointer animated fadeIn" onclick="openMenu()"></i>
+        <a href="/Users/haoeryou/OneDrive/hve-notes-source/hve-notes/output">
+          <img class="animated fadeInLeft avatar rounded-lg mx-4 lg:mt-32 lg:mx-0 mt-0 lg:w-24 lg:h-24 w-12 w-12" src="/Users/haoeryou/OneDrive/hve-notes-source/hve-notes/output/images/avatar.png?v=1563794317201" alt="">
+        </a>
+        <h1 class="animated fadeInLeft lg:text-4xl font-extrabold lg:mt-8 mt-0 text-xl" style="animation-delay: 0.2s">海岛心hey</h1>
+      </div>
+      
+        <div class="animated fadeInLeft" style="animation-delay: 0.4s">
+          <p class="my-4 text-gray-600 font-light hidden lg:block">
+            Every 🐦 has an 🦅's dream.
+          </p>
+          <div class="animated fadeInLeft social-container hidden lg:block" style="animation-delay: 0.6s">
+            
+              
+                <a href="https://github.com/EryouHao" target="_blank" class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
+                  <i class="remixicon-github-line"></i>
+                </a>
+              
+            
+              
+                <a href="https://twitter.com/EryouHao" target="_blank" class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
+                  <i class="remixicon-twitter-line"></i>
+                </a>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+          </div>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="menu-container">
+  <i class="remixicon-arrow-left-line text-2xl cursor-pointer animated fadeIn close-menu-btn" onclick="closeMenu()"></i>
+  <div>
     
       
-        <a href="http://fehey.com" class="menu">
+        <a href="/Users/haoeryou/OneDrive/hve-notes-source/hve-notes/output/index.html" class="menu" style="animation-delay: 0s">
           首页
         </a>
       
     
       
-        <a href="https://github.com/EryouHao" class="menu" target="_blank">
-          Github
+        <a href="/Users/haoeryou/OneDrive/hve-notes-source/hve-notes/output/archives/index.html" class="menu" style="animation-delay: 0.2s">
+          归档
+        </a>
+      
+    
+      
+        <a href="/Users/haoeryou/OneDrive/hve-notes-source/hve-notes/output/tags/index.html" class="menu" style="animation-delay: 0.4s">
+          标签
+        </a>
+      
+    
+      
+        <a href="/Users/haoeryou/OneDrive/hve-notes-source/hve-notes/output/post/about//index.html" class="menu" style="animation-delay: 0.6000000000000001s">
+          关于
         </a>
       
     
   </div>
+  <div class="site-footer">
+    <div class="py-4 text-gray-700">Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a></div>
+    <a class="rss" href="/Users/haoeryou/OneDrive/hve-notes-source/hve-notes/output/atom.xml" target="_blank">RSS</a>
+  </div>
 </div>
-
-    
+<div class="mask" onclick="closeMenu()">
+</div>
+      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4">
+        <h2 class="text-lg text-gray-700 mb-8">
+          <i class="remixicon-archive-line"></i> 文章归档
+        </h2>
         
 
-<div class="post-container">
+        <div class="archives-container">
+          
+            <h2 class="text-gray-600 py-4 animated fadeIn">
+              <i class="remixicon-map-pin-time-line"></i>
+              2019
+            </h2>
+            
+              
+                <a href="/Users/haoeryou/OneDrive/hve-notes-source/hve-notes/output/post/2018-nian-zhong-zong-jie/index.html" class="post">
+                  <h2 class="inline-block font-bold text-lg post-title animated fadeIn">
+                    2018 年终总结
+                  </h2>
+                </a>
+                <div class="text-sm font-light mt-3 mb-6 text-gray-400 animated fadeInDown" style="animation-delay: 0.4s">2019-01-14</div>
+              
+            
+              
+                <a href="/Users/haoeryou/OneDrive/hve-notes-source/hve-notes/output/post/hve-notes-zhu-ye-shang-xian-la/index.html" class="post">
+                  <h2 class="inline-block font-bold text-lg post-title animated fadeIn">
+                    Hve Notes 主页上线啦
+                  </h2>
+                </a>
+                <div class="text-sm font-light mt-3 mb-6 text-gray-400 animated fadeInDown" style="animation-delay: 0.4s">2019-01-01</div>
+              
+            
+              
+            
+          
+            <h2 class="text-gray-600 py-4 animated fadeIn">
+              <i class="remixicon-map-pin-time-line"></i>
+              2018
+            </h2>
+            
+              
+            
+              
+            
+              
+                <a href="/Users/haoeryou/OneDrive/hve-notes-source/hve-notes/output/post/hello-hve/index.html" class="post">
+                  <h2 class="inline-block font-bold text-lg post-title animated fadeIn">
+                    Hello Hve Notes
+                  </h2>
+                </a>
+                <div class="text-sm font-light mt-3 mb-6 text-gray-400 animated fadeInDown" style="animation-delay: 0.4s">2018-12-12</div>
+              
+            
+          
+        </div>
+
+        <div>
+          <div class="pagination-container animated fadeIn">
   
-    <h2>2019</h2>
-    
-      
-        <article class="post">
-          <a href="/Users/haoeryou/Documents/hve-notes/output/post/hve-notes-zhu-ye-shang-xian-la">
-            <h2 class="post-title">Hve Notes 主页上线啦</h2>
-          </a>
-        </article>
-      
-    
-      
-    
+    <a href="/Users/haoeryou/OneDrive/hve-notes-source/hve-notes/output/archives/index.html" class="page-btn"><i class="remixicon-arrow-left-line"></i> 上一页</a>
   
-    <h2>2018</h2>
-    
-      
-    
-      
-        <article class="post">
-          <a href="/Users/haoeryou/Documents/hve-notes/output/post/hello-hve">
-            <h2 class="post-title">Hello Hve Notes</h2>
-          </a>
-        </article>
-      
-    
   
 </div>
 
-    
-        <div class="pagination-container">
-  
-    <a href="/Users/haoeryou/Documents/hve-notes/output/archives/" class="prev-page">上一页</a>
-  
-  
-</div>
-
-    
-        <div class="site-footer">
-  Powered by Hve Notes
-</div>
-
-<script>
-  hljs.initHighlightingOnLoad()
-</script>
-
+        </div>
       </div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/prism.min.js"></script>  
+<script>
+
+let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+// This should probably be throttled.
+// Especially because it triggers during smooth scrolling.
+// https://lodash.com/docs/4.17.10#throttle
+// You could do like...
+// window.addEventListener("scroll", () => {
+//    _.throttle(doThatStuff, 100);
+// });
+// Only not doing it here to keep this Pen dependency-free.
+
+window.addEventListener("scroll", event => {
+  let fromTop = window.scrollY;
+
+  mainNavLinks.forEach((link, index) => {
+    let section = document.getElementById(decodeURI(link.hash).substring(1));
+    let nextSection = null
+    if (mainNavLinks[index + 1]) {
+      nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+    }
+    if (section.offsetTop <= fromTop) {
+      if (nextSection) {
+        if (nextSection.offsetTop > fromTop) {
+          link.classList.add("current");
+        } else {
+          link.classList.remove("current");    
+        }
+      } else {
+        link.classList.add("current");
+      }
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  var lazyImages = [].slice.call(document.querySelectorAll(".post-feature-image.lazy"));
+
+  if ("IntersectionObserver" in window) {
+    let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          let lazyImage = entry.target
+          lazyImage.style.backgroundImage = `url(${lazyImage.dataset.bg})`
+          lazyImage.classList.remove("lazy")
+          lazyImageObserver.unobserve(lazyImage)
+        }
+      });
+    });
+
+    lazyImages.forEach(function(lazyImage) {
+      lazyImageObserver.observe(lazyImage)
+    })
+  } else {
+    // Possibly fall back to a more compatible method here
+  }
+});
+
+const menuContainer = document.querySelector('.menu-container')
+const menus = document.querySelectorAll('.menu-container .menu')
+const mask = document.querySelector('.mask')
+const contentWrapper = document.querySelector('.content-wrapper')
+const latestArticle = document.querySelector('.latest-article')
+const readMore = document.querySelector('.read-more')
+
+const isHome = location.pathname === '/'
+if (latestArticle) {
+  latestArticle.style.display = isHome ? 'block' : 'none'
+  readMore.style.display = isHome ? 'block' : 'none'
+}
+
+const openMenu = () => {
+  menuContainer.classList.add('open')
+  menus.forEach(menu => {
+    menu.classList.add('animated', 'fadeInLeft')
+  })
+  mask.classList.add('open')
+  contentWrapper.classList.add('is-second')
+}
+
+const closeMenu = () => {
+  menuContainer.classList.remove('open')
+  menus.forEach(menu => {
+    menu.classList.remove('animated', 'fadeInLeft')
+  })
+  mask.classList.remove('open')
+  contentWrapper.classList.remove('is-second')
+}
+</script>
+  
   </body>
 </html>

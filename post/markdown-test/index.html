@@ -2,15 +2,15 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Markdown 测试文章 | 海岛心hey</title>
+<title>海岛心hey</title>
 <meta name="description" content="Every 🐦 has an 🦅's dream." />
-<link rel="shortcut icon" href="https://fehey.com/favicon.ico?v=1563463501599">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://fehey.com/favicon.ico?v=1563794363311">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-<link rel="stylesheet" href="https://fehey.com/styles/main.css">
-
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<link href="https://cdn.remixicon.com/releases/v1.3.1/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+<link rel="stylesheet" href="https://fehey.com/styles/main.css">
 
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113307620-1"></script>
@@ -25,91 +25,100 @@
 
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://fehey.com">
-  <img class="avatar" src="https://fehey.com/images/avatar.png?v=1563463501599" alt="">
-  </a>
-  <h1 class="site-title">
-    海岛心hey
-  </h1>
-  <p class="site-description">
-    Every 🐦 has an 🦅's dream.
-  </p>
-  <div class="menu-container">
+    <div id="app" class="main px-4 flex flex-col lg:flex-row">
+      <div id="sidebar" class="sidebar-wrapper lg:static lg:w-1/4">
+  <div class="lg:sticky top-0">
+    <div class="sidebar-content">
+      <div class="flex lg:block p-4 lg:px-0 items-center fixed lg:static lg:block top-0 right-0 left-0 bg-white z-50">
+        <i class="remixicon-menu-2-line lg:mt-4 text-2xl cursor-pointer animated fadeIn" onclick="openMenu()"></i>
+        <a href="https://fehey.com">
+          <img class="animated fadeInLeft avatar rounded-lg mx-4 lg:mt-32 lg:mx-0 mt-0 lg:w-24 lg:h-24 w-12 w-12" src="https://fehey.com/images/avatar.png?v=1563794363311" alt="">
+        </a>
+        <h1 class="animated fadeInLeft lg:text-4xl font-extrabold lg:mt-8 mt-0 text-xl" style="animation-delay: 0.2s">海岛心hey</h1>
+      </div>
+      
+        <div class="animated fadeInLeft" style="animation-delay: 0.4s">
+          <p class="my-4 text-gray-600 font-light hidden lg:block">
+            文章目录
+          </p>
+          <div class="toc-container hidden lg:block">
+            <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E6%A0%87%E9%A2%98">标题</a>
+<ul>
+<li><a href="#%E4%B8%89%E7%BA%A7%E6%A0%87%E9%A2%98%E6%98%BE%E7%A4%BA">三级标题显示</a></li>
+</ul>
+</li>
+<li><a href="#%E6%99%AE%E9%80%9A%E6%AE%B5%E8%90%BD">普通段落</a></li>
+<li><a href="#%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8">有序列表</a></li>
+<li><a href="#%E6%97%A0%E5%BA%8F%E5%88%97%E8%A1%A8">无序列表</a></li>
+<li><a href="#%E5%85%B6%E4%BB%96%E5%86%85%E5%AE%B9">其他内容</a></li>
+<li><a href="#%E5%9D%97%E4%BB%A3%E7%A0%81">块代码</a></li>
+<li><a href="#%E8%A1%A8%E6%A0%BC">表格</a></li>
+<li><a href="#%E4%BB%BB%E5%8A%A1%E5%88%97%E8%A1%A8">任务列表</a></li>
+<li><a href="#%E5%8A%A0%E5%BC%BA%E5%8A%9F%E8%83%BD">加强功能</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="menu-container">
+  <i class="remixicon-arrow-left-line text-2xl cursor-pointer animated fadeIn close-menu-btn" onclick="closeMenu()"></i>
+  <div>
     
       
-        <a href="https://fehey.com" class="menu">
+        <a href="https://fehey.com" class="menu" style="animation-delay: 0s">
           首页
         </a>
       
     
       
-        <a href="https://fehey.com/archives" class="menu">
+        <a href="https://fehey.com/archives" class="menu" style="animation-delay: 0.2s">
           归档
         </a>
       
     
       
-        <a href="https://fehey.com/tags" class="menu">
+        <a href="https://fehey.com/tags" class="menu" style="animation-delay: 0.4s">
           标签
         </a>
       
     
       
-        <a href="https://fehey.com/post/about/" class="menu">
+        <a href="https://fehey.com/post/about/" class="menu" style="animation-delay: 0.6000000000000001s">
           关于
         </a>
       
     
   </div>
-  <div class="social-container">
-    
-      
-        <a href="https://github.com/EryouHao" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
-      
-    
-      
-        <a href="https://twitter.com/EryouHao" target="_blank">
-          <i class="fab fa-twitter"></i>
-        </a>
-      
-    
-      
-    
-      
-    
-      
-    
+  <div class="site-footer">
+    <div class="py-4 text-gray-700">Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a></div>
+    <a class="rss" href="https://fehey.com/atom.xml" target="_blank">RSS</a>
   </div>
 </div>
-
-        <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              Markdown 测试文章
-            </h2>
-            <div class="post-info">
-              <span>
-                2019-07-18
-              </span>
-              <span>
-                8 min read
-              </span>
-              
-            </div>
-            
-            <div class="post-content-wrapper">
-              <div class="post-content">
-                <blockquote>
+<div class="mask" onclick="closeMenu()">
+</div>
+      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4 post-detail animated fadeIn">
+        <h1 class="text-3xl font-bold lg:mt-16">Markdown 测试文章</h1>
+        <div class="text-sm text-gray-700 lg:my-8">
+          2019-07-18 / 8 min read
+        </div>
+        
+        <div class="post-content yue">
+          <p>Markdown是一种轻量级标记语言，创始人为约翰·格鲁伯（英语：John Gruber）。它允许人们“使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML（或者HTML）文档”。</p>
+<!-- more -->
+<blockquote>
 <p>此篇仅为测试渲染效果，非教程</p>
 </blockquote>
 <h2 id="标题">标题</h2>
 <h3 id="三级标题显示">三级标题显示</h3>
-<h3 id="四级标题显示">四级标题显示</h3>
 <h2 id="普通段落">普通段落</h2>
 <p>金樽清酒斗十千， 玉盘珍羞直万钱。停杯投箸不能食， 拔剑四顾心茫然。欲渡黄河冰塞川， 将登太行雪满山。闲来垂钓碧溪上， 忽复乘舟梦日边。行路难，行路难， 多歧路，今安在？长风破浪会有时， 直挂云帆济沧海。</p>
 <h2 id="有序列表">有序列表</h2>
@@ -181,14 +190,14 @@
 </table>
 <h2 id="任务列表">任务列表</h2>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-3601786"><label class="task-list-item-label" for="task-item-3601786"> 第一项任务</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6004228"><label class="task-list-item-label" for="task-item-6004228"> 第二项任务</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-873214"><label class="task-list-item-label" for="task-item-873214"> 第三项任务</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-3133796"><label class="task-list-item-label" for="task-item-3133796"> 第四项任务</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-1021168"><label class="task-list-item-label" for="task-item-1021168"> 第一项任务</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-473237"><label class="task-list-item-label" for="task-item-473237"> 第二项任务</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4622298"><label class="task-list-item-label" for="task-item-4622298"> 第三项任务</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-4378616"><label class="task-list-item-label" for="task-item-4378616"> 第四项任务</label></li>
 </ul>
 <h2 id="加强功能">加强功能</h2>
 <ul>
-<li>KaTeX 行内公式<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msqrt><mrow><mn>3</mn><mi>x</mi><mo>−</mo><mn>1</mn></mrow></msqrt><mo>+</mo><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>x</mi><msup><mo stretchy="false">)</mo><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\sqrt{3x-1}+(1+x)^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.04em;vertical-align:-0.17444499999999996em;"></span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8655550000000001em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord" style="padding-left:0.833em;"><span class="mord">3</span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">1</span></span></span><span style="top:-2.825555em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em;"><svg width='400em' height='1.08em' viewBox='0 0 400000 1080' preserveAspectRatio='xMinYMin slice'><path d='M95,702c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,
+<li>KaTeX 行内公式<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msqrt><mrow><mn>3</mn><mi>x</mi><mo>−</mo><mn>1</mn></mrow></msqrt><mo>+</mo><mo>(</mo><mn>1</mn><mo>+</mo><mi>x</mi><msup><mo>)</mo><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\sqrt{3x-1}+(1+x)^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.04em;vertical-align:-0.17444499999999996em;"></span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8655550000000001em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord" style="padding-left:0.833em;"><span class="mord">3</span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">1</span></span></span><span style="top:-2.825555em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em;"><svg width='400em' height='1.08em' viewBox='0 0 400000 1080' preserveAspectRatio='xMinYMin slice'><path d='M95,702c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,
 -10,-9.5,-14c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54c44.2,-33.3,65.8,
 -50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10s173,378,173,378c0.7,0,
 35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429c69,-144,104.5,-217.7,106.5,
@@ -197,7 +206,7 @@ s-235,486,-235,486c-2.7,4.7,-9,7,-19,7c-6,0,-10,-1,-12,-3s-194,-422,-194,-422
 s-65,47,-65,47z M834 80H400000v40H845z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.17444499999999996em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord mathdefault">x</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span></li>
 <li>KaTeX 块级公式</li>
 </ul>
-<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mtable rowspacing="0.15999999999999992em" columnalign="center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mi mathvariant="normal">∇</mi><mo>×</mo><mover accent="true"><mi mathvariant="bold">B</mi><mo>⃗</mo></mover><mo>−</mo><mtext> </mtext><mfrac><mn>1</mn><mi>c</mi></mfrac><mtext> </mtext><mfrac><mrow><mi mathvariant="normal">∂</mi><mover accent="true"><mi mathvariant="bold">E</mi><mo>⃗</mo></mover></mrow><mrow><mi mathvariant="normal">∂</mi><mi>t</mi></mrow></mfrac></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mo>=</mo><mfrac><mrow><mn>4</mn><mi>π</mi></mrow><mi>c</mi></mfrac><mover accent="true"><mi mathvariant="bold">j</mi><mo>⃗</mo></mover><mi mathvariant="normal">∇</mi><mo>⋅</mo><mover accent="true"><mi mathvariant="bold">E</mi><mo>⃗</mo></mover></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mo>=</mo><mn>4</mn><mi>π</mi><mi>ρ</mi></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mi mathvariant="normal">∇</mi><mo>×</mo><mover accent="true"><mi mathvariant="bold">E</mi><mo>⃗</mo></mover><mtext> </mtext><mo>+</mo><mtext> </mtext><mfrac><mn>1</mn><mi>c</mi></mfrac><mtext> </mtext><mfrac><mrow><mi mathvariant="normal">∂</mi><mover accent="true"><mi mathvariant="bold">B</mi><mo>⃗</mo></mover></mrow><mrow><mi mathvariant="normal">∂</mi><mi>t</mi></mrow></mfrac></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mo>=</mo><mover accent="true"><mn mathvariant="bold">0</mn><mo>⃗</mo></mover></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mi mathvariant="normal">∇</mi><mo>⋅</mo><mover accent="true"><mi mathvariant="bold">B</mi><mo>⃗</mo></mover></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mo>=</mo><mn>0</mn></mrow></mstyle></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{array}{c}
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mtable><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mi mathvariant="normal">∇</mi><mo>×</mo><mover accent="true"><mi mathvariant="bold">B</mi><mo>⃗</mo></mover><mo>−</mo><mtext> </mtext><mfrac><mn>1</mn><mi>c</mi></mfrac><mtext> </mtext><mfrac><mrow><mi mathvariant="normal">∂</mi><mover accent="true"><mi mathvariant="bold">E</mi><mo>⃗</mo></mover></mrow><mrow><mi mathvariant="normal">∂</mi><mi>t</mi></mrow></mfrac></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mo>=</mo><mfrac><mrow><mn>4</mn><mi>π</mi></mrow><mi>c</mi></mfrac><mover accent="true"><mi mathvariant="bold">j</mi><mo>⃗</mo></mover><mi mathvariant="normal">∇</mi><mo>⋅</mo><mover accent="true"><mi mathvariant="bold">E</mi><mo>⃗</mo></mover></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mo>=</mo><mn>4</mn><mi>π</mi><mi>ρ</mi></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mi mathvariant="normal">∇</mi><mo>×</mo><mover accent="true"><mi mathvariant="bold">E</mi><mo>⃗</mo></mover><mtext> </mtext><mo>+</mo><mtext> </mtext><mfrac><mn>1</mn><mi>c</mi></mfrac><mtext> </mtext><mfrac><mrow><mi mathvariant="normal">∂</mi><mover accent="true"><mi mathvariant="bold">B</mi><mo>⃗</mo></mover></mrow><mrow><mi mathvariant="normal">∂</mi><mi>t</mi></mrow></mfrac></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mo>=</mo><mover accent="true"><mn mathvariant="bold">0</mn><mo>⃗</mo></mover></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mi mathvariant="normal">∇</mi><mo>⋅</mo><mover accent="true"><mi mathvariant="bold">B</mi><mo>⃗</mo></mover></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mo>=</mo><mn>0</mn></mrow></mstyle></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{array}{c}
 
 \nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &amp;
 = \frac{4\pi}{c}\vec{\mathbf{j}}    \nabla \cdot \vec{\mathbf{E}} &amp; = 4 \pi \rho \\
@@ -272,7 +281,6 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
 <li><a href="#%E6%A0%87%E9%A2%98">标题</a>
 <ul>
 <li><a href="#%E4%B8%89%E7%BA%A7%E6%A0%87%E9%A2%98%E6%98%BE%E7%A4%BA">三级标题显示</a></li>
-<li><a href="#%E5%9B%9B%E7%BA%A7%E6%A0%87%E9%A2%98%E6%98%BE%E7%A4%BA">四级标题显示</a></li>
 </ul>
 </li>
 <li><a href="#%E6%99%AE%E9%80%9A%E6%AE%B5%E8%90%BD">普通段落</a></li>
@@ -297,44 +305,34 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
 </ol>
 </section>
 
-              </div>
-              <div class="toc-container">
-                <ul class="markdownIt-TOC">
-<li>
-<ul>
-<li><a href="#%E6%A0%87%E9%A2%98">标题</a>
-<ul>
-<li><a href="#%E4%B8%89%E7%BA%A7%E6%A0%87%E9%A2%98%E6%98%BE%E7%A4%BA">三级标题显示</a></li>
-<li><a href="#%E5%9B%9B%E7%BA%A7%E6%A0%87%E9%A2%98%E6%98%BE%E7%A4%BA">四级标题显示</a></li>
-</ul>
-</li>
-<li><a href="#%E6%99%AE%E9%80%9A%E6%AE%B5%E8%90%BD">普通段落</a></li>
-<li><a href="#%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8">有序列表</a></li>
-<li><a href="#%E6%97%A0%E5%BA%8F%E5%88%97%E8%A1%A8">无序列表</a></li>
-<li><a href="#%E5%85%B6%E4%BB%96%E5%86%85%E5%AE%B9">其他内容</a></li>
-<li><a href="#%E5%9D%97%E4%BB%A3%E7%A0%81">块代码</a></li>
-<li><a href="#%E8%A1%A8%E6%A0%BC">表格</a></li>
-<li><a href="#%E4%BB%BB%E5%8A%A1%E5%88%97%E8%A1%A8">任务列表</a></li>
-<li><a href="#%E5%8A%A0%E5%BC%BA%E5%8A%9F%E8%83%BD">加强功能</a></li>
-</ul>
-</li>
-</ul>
-
-              </div>
-            </div>
-          </article>
         </div>
 
         
-          <div class="next-post">
-            <div class="next">下一篇</div>
-            <a href="https://fehey.com/post/liqi">
-              <h3 class="post-title">
-                利器+
-              </h3>
-            </a>
-          </div>
-        
+
+
+        <div class="flex justify-between py-8">
+          
+            <div class="prev-post">
+              <a href="https://fehey.com/post/liqi">
+                <h3 class="post-title">
+                  <i class="remixicon-arrow-left-line"></i>
+                  利器+
+                </h3>
+              </a>
+            </div>
+          
+
+          
+            <div class="next-post">
+              <a href="https://fehey.com/post/liqi">
+                <h3 class="post-title">
+                  利器+
+                  <i class="remixicon-arrow-right-line"></i>
+                </h3>
+              </a>
+            </div>
+          
+        </div>
 
         
           
@@ -364,54 +362,103 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
           
         
 
-        <div class="site-footer">
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
-  <a class="rss" href="https://fehey.com/atom.xml" target="_blank">RSS</a>
-</div>
-
-<script>
-  hljs.initHighlightingOnLoad()
-
-  let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
-
-  // This should probably be throttled.
-  // Especially because it triggers during smooth scrolling.
-  // https://lodash.com/docs/4.17.10#throttle
-  // You could do like...
-  // window.addEventListener("scroll", () => {
-  //    _.throttle(doThatStuff, 100);
-  // });
-  // Only not doing it here to keep this Pen dependency-free.
-
-  window.addEventListener("scroll", event => {
-    let fromTop = window.scrollY;
-
-    mainNavLinks.forEach((link, index) => {
-      let section = document.getElementById(decodeURI(link.hash).substring(1));
-      let nextSection = null
-      if (mainNavLinks[index + 1]) {
-        nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-      }
-      console.log('section.offsetHeight', section.offsetHeight);
-      if (section.offsetTop <= fromTop) {
-        if (nextSection) {
-          if (nextSection.offsetTop > fromTop) {
-            link.classList.add("current");
-          } else {
-            link.classList.remove("current");    
-          }
-        } else {
-          link.classList.add("current");
-        }
-      } else {
-        link.classList.remove("current");
-      }
-    });
-  });
-
-</script>
-
       </div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/prism.min.js"></script>  
+<script>
+
+let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+// This should probably be throttled.
+// Especially because it triggers during smooth scrolling.
+// https://lodash.com/docs/4.17.10#throttle
+// You could do like...
+// window.addEventListener("scroll", () => {
+//    _.throttle(doThatStuff, 100);
+// });
+// Only not doing it here to keep this Pen dependency-free.
+
+window.addEventListener("scroll", event => {
+  let fromTop = window.scrollY;
+
+  mainNavLinks.forEach((link, index) => {
+    let section = document.getElementById(decodeURI(link.hash).substring(1));
+    let nextSection = null
+    if (mainNavLinks[index + 1]) {
+      nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+    }
+    if (section.offsetTop <= fromTop) {
+      if (nextSection) {
+        if (nextSection.offsetTop > fromTop) {
+          link.classList.add("current");
+        } else {
+          link.classList.remove("current");    
+        }
+      } else {
+        link.classList.add("current");
+      }
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  var lazyImages = [].slice.call(document.querySelectorAll(".post-feature-image.lazy"));
+
+  if ("IntersectionObserver" in window) {
+    let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          let lazyImage = entry.target
+          lazyImage.style.backgroundImage = `url(${lazyImage.dataset.bg})`
+          lazyImage.classList.remove("lazy")
+          lazyImageObserver.unobserve(lazyImage)
+        }
+      });
+    });
+
+    lazyImages.forEach(function(lazyImage) {
+      lazyImageObserver.observe(lazyImage)
+    })
+  } else {
+    // Possibly fall back to a more compatible method here
+  }
+});
+
+const menuContainer = document.querySelector('.menu-container')
+const menus = document.querySelectorAll('.menu-container .menu')
+const mask = document.querySelector('.mask')
+const contentWrapper = document.querySelector('.content-wrapper')
+const latestArticle = document.querySelector('.latest-article')
+const readMore = document.querySelector('.read-more')
+
+const isHome = location.pathname === '/'
+if (latestArticle) {
+  latestArticle.style.display = isHome ? 'block' : 'none'
+  readMore.style.display = isHome ? 'block' : 'none'
+}
+
+const openMenu = () => {
+  menuContainer.classList.add('open')
+  menus.forEach(menu => {
+    menu.classList.add('animated', 'fadeInLeft')
+  })
+  mask.classList.add('open')
+  contentWrapper.classList.add('is-second')
+}
+
+const closeMenu = () => {
+  menuContainer.classList.remove('open')
+  menus.forEach(menu => {
+    menu.classList.remove('animated', 'fadeInLeft')
+  })
+  mask.classList.remove('open')
+  contentWrapper.classList.remove('is-second')
+}
+</script>
+  
   </body>
 </html>

@@ -2,15 +2,15 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Gridea 小白上手教程 | 海岛心hey</title>
+<title>海岛心hey</title>
 <meta name="description" content="Every 🐦 has an 🦅's dream." />
-<link rel="shortcut icon" href="https://fehey.com/favicon.ico?v=1563463501599">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://fehey.com/favicon.ico?v=1563794363311">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-<link rel="stylesheet" href="https://fehey.com/styles/main.css">
-
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<link href="https://cdn.remixicon.com/releases/v1.3.1/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+<link rel="stylesheet" href="https://fehey.com/styles/main.css">
 
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113307620-1"></script>
@@ -25,88 +25,86 @@
 
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://fehey.com">
-  <img class="avatar" src="https://fehey.com/images/avatar.png?v=1563463501599" alt="">
-  </a>
-  <h1 class="site-title">
-    海岛心hey
-  </h1>
-  <p class="site-description">
-    Every 🐦 has an 🦅's dream.
-  </p>
-  <div class="menu-container">
+    <div id="app" class="main px-4 flex flex-col lg:flex-row">
+      <div id="sidebar" class="sidebar-wrapper lg:static lg:w-1/4">
+  <div class="lg:sticky top-0">
+    <div class="sidebar-content">
+      <div class="flex lg:block p-4 lg:px-0 items-center fixed lg:static lg:block top-0 right-0 left-0 bg-white z-50">
+        <i class="remixicon-menu-2-line lg:mt-4 text-2xl cursor-pointer animated fadeIn" onclick="openMenu()"></i>
+        <a href="https://fehey.com">
+          <img class="animated fadeInLeft avatar rounded-lg mx-4 lg:mt-32 lg:mx-0 mt-0 lg:w-24 lg:h-24 w-12 w-12" src="https://fehey.com/images/avatar.png?v=1563794363311" alt="">
+        </a>
+        <h1 class="animated fadeInLeft lg:text-4xl font-extrabold lg:mt-8 mt-0 text-xl" style="animation-delay: 0.2s">海岛心hey</h1>
+      </div>
+      
+        <div class="animated fadeInLeft" style="animation-delay: 0.4s">
+          <p class="my-4 text-gray-600 font-light hidden lg:block">
+            文章目录
+          </p>
+          <div class="toc-container hidden lg:block">
+            <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C">准备工作</a></li>
+<li><a href="#%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8">开始使用</a></li>
+<li><a href="#%E5%BC%80%E5%90%AF%E6%96%87%E7%AB%A0%E8%AF%84%E8%AE%BA">开启文章评论</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="menu-container">
+  <i class="remixicon-arrow-left-line text-2xl cursor-pointer animated fadeIn close-menu-btn" onclick="closeMenu()"></i>
+  <div>
     
       
-        <a href="https://fehey.com" class="menu">
+        <a href="https://fehey.com" class="menu" style="animation-delay: 0s">
           首页
         </a>
       
     
       
-        <a href="https://fehey.com/archives" class="menu">
+        <a href="https://fehey.com/archives" class="menu" style="animation-delay: 0.2s">
           归档
         </a>
       
     
       
-        <a href="https://fehey.com/tags" class="menu">
+        <a href="https://fehey.com/tags" class="menu" style="animation-delay: 0.4s">
           标签
         </a>
       
     
       
-        <a href="https://fehey.com/post/about/" class="menu">
+        <a href="https://fehey.com/post/about/" class="menu" style="animation-delay: 0.6000000000000001s">
           关于
         </a>
       
     
   </div>
-  <div class="social-container">
-    
-      
-        <a href="https://github.com/EryouHao" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
-      
-    
-      
-        <a href="https://twitter.com/EryouHao" target="_blank">
-          <i class="fab fa-twitter"></i>
-        </a>
-      
-    
-      
-    
-      
-    
-      
-    
+  <div class="site-footer">
+    <div class="py-4 text-gray-700">Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a></div>
+    <a class="rss" href="https://fehey.com/atom.xml" target="_blank">RSS</a>
   </div>
 </div>
-
-        <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              Gridea 小白上手教程
-            </h2>
-            <div class="post-info">
-              <span>
-                2019-02-17
-              </span>
-              <span>
-                1 min read
-              </span>
-              
-            </div>
-            
-              <img class="post-feature-image" src="https://fehey.com/post-images/hve-notes-start.jpg" alt="">
-            
-            <div class="post-content-wrapper">
-              <div class="post-content">
-                <p>如果你使用过 <strong>Hexo</strong> 等工具基于 <strong>Github</strong> 做个人博客，那么恭喜你，你可以很轻松的上手使用<strong>Gridea</strong><br>
+<div class="mask" onclick="closeMenu()">
+</div>
+      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4 post-detail animated fadeIn">
+        <h1 class="text-3xl font-bold lg:mt-16">Gridea 小白上手教程</h1>
+        <div class="text-sm text-gray-700 lg:my-8">
+          2019-02-17 / 1 min read
+        </div>
+        
+          <img class="post-feature-image rounded-lg mx-auto my-4" src="https://fehey.com/post-images/hve-notes-start.jpg" alt="">
+        
+        <div class="post-content yue">
+          <p>如果你使用过 <strong>Hexo</strong> 等工具基于 <strong>Github</strong> 做个人博客，那么恭喜你，你可以很轻松的上手使用<strong>Gridea</strong><br>
 如果你以前没有使用过，那么希望这篇文章可以帮助你顺利的完成博客搭建。话不多说，Let's Go!</p>
 <!-- more -->
 <p style="color: #e03131; font-size 18px;">由于项目之前叫做 Hve Notes，所以截图还是旧版软件，但不影响使用，各位小伙伴先将就咯</p>
@@ -141,33 +139,34 @@
 <p>这样评论插件就设置好了，在预览时会在文章页显示评论模块，但不会显示具体的评论信息，因为这个是本地预览，而 <strong>Github OAuth</strong> 设置的域名为线上的域名。待博客同步到线上时就可以显示啦！</p>
 <p>快快开始你的创作吧！</p>
 
-              </div>
-              <div class="toc-container">
-                <ul class="markdownIt-TOC">
-<li>
-<ul>
-<li><a href="#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C">准备工作</a></li>
-<li><a href="#%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8">开始使用</a></li>
-<li><a href="#%E5%BC%80%E5%90%AF%E6%96%87%E7%AB%A0%E8%AF%84%E8%AE%BA">开启文章评论</a></li>
-</ul>
-</li>
-</ul>
-
-              </div>
-            </div>
-          </article>
         </div>
 
         
-          <div class="next-post">
-            <div class="next">下一篇</div>
-            <a href="https://fehey.com/post/markdown-yu-fa-jian-dan-jiao-cheng">
-              <h3 class="post-title">
-                Markdown 语法简单教程
-              </h3>
-            </a>
-          </div>
-        
+
+
+        <div class="flex justify-between py-8">
+          
+            <div class="prev-post">
+              <a href="https://fehey.com/post/markdown-yu-fa-jian-dan-jiao-cheng">
+                <h3 class="post-title">
+                  <i class="remixicon-arrow-left-line"></i>
+                  Markdown 语法简单教程
+                </h3>
+              </a>
+            </div>
+          
+
+          
+            <div class="next-post">
+              <a href="https://fehey.com/post/markdown-yu-fa-jian-dan-jiao-cheng">
+                <h3 class="post-title">
+                  Markdown 语法简单教程
+                  <i class="remixicon-arrow-right-line"></i>
+                </h3>
+              </a>
+            </div>
+          
+        </div>
 
         
           
@@ -197,54 +196,103 @@
           
         
 
-        <div class="site-footer">
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
-  <a class="rss" href="https://fehey.com/atom.xml" target="_blank">RSS</a>
-</div>
-
-<script>
-  hljs.initHighlightingOnLoad()
-
-  let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
-
-  // This should probably be throttled.
-  // Especially because it triggers during smooth scrolling.
-  // https://lodash.com/docs/4.17.10#throttle
-  // You could do like...
-  // window.addEventListener("scroll", () => {
-  //    _.throttle(doThatStuff, 100);
-  // });
-  // Only not doing it here to keep this Pen dependency-free.
-
-  window.addEventListener("scroll", event => {
-    let fromTop = window.scrollY;
-
-    mainNavLinks.forEach((link, index) => {
-      let section = document.getElementById(decodeURI(link.hash).substring(1));
-      let nextSection = null
-      if (mainNavLinks[index + 1]) {
-        nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-      }
-      console.log('section.offsetHeight', section.offsetHeight);
-      if (section.offsetTop <= fromTop) {
-        if (nextSection) {
-          if (nextSection.offsetTop > fromTop) {
-            link.classList.add("current");
-          } else {
-            link.classList.remove("current");    
-          }
-        } else {
-          link.classList.add("current");
-        }
-      } else {
-        link.classList.remove("current");
-      }
-    });
-  });
-
-</script>
-
       </div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/prism.min.js"></script>  
+<script>
+
+let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+// This should probably be throttled.
+// Especially because it triggers during smooth scrolling.
+// https://lodash.com/docs/4.17.10#throttle
+// You could do like...
+// window.addEventListener("scroll", () => {
+//    _.throttle(doThatStuff, 100);
+// });
+// Only not doing it here to keep this Pen dependency-free.
+
+window.addEventListener("scroll", event => {
+  let fromTop = window.scrollY;
+
+  mainNavLinks.forEach((link, index) => {
+    let section = document.getElementById(decodeURI(link.hash).substring(1));
+    let nextSection = null
+    if (mainNavLinks[index + 1]) {
+      nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+    }
+    if (section.offsetTop <= fromTop) {
+      if (nextSection) {
+        if (nextSection.offsetTop > fromTop) {
+          link.classList.add("current");
+        } else {
+          link.classList.remove("current");    
+        }
+      } else {
+        link.classList.add("current");
+      }
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  var lazyImages = [].slice.call(document.querySelectorAll(".post-feature-image.lazy"));
+
+  if ("IntersectionObserver" in window) {
+    let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          let lazyImage = entry.target
+          lazyImage.style.backgroundImage = `url(${lazyImage.dataset.bg})`
+          lazyImage.classList.remove("lazy")
+          lazyImageObserver.unobserve(lazyImage)
+        }
+      });
+    });
+
+    lazyImages.forEach(function(lazyImage) {
+      lazyImageObserver.observe(lazyImage)
+    })
+  } else {
+    // Possibly fall back to a more compatible method here
+  }
+});
+
+const menuContainer = document.querySelector('.menu-container')
+const menus = document.querySelectorAll('.menu-container .menu')
+const mask = document.querySelector('.mask')
+const contentWrapper = document.querySelector('.content-wrapper')
+const latestArticle = document.querySelector('.latest-article')
+const readMore = document.querySelector('.read-more')
+
+const isHome = location.pathname === '/'
+if (latestArticle) {
+  latestArticle.style.display = isHome ? 'block' : 'none'
+  readMore.style.display = isHome ? 'block' : 'none'
+}
+
+const openMenu = () => {
+  menuContainer.classList.add('open')
+  menus.forEach(menu => {
+    menu.classList.add('animated', 'fadeInLeft')
+  })
+  mask.classList.add('open')
+  contentWrapper.classList.add('is-second')
+}
+
+const closeMenu = () => {
+  menuContainer.classList.remove('open')
+  menus.forEach(menu => {
+    menu.classList.remove('animated', 'fadeInLeft')
+  })
+  mask.classList.remove('open')
+  contentWrapper.classList.remove('is-second')
+}
+</script>
+  
   </body>
 </html>
