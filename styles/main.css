@@ -6191,6 +6191,9 @@ pre[data-line] {
   font-size: 0.86em;
   font-family: Menlo,Monaco,Consolas,Courier New,monospace;
   border-radius: 0.5rem;
+  box-shadow: 1px 1px 0.5em black inset;
+  padding: 1em;
+  background: hsl(0, 0%, 8%);
 }
 .yue pre code,
 .yue pre tt {
