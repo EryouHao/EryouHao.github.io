@@ -6631,6 +6631,15 @@ body {
 .rss:hover {
   border-bottom: 2px solid #1A202C;
 }
+.sidebar-content {
+  height: 100vh;
+  overflow-y: auto;
+}
+@media (max-width: 1024px) {
+  .sidebar-content {
+    height: auto;
+  }
+}
 @media (min-width: 640px) {
   .sm\:appearance-none {
     -webkit-appearance: none;

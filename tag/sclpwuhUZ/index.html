@@ -26,7 +26,7 @@
 
   </head>
   <body>
-    <div class="main px-4 flex flex-col lg:flex-row">
+    <div id="app" class="main px-4 flex flex-col lg:flex-row">
       <div id="sidebar" class="sidebar-wrapper lg:static lg:w-1/4">
   <div class="lg:sticky top-0">
     <div class="sidebar-content">
@@ -116,99 +116,33 @@
 <div class="mask" onclick="closeMenu()">
 </div>
       <div class="content-wrapper py-32 lg:p-8 lg:w-3/4">
-        <h2 class="latest-article text-lg text-gray-700 mb-8">
-          <i class="remixicon-article-line"></i>
-          最新文章
+        <h2 class="text-lg text-gray-700 mb-8">
+          <i class="remixicon-bookmark-line"></i> Gridea
         </h2>
         
   <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${0 * 0.2}s` }">
     
-      <a href="https://fehey.com/post/yu-jian-chuang-zuo-yu-jian-hve-notes" class="feature-image-wrapper bg-gray-100 rounded-lg flex-shrink-0 mr-8 w-full h-56 h-32 md:w-56 md:h-40">
-        <div class="post-feature-image lazy w-full h-56 h-32 md:w-56 md:h-40" data-bg="'https://fehey.com/post-images/yu-jian-chuang-zuo-yu-jian-hve-notes.png'">
+      <a href="https://fehey.com/post/gridea-v083-quan-xin-ti-yan-zhu-ni-miao-bi-sheng-hua" class="feature-image-wrapper bg-gray-100 rounded-lg flex-shrink-0 mr-8 w-full h-56 h-32 md:w-56 md:h-40">
+        <div class="post-feature-image lazy w-full h-56 h-32 md:w-56 md:h-40" data-bg="'https://i.loli.net/2019/09/21/FvmS8KRL3Gg5syn.png'">
         </div>
       </a>
     
     <div class="content">
-      <a href="https://fehey.com/post/yu-jian-chuang-zuo-yu-jian-hve-notes">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">遇见创作，遇见Hve Notes</h2>
+      <a href="https://fehey.com/post/gridea-v083-quan-xin-ti-yan-zhu-ni-miao-bi-sheng-hua">
+        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">Gridea v0.8.3 全新体验，助你妙笔生花</h2>
       </a>
       <div class="post-abstract text-gray-700 font-light my-4">
-        <p>作为一个技术人，你是否喜欢创作，或是怀念过往又或是畅想未来，或是总结技术又或是记录生活？</p>
-
+        
       </div>
-      <div class="text-gray-400 text-sm font-light">2019-01-14 / 3 min read</div>
+      <div class="text-gray-400 text-sm font-light">2019-09-21 / 3 min read</div>
     </div>
   </section>
 
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${1 * 0.2}s` }">
-    
-      <a href="https://fehey.com/post/2018-nian-zhong-zong-jie" class="feature-image-wrapper bg-gray-100 rounded-lg flex-shrink-0 mr-8 w-full h-56 h-32 md:w-56 md:h-40">
-        <div class="post-feature-image lazy w-full h-56 h-32 md:w-56 md:h-40" data-bg="'https://fehey.com/post-images/2018-nian-zhong-zong-jie.png'">
-        </div>
-      </a>
-    
-    <div class="content">
-      <a href="https://fehey.com/post/2018-nian-zhong-zong-jie">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">2018 年终总结</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
-        <p>📃又到了一年一度的<strong>年终总结</strong>，这是参加工作的第一个完整年。</p>
-
-      </div>
-      <div class="text-gray-400 text-sm font-light">2019-01-14 / 4 min read</div>
-    </div>
-  </section>
-
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${2 * 0.2}s` }">
-    
-      <a href="https://fehey.com/post/hve-notes-zhu-ye-shang-xian-la" class="feature-image-wrapper bg-gray-100 rounded-lg flex-shrink-0 mr-8 w-full h-56 h-32 md:w-56 md:h-40">
-        <div class="post-feature-image lazy w-full h-56 h-32 md:w-56 md:h-40" data-bg="'https://fehey.com/post-images/hve-notes-zhu-ye-shang-xian-la.png'">
-        </div>
-      </a>
-    
-    <div class="content">
-      <a href="https://fehey.com/post/hve-notes-zhu-ye-shang-xian-la">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">Hve Notes 主页上线啦</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
-        <p>铛铛铛，喜大普奔，Hve Notes 主页上线啦！</p>
-
-      </div>
-      <div class="text-gray-400 text-sm font-light">2019-01-01 / 1 min read</div>
-    </div>
-  </section>
-
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${3 * 0.2}s` }">
-    
-      <a href="https://fehey.com/post/hello-hve" class="feature-image-wrapper bg-gray-100 rounded-lg flex-shrink-0 mr-8 w-full h-56 h-32 md:w-56 md:h-40">
-        <div class="post-feature-image lazy w-full h-56 h-32 md:w-56 md:h-40" data-bg="'https://fehey.com/post-images/hello-hve.png'">
-        </div>
-      </a>
-    
-    <div class="content">
-      <a href="https://fehey.com/post/hello-hve">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">Hello Hve Notes</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
-        <p>👏 欢迎使用 <strong>Hve</strong> ！</p>
-
-      </div>
-      <div class="text-gray-400 text-sm font-light">2018-12-12 / 1 min read</div>
-    </div>
-  </section>
-
-        <div class="read-more">
-          
-        </div>
-        <div class="index-page">
-          <div class="pagination-container animated fadeIn">
-  
-    <a href="https://fehey.com/" class="page-btn"><i class="remixicon-arrow-left-line"></i> 上一页</a>
+        <div class="pagination-container animated fadeIn">
   
   
 </div>
 
-        </div>
       </div>
     </div>
 

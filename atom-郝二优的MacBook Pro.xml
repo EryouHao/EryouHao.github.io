@@ -1,68 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://fehey.com</id>
+    <id>http://localhost:4002</id>
     <title>海岛心hey</title>
-    <updated>2019-09-22T16:32:09.478Z</updated>
+    <updated>2019-09-19T15:22:29.109Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://fehey.com"/>
-    <link rel="self" href="https://fehey.com/atom.xml"/>
+    <link rel="alternate" href="http://localhost:4002"/>
+    <link rel="self" href="http://localhost:4002/atom.xml"/>
     <subtitle>Every 🐦 has an 🦅&apos;s dream.</subtitle>
-    <logo>https://fehey.com/images/avatar.png</logo>
-    <icon>https://fehey.com/favicon.ico</icon>
+    <logo>http://localhost:4002/images/avatar.png</logo>
+    <icon>http://localhost:4002/favicon.ico</icon>
     <rights>All rights reserved 2019, 海岛心hey</rights>
     <entry>
-        <title type="html"><![CDATA[Gridea v0.8.3 全新体验，助你妙笔生花]]></title>
-        <id>https://fehey.com/post/gridea-v083-quan-xin-ti-yan-zhu-ni-miao-bi-sheng-hua</id>
-        <link href="https://fehey.com/post/gridea-v083-quan-xin-ti-yan-zhu-ni-miao-bi-sheng-hua">
+        <title type="html"><![CDATA[一个人如何做一个开源项目]]></title>
+        <id>http://localhost:4002/post/yi-ge-ren-ru-he-zuo-yi-ge-kai-yuan-xiang-mu</id>
+        <link href="http://localhost:4002/post/yi-ge-ren-ru-he-zuo-yi-ge-kai-yuan-xiang-mu">
         </link>
-        <updated>2019-09-21T03:39:39.000Z</updated>
-        <content type="html"><![CDATA[<p>这里 <a href="https://gridea.dev">Gridea</a> 是 v0.8.3 版本的发布日志，如果你还没听说过它，不妨点击下面链接一探究竟吧！</p>
-<p><a href="https://gridea.dev">Gridea - 一个静态博客写作客户端</a></p>
-<p>时隔两个多月，Gridea 迎来了它的第 5 个版本，我们在这次更新中，尝试新的编辑体验，在保持原汁原味的 Markdown 编辑体验下，加以快捷键的支持，助力你<em>快速成文</em>。</p>
-<p>如果你想立即尝鲜，可以直接去下载了 <a href="https://gridea.dev/">Gridea 下载</a>。但是，如果你想知道这个版本更新了什么，继续阅读吧...</p>
-<h2 id="懒人目录">懒人目录</h2>
+        <updated>2019-07-23T02:50:48.000Z</updated>
+        <content type="html"><![CDATA[<p>相信很多工程师有想过做一个开源项目或者至少见过很多大大小小的开源项目，有的上万 Star，有的上百万的 Downloads，有人因此名声大振，有人因此获得了额外的商业合作机会。那么究竟如何做一个开源项目，准确地说是如何一个人来做一个开源项目呢？且听笔者娓娓道来。</p>
+<h2 id="做什么">做什么</h2>
+<p>开始一个项目，我们面临的第一个问题就是要做什么？是写组件库还是写软件，是写框架造轮子还是写编程实战系列。可选的方向有很多，那么我的建议是写你「感兴趣」且「有价值」的东西。</p>
+<p>我们经常听到说，兴趣是最好的老师。诚然，无论做什么事情，若是带着兴趣上路，已经成功了一半，我们在做自己喜欢的事情时，往往会事半功倍，做开源项目亦是如此。尤其是当挖好坑，项目做了一期之后，后面的迭代维护，需要更多的精力与时间，若是无兴趣，多半无法支撑下去。另外，除了兴趣，价值也是支撑项目作者开发的动力。如果你的项目能够帮助到某些人，能够在不额外推广的情况下保持用户自增长，那么开发者也会更有源源不断的动力吧。</p>
+<p>那就笔者的亲身实践来看，我做了 <a href="https://gridea.dev">Gridea</a> 这个项目，从项目发布到现在的几个月内，我发现它确实是一个有价值的项目。虽然现在是“博客至死”的年代，越来越多的人选择在线社区做为自己的发声地，或为了更多的关注与互动，或为了能够在相对应的圈子打造自己的个人品牌等等。但还是有一部分人希望有个独立的地方，能够一定程度地享受自由写作的状态。有的用来在求职时为简历增加一份色彩，有的为了结交更多的朋友，有的就是单纯的为了分享，或生活，或心情。但是搭建博客还是有一定的门槛，所以为了让更多的非开发者能够实现一个自己的博客，同时能够有个不错的更博体验，能够让博客爱好者爱上创作，Gridea 就诞生了。</p>
+<p>如果你在开始一个项目的时候不确定它是否有用，那么可以简单地通过以下的几种方法来进行验证，然后再做不迟。</p>
 <ul>
-<li>全新的内置编辑器，全新的编辑体验与快捷键</li>
-<li>增加 Emoji 输入面板与文章信息统计</li>
-<li>增加未保存提示，内容不丢失</li>
-<li>修复操作 BUG，更改预览模式</li>
-<li>升级 Electron 版本到 6.0+</li>
-<li>Markdown 渲染支持 <code>Emoji</code> 与 <code>implict-figures</code></li>
-<li>更多细节优化，等你发现</li>
-<li>增加 GA 统计，为了更好的优化产品</li>
-<li>新上架一款精致的付费主题「Tech」</li>
+<li>在论坛或者社区进行投票或提问，通过社区的声音来判断是否有这个需求；</li>
+<li>看是否已经有别人做了这件事情，并且此需求的人还很多，但是别人做的并不够好；</li>
+<li>拟一个项目规划草案，然后提供订阅更新服务，去社区看看有多少人感兴趣；</li>
+<li>当然了，也可以从自身出发考虑，做这个项目于自己的收益是什么。</li>
 </ul>
-<h3 id="全新的内置编辑器全新的编辑体验与快捷键">全新的内置编辑器，全新的编辑体验与快捷键</h3>
-<p>我们替换了 Gridea 内置编辑器，并进行了深度定制，以获得更流畅的 Markdown 写作体验。精心调教的间距控制，减缓长时间写作带来的疲劳；输入状态极简页面，集中注意力一气呵成，同时鼠标移动时会重新出现工具栏，提升易用性。相信在你熟悉了这套快捷键之后，可能再也不需要输入工具栏了。<br>
-<img src="https://i.loli.net/2019/09/21/pVWg3N6LOvyzaIi.png" alt="Gridea Editor"></p>
-<blockquote>
-<p>同时，增加了 Markdown 渲染 Emoji 和 implict-figures 的支持，为主题创作者提供更多可能。</p>
-</blockquote>
-<h3 id="emoji-输入面板与文章信息统计">Emoji 输入面板与文章信息统计</h3>
-<p>是的，这个版本我们新增了这两个实用的小功能。相信丰富的 Emoji 能够让你的字里行间更生动活泼，更富表现力。<br>
-<img src="https://i.loli.net/2019/09/21/oC63QjmNhVDcdE5.png" alt="Emoji and info"></p>
-<h3 id="未保存提示保障内容">未保存提示，保障内容</h3>
-<p>我们增加了返回时未保存提示，无论是文章的内容还是配置发生变动且未保存时，都会提示你，保存与否，你来决定。同时，文章内容的快速保存也可以使用快捷键 <code>Command</code> + <code>S</code> 操作。</p>
-<figure data-type="image" tabindex="1"><img src="https://i.loli.net/2019/09/21/TQEq7bUtIj1o5Gn.png" alt="Unsave"></figure>
-<h3 id="修复-bug更改预览模式">修复 BUG，更改预览模式</h3>
-<p>修复了创建文章多次保存时报 URL 冲突问题。修改预览时本地文件访问为静态 Server，为后面更好的预览体验做准备，是的，敬请期待吧。</p>
-<h3 id="增加-ga-统计为了更好的优化产品">增加 GA 统计，为了更好的优化产品</h3>
-<p>我们为应用增加了 GA 统计，但不要担心，我们并没有统计你的 <code>Token</code> 信息。一切为了更好的优化产品</p>
-<h3 id="新上架一款精致的付费主题tech">新上架一款精致的付费主题「Tech」</h3>
-<p>开发者精力有限，主题开发一直都是比较缓慢，这次我们带来了一款精致的主题，无论是科技、文艺、随笔类博客，都能轻松驾驭。轻松更换主题色，随你所好（不妨试试最近流行的「暗夜绿」哦，<code>#6f7972</code>）。<br>
-更多关于这款主题的信息，可点击下面链接了解：<a href="https://mianbaoduo.com/o/bread/mbd-ZZ2clA==">Gridea Theme Tech</a></p>
-<blockquote>
-<p>是的，定价依然是一顿早餐的价格，手工费，制作不易，且买且珍惜。</p>
-</blockquote>
-<figure data-type="image" tabindex="2"><img src="https://i.loli.net/2019/09/21/NOGhLpXBRT7bUHA.jpg" alt="Gridea Theme Tech"></figure>
-<p>尽情享受写作的乐趣吧，相信，落笔处，尽是繁华。</p>
-<p>😘 Enjoy~</p>
+<p>相信有足够准备与思考的项目，能够完成的概率还是略高的，不至于“挖坑一时爽，填坑火葬场”。</p>
+<h2 id="如何做">如何做</h2>
+<p>接下来聊聊如何做的部分。好的，到这里，“坑”选好了，那么如何挖和如何填呢？在此篇仅就基于 GitHub 的开源项目的做法与实践经验吧。</p>
+<h3 id="项目设计">项目设计</h3>
+<p>首先是项目的设计，由于 Gridea 是一个客户端，不同于给开发者用的工具类库等等。分为 UI 设计和功能设计。由于笔者是开发者，个人认为 UI 设计是比较难，那么如何来做呢？当然最简单直接的方法是找人和你一起做，如果能有幸找到比较合适的设计师助力，自然是好的。但是此篇说的是一个人如何做，那么就有一些“偏门”方案了。</p>
+<p>基本的审美还是需要有的，另外可以看下同类产品是如何做的，比如我在做 Gridea 的过程中，体验了 N 个 Markdown 笔记工具，然后总结出他们的亮点和缺点，有哪些适合 Gridea 在作为博客客户端中可以借鉴的，有哪些可以优化的，慢慢地，你的产品形态也就出来了。然后去 Dribbble 等设计分享平台，看一些设计灵感，流行趋势等等，然后慢慢优化。Gridea 就经历了几次大的 UI 改版，直到现在也在不断优化和调整。</p>
+<figure data-type="image" tabindex="1"><img src="http://localhost:4002/post-images/1568626426914.png" alt=""></figure>
+<p>其次是功能设计部分，我的建议是在项目第一版时，提供必要且最小的功能集。一方面可以缩短开发周期与快速验证产品可行性，另外能够利用种子用户来不断优化自己的产品规划与用户体验。没有任何一项目上来就是完美的大而全，就算 Twitter 这种用户量级的产品也是从 0 开始的。</p>
+<p>功能完成之后就是进行技术选型并开发，当然关于这部分不同的人可能有不同的想法。可以选择自己擅长的技术，提高开发效率，快速推进项目，也可以选择自己感兴趣但不太熟悉的技术，开发项目的同时锻炼了自己的技术能力，双赢。</p>
+<h3 id="项目细节">项目细节</h3>
+<p>这里我想提两点，也是开源项目相对比较重要的两点：写好 README 和管理好 ISSUES。</p>
+<ul>
+<li>
+<p><strong>README 是开源项目的脸面。</strong> 别人通过链接访问到你的项目首先看的就是 README，那么它的重要程度我想就不用多说了吧。一个无描述或者粗略的 README 可能是降低项目好感的最直接因素。那么 README 该如何写呢？</p>
+<ul>
+<li>项目名称与短描述（或者叫做 Slogan）。交代好项目是做什么的，解决了什么问题。</li>
+<li>项目特色。你的项目有什么特色功能，好在哪里。</li>
+</ul>
+</li>
+<li>
+<p><strong>ISSUES 是反映开源项目的温度的地方。</strong></p>
+</li>
+</ul>
 ]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Markdown 测试文章]]></title>
-        <id>https://fehey.com/post/markdown-test</id>
-        <link href="https://fehey.com/post/markdown-test">
+        <id>http://localhost:4002/post/markdown-test</id>
+        <link href="http://localhost:4002/post/markdown-test">
         </link>
         <updated>2019-07-18T14:17:43.000Z</updated>
         <summary type="html"><![CDATA[<p>Markdown是一种轻量级标记语言，创始人为约翰·格鲁伯（英语：John Gruber）。它允许人们“使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML（或者HTML）文档”。</p>
@@ -145,10 +139,10 @@
 </table>
 <h2 id="任务列表">任务列表</h2>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-1403789"><label class="task-list-item-label" for="task-item-1403789"> 第一项任务</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-401344"><label class="task-list-item-label" for="task-item-401344"> 第二项任务</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9541382"><label class="task-list-item-label" for="task-item-9541382"> 第三项任务</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-8029966"><label class="task-list-item-label" for="task-item-8029966"> 第四项任务</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-4113012"><label class="task-list-item-label" for="task-item-4113012"> 第一项任务</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9607278"><label class="task-list-item-label" for="task-item-9607278"> 第二项任务</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7587395"><label class="task-list-item-label" for="task-item-7587395"> 第三项任务</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-9374900"><label class="task-list-item-label" for="task-item-9374900"> 第四项任务</label></li>
 </ul>
 <h2 id="加强功能">加强功能</h2>
 <ul>
@@ -263,8 +257,8 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
     </entry>
     <entry>
         <title type="html"><![CDATA[利器+]]></title>
-        <id>https://fehey.com/post/liqi</id>
-        <link href="https://fehey.com/post/liqi">
+        <id>http://localhost:4002/post/liqi</id>
+        <link href="http://localhost:4002/post/liqi">
         </link>
         <updated>2019-06-26T06:20:56.000Z</updated>
         <content type="html"><![CDATA[<h2 id="介绍一下你自己和所做的工作">介绍一下你自己和所做的工作</h2>
@@ -341,8 +335,8 @@ Mac 下的一个终端工具，功能非常强大，支持主题系统</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[Gridea 一个简单、开源、强大的静态博客写作客户端]]></title>
-        <id>https://fehey.com/post/meet-gridea</id>
-        <link href="https://fehey.com/post/meet-gridea">
+        <id>http://localhost:4002/post/meet-gridea</id>
+        <link href="http://localhost:4002/post/meet-gridea">
         </link>
         <updated>2019-04-23T10:48:57.000Z</updated>
         <content type="html"><![CDATA[<p>想当时，博客兴起的年代，成千上万的人挑选各种平台去搭建一个属于自己的博客。从新浪博客、博客园到 Wordpress、Hexo，越来越多的人选择了静态博客，越来越趋于轻量化。</p>
@@ -380,8 +374,8 @@ Mac 下的一个终端工具，功能非常强大，支持主题系统</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[Gridea 小白上手教程]]></title>
-        <id>https://fehey.com/post/hve-notes-start</id>
-        <link href="https://fehey.com/post/hve-notes-start">
+        <id>http://localhost:4002/post/hve-notes-start</id>
+        <link href="http://localhost:4002/post/hve-notes-start">
         </link>
         <updated>2019-02-16T19:04:18.000Z</updated>
         <summary type="html"><![CDATA[<p>如果你使用过 <strong>Hexo</strong> 等工具基于 <strong>Github</strong> 做个人博客，那么恭喜你，你可以很轻松的上手使用<strong>Gridea</strong><br>
@@ -399,13 +393,13 @@ Mac 下的一个终端工具，功能非常强大，支持主题系统</p>
 <strong>注意：同步会覆盖掉仓库的文件，若仓库内有需要备份的，请手动备份</strong></p>
 <p>首先你需要一个 <a href="http://github.com">Github</a> 账号，如果没有的话，快去注册一个吧！</p>
 <p>登录 Github，然后进入到 <a href="https://github.com/settings/tokens/new">这里</a> 创建一个 <strong>Token</strong>，勾选上 <strong>repo</strong> 的相关权限即可，下面是对应的截图示例：<br>
-<img src="https://fehey.com/post-images/1550403256560.png" alt="Github Personal access tokesn"></p>
+<img src="http://localhost:4002/post-images/1550403256560.png" alt="Github Personal access tokesn"></p>
 <p>生成之后你可以复制 <strong>Token</strong> 到你可以再次找到的某个地方，因为一旦你关了这个网页就再也不会看到它了，稍后会在软件中使用</p>
-<figure data-type="image" tabindex="1"><img src="https://fehey.com/post-images/1550403732691.png" alt="Token示例"></figure>
+<figure data-type="image" tabindex="1"><img src="http://localhost:4002/post-images/1550403732691.png" alt="Token示例"></figure>
 <p>接下来你需要创建一个仓库，用来存放博客构建后的静态文件。我们建议你创建仓库名为 <strong>用户名.github.io</strong> 的仓库，因为 Github 会默认将此仓库设置成 <a href="https://pages.github.com/">Github Pages</a> 可访问类型，若不是用此命名的仓库，则不能默认使用 Github Pages，所以请认真确认。例如我的 Github 用户名为 <strong>EryouHao</strong>，则仓库名为 <strong>EryouHao.github.io</strong>。使用这种方式还有一个好处是，在没有自定义域名的情况下，使你的博客域名更短。当然如果想使用其他仓库来存放博客静态文件的话，也不是不可以，只不过，存放之后，若没有设置自定义域名，则访问地址将变成 <code>https://用户名.github.io/blog</code> （blog 为仓库名）这种二级目录的形式。</p>
 <h2 id="开始使用">开始使用</h2>
 <p>打开 <strong>Hve Notes</strong> 进入到<strong>配置</strong>页面，然后按照下面示例，输入相关配置并保存</p>
-<figure data-type="image" tabindex="2"><img src="https://fehey.com/post-images/1550405739647.png" alt="配置示例"></figure>
+<figure data-type="image" tabindex="2"><img src="http://localhost:4002/post-images/1550405739647.png" alt="配置示例"></figure>
 <p>在不开启文章评论的情况下，到此为止，你已经可以点击预览，点击同步进行博客部署啦，快去试试看吧！（当然在不同步的情况下）</p>
 <h2 id="开启文章评论">开启文章评论</h2>
 <p><strong>Hve Notes</strong> 目前提供了 <a href="https://github.com/gitalk/gitalk/blob/master/readme-cn.md">Gitalk</a> 和 <a href="">Disqus</a> 两种评论系统支持。</p>
@@ -414,19 +408,19 @@ Mac 下的一个终端工具，功能非常强大，支持主题系统</p>
 </blockquote>
 <p>你可以按照 <a href="https://github.com/gitalk/gitalk/blob/master/readme-cn.md">Gitalk 的文档</a> 进行相关字段配置，或者按照下面的步骤操作。</p>
 <p>首先你需要有一个 <strong>Github OAuth Application</strong>，点击<a href="https://github.com/settings/applications/new">这里</a>创建，字段填写可以参照下图</p>
-<figure data-type="image" tabindex="3"><img src="https://fehey.com/post-images/1550455713413.png" alt="Github OAuth"></figure>
+<figure data-type="image" tabindex="3"><img src="http://localhost:4002/post-images/1550455713413.png" alt="Github OAuth"></figure>
 <p>创建完成后可将 <strong>Client ID</strong> 和 <strong>Client Secret</strong>复制一下，保存到本地</p>
-<figure data-type="image" tabindex="4"><img src="https://fehey.com/post-images/1550455918492.png" alt=""></figure>
+<figure data-type="image" tabindex="4"><img src="http://localhost:4002/post-images/1550455918492.png" alt=""></figure>
 <p>接下来就可以去应用里面填写对应的信息，并开启评论</p>
-<figure data-type="image" tabindex="5"><img src="https://fehey.com/post-images/1550456148809.png" alt=""></figure>
+<figure data-type="image" tabindex="5"><img src="http://localhost:4002/post-images/1550456148809.png" alt=""></figure>
 <p>这样评论插件就设置好了，在预览时会在文章页显示评论模块，但不会显示具体的评论信息，因为这个是本地预览，而 <strong>Github OAuth</strong> 设置的域名为线上的域名。待博客同步到线上时就可以显示啦！</p>
 <p>快快开始你的创作吧！</p>
 ]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Markdown 语法简单教程]]></title>
-        <id>https://fehey.com/post/markdown-yu-fa-jian-dan-jiao-cheng</id>
-        <link href="https://fehey.com/post/markdown-yu-fa-jian-dan-jiao-cheng">
+        <id>http://localhost:4002/post/markdown-yu-fa-jian-dan-jiao-cheng</id>
+        <link href="http://localhost:4002/post/markdown-yu-fa-jian-dan-jiao-cheng">
         </link>
         <updated>2019-01-24T21:45:08.000Z</updated>
         <content type="html"><![CDATA[<h3 id="1-斜体和粗体">1. 斜体和粗体</h3>
@@ -535,8 +529,8 @@ hello()
     </entry>
     <entry>
         <title type="html"><![CDATA[遇见创作，遇见Hve Notes]]></title>
-        <id>https://fehey.com/post/yu-jian-chuang-zuo-yu-jian-hve-notes</id>
-        <link href="https://fehey.com/post/yu-jian-chuang-zuo-yu-jian-hve-notes">
+        <id>http://localhost:4002/post/yu-jian-chuang-zuo-yu-jian-hve-notes</id>
+        <link href="http://localhost:4002/post/yu-jian-chuang-zuo-yu-jian-hve-notes">
         </link>
         <updated>2019-01-14T08:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>作为一个技术人，你是否喜欢创作，或是怀念过往又或是畅想未来，或是总结技术又或是记录生活？</p>
@@ -573,8 +567,8 @@ hello()
     </entry>
     <entry>
         <title type="html"><![CDATA[2018 年终总结]]></title>
-        <id>https://fehey.com/post/2018-nian-zhong-zong-jie</id>
-        <link href="https://fehey.com/post/2018-nian-zhong-zong-jie">
+        <id>http://localhost:4002/post/2018-nian-zhong-zong-jie</id>
+        <link href="http://localhost:4002/post/2018-nian-zhong-zong-jie">
         </link>
         <updated>2019-01-13T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>📃又到了一年一度的<strong>年终总结</strong>，这是参加工作的第一个完整年。</p>
@@ -603,8 +597,8 @@ hello()
     </entry>
     <entry>
         <title type="html"><![CDATA[Hve Notes 主页上线啦]]></title>
-        <id>https://fehey.com/post/hve-notes-zhu-ye-shang-xian-la</id>
-        <link href="https://fehey.com/post/hve-notes-zhu-ye-shang-xian-la">
+        <id>http://localhost:4002/post/hve-notes-zhu-ye-shang-xian-la</id>
+        <link href="http://localhost:4002/post/hve-notes-zhu-ye-shang-xian-la">
         </link>
         <updated>2019-01-01T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>铛铛铛，喜大普奔，Hve Notes 主页上线啦！</p>
@@ -621,8 +615,8 @@ hello()
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello Hve Notes]]></title>
-        <id>https://fehey.com/post/hello-hve</id>
-        <link href="https://fehey.com/post/hello-hve">
+        <id>http://localhost:4002/post/hello-hve</id>
+        <link href="http://localhost:4002/post/hello-hve">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>👏 欢迎使用 <strong>Hve</strong> ！</p>
