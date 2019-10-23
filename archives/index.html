@@ -4,357 +4,232 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>海岛心hey</title>
 <meta name="description" content="Every 🐦 has an 🦅's dream." />
-<link rel="shortcut icon" href="https://fehey.com/favicon.ico?v=1569169893868">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="shortcut icon" href="https://fehey.com/favicon.ico?v=1571821651782">
 <link href="https://cdn.remixicon.com/releases/v1.3.1/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
 <link rel="stylesheet" href="https://fehey.com/styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="海岛心hey - Atom Feed" href="https://fehey.com/atom.xml">
 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113307620-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-113307620-1');
-</script>
 
 
   </head>
   <body>
-    <div id="app" class="main px-4 flex flex-col lg:flex-row">
-      <div id="sidebar" class="sidebar-wrapper lg:static lg:w-1/4">
-  <div class="lg:sticky top-0">
-    <div class="sidebar-content">
-      <div class="flex lg:block p-4 lg:px-0 items-center fixed lg:static lg:block top-0 right-0 left-0 bg-white z-50">
-        <i class="remixicon-menu-2-line lg:mt-4 text-2xl cursor-pointer animated fadeIn" onclick="openMenu()"></i>
-        <a href="https://fehey.com">
-          <img class="animated fadeInLeft avatar rounded-lg mx-4 lg:mt-32 lg:mx-0 mt-0 lg:w-24 lg:h-24 w-12 w-12" src="https://fehey.com/images/avatar.png?v=1569169893868" alt="">
-        </a>
-        <h1 class="animated fadeInLeft lg:text-4xl font-extrabold lg:mt-8 mt-0 text-xl" style="animation-delay: 0.2s">海岛心hey</h1>
+    <div class="head">
+  <div class="inner">
+    <a class="site-name" href="https://fehey.com">
+        <span>海岛心hey</span>
+    </a>
+    <label class="burger" for="burger"></label>
+    <input id="burger" type="checkbox">
+    <button class="burger">
+      <div>
+        <span></span>
+        <span></span>
       </div>
+    </button>
+    <nav class="info_nav">
       
-        <div class="animated fadeInLeft" style="animation-delay: 0.4s">
-          <p class="my-4 text-gray-600 font-light hidden lg:block">
-            Every 🐦 has an 🦅's dream.
-          </p>
-          <div class="animated fadeInLeft social-container hidden lg:block" style="animation-delay: 0.6s">
-            
-              
-                <a href="https://github.com/EryouHao" target="_blank" class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
-                  <i class="remixicon-github-line"></i>
-                </a>
-              
-            
-              
-                <a href="https://twitter.com/EryouHao" target="_blank" class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
-                  <i class="remixicon-twitter-line"></i>
-                </a>
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-          </div>
-        </div>
-      
-    </div>
-  </div>
-</div>
-
-<div class="menu-container">
-  <i class="remixicon-arrow-left-line text-2xl cursor-pointer animated fadeIn close-menu-btn" onclick="closeMenu()"></i>
-  <div>
-    
-      
-        <a href="https://fehey.com" class="menu" style="animation-delay: 0s">
-          首页
-        </a>
-      
-    
-      
-        <a href="https://fehey.com/archives" class="menu" style="animation-delay: 0.2s">
-          归档
-        </a>
-      
-    
-      
-        <a href="https://fehey.com/tags" class="menu" style="animation-delay: 0.4s">
-          标签
-        </a>
-      
-    
-      
-        <a href="https://fehey.com/post/about/" class="menu" style="animation-delay: 0.6000000000000001s">
-          关于
-        </a>
-      
-    
-  </div>
-  <div class="site-footer">
-    <div class="py-4 text-gray-700">Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a></div>
-    <a class="rss" href="https://fehey.com/atom.xml" target="_blank">RSS</a>
-  </div>
-</div>
-<div class="mask" onclick="closeMenu()">
-</div>
-      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4">
-        <h2 class="text-lg text-gray-700 mb-8">
-          <i class="remixicon-archive-line"></i> 文章归档
-        </h2>
         
-
-        <div class="archives-container">
-          
-            <h2 class="text-gray-600 py-4 animated fadeIn">
-              <i class="remixicon-map-pin-time-line"></i>
-              2019
-            </h2>
-            
-              
-                <a href="https://fehey.com/post/gridea-v083-quan-xin-ti-yan-zhu-ni-miao-bi-sheng-hua" class="post">
-                  <h2 class="inline-block font-bold text-lg post-title animated fadeIn">
-                    Gridea v0.8.3 全新体验，助你妙笔生花
-                  </h2>
-                </a>
-                <div class="text-sm font-light mt-3 mb-6 text-gray-400 animated fadeInDown" style="animation-delay: 0.4s">2019-09-21</div>
-              
-            
-              
-                <a href="https://fehey.com/post/markdown-test" class="post">
-                  <h2 class="inline-block font-bold text-lg post-title animated fadeIn">
-                    Markdown 测试文章
-                  </h2>
-                </a>
-                <div class="text-sm font-light mt-3 mb-6 text-gray-400 animated fadeInDown" style="animation-delay: 0.4s">2019-07-18</div>
-              
-            
-              
-                <a href="https://fehey.com/post/liqi" class="post">
-                  <h2 class="inline-block font-bold text-lg post-title animated fadeIn">
-                    利器+
-                  </h2>
-                </a>
-                <div class="text-sm font-light mt-3 mb-6 text-gray-400 animated fadeInDown" style="animation-delay: 0.4s">2019-06-26</div>
-              
-            
-              
-                <a href="https://fehey.com/post/meet-gridea" class="post">
-                  <h2 class="inline-block font-bold text-lg post-title animated fadeIn">
-                    Gridea 一个简单、开源、强大的静态博客写作客户端
-                  </h2>
-                </a>
-                <div class="text-sm font-light mt-3 mb-6 text-gray-400 animated fadeInDown" style="animation-delay: 0.4s">2019-04-23</div>
-              
-            
-              
-                <a href="https://fehey.com/post/hve-notes-start" class="post">
-                  <h2 class="inline-block font-bold text-lg post-title animated fadeIn">
-                    Gridea 小白上手教程
-                  </h2>
-                </a>
-                <div class="text-sm font-light mt-3 mb-6 text-gray-400 animated fadeInDown" style="animation-delay: 0.4s">2019-02-17</div>
-              
-            
-              
-                <a href="https://fehey.com/post/markdown-yu-fa-jian-dan-jiao-cheng" class="post">
-                  <h2 class="inline-block font-bold text-lg post-title animated fadeIn">
-                    Markdown 语法简单教程
-                  </h2>
-                </a>
-                <div class="text-sm font-light mt-3 mb-6 text-gray-400 animated fadeInDown" style="animation-delay: 0.4s">2019-01-25</div>
-              
-            
-              
-                <a href="https://fehey.com/post/yu-jian-chuang-zuo-yu-jian-hve-notes" class="post">
-                  <h2 class="inline-block font-bold text-lg post-title animated fadeIn">
-                    遇见创作，遇见Hve Notes
-                  </h2>
-                </a>
-                <div class="text-sm font-light mt-3 mb-6 text-gray-400 animated fadeInDown" style="animation-delay: 0.4s">2019-01-14</div>
-              
-            
-              
-                <a href="https://fehey.com/post/2018-nian-zhong-zong-jie" class="post">
-                  <h2 class="inline-block font-bold text-lg post-title animated fadeIn">
-                    2018 年终总结
-                  </h2>
-                </a>
-                <div class="text-sm font-light mt-3 mb-6 text-gray-400 animated fadeInDown" style="animation-delay: 0.4s">2019-01-14</div>
-              
-            
-              
-                <a href="https://fehey.com/post/hve-notes-zhu-ye-shang-xian-la" class="post">
-                  <h2 class="inline-block font-bold text-lg post-title animated fadeIn">
-                    Hve Notes 主页上线啦
-                  </h2>
-                </a>
-                <div class="text-sm font-light mt-3 mb-6 text-gray-400 animated fadeInDown" style="animation-delay: 0.4s">2019-01-01</div>
-              
-            
-              
-            
-          
-            <h2 class="text-gray-600 py-4 animated fadeIn">
-              <i class="remixicon-map-pin-time-line"></i>
-              2018
-            </h2>
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-                <a href="https://fehey.com/post/hello-hve" class="post">
-                  <h2 class="inline-block font-bold text-lg post-title animated fadeIn">
-                    Hello Hve Notes
-                  </h2>
-                </a>
-                <div class="text-sm font-light mt-3 mb-6 text-gray-400 animated fadeInDown" style="animation-delay: 0.4s">2018-12-12</div>
-              
-            
-          
-        </div>
-
-        <div>
-          <div class="pagination-container animated fadeIn">
-  
-  
+          <a href="https://fehey.com">首页</a>
+        
+      
+        
+          <a href="https://fehey.com/archives">归档</a>
+        
+      
+        
+          <a href="https://fehey.com/tags">标签</a>
+        
+      
+        
+          <a href="https://fehey.com/post/about/">关于</a>
+        
+      
+    </nav>
+  </div>
 </div>
-
+    <div class="info _site">
+      <div class="inner">
+        <div class="info_main">
+          <h1 class="info_title"><i class="remixicon-archive-line"></i> 目前共计 10 篇创作</h1>
         </div>
       </div>
     </div>
-
-    <script src="https://fehey.com/media/prism.js"></script>  
-<script>
-
-Prism.highlightAll()
-
-let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
-
-// This should probably be throttled.
-// Especially because it triggers during smooth scrolling.
-// https://lodash.com/docs/4.17.10#throttle
-// You could do like...
-// window.addEventListener("scroll", () => {
-//    _.throttle(doThatStuff, 100);
-// });
-// Only not doing it here to keep this Pen dependency-free.
-
-window.addEventListener("scroll", event => {
-  let fromTop = window.scrollY;
-
-  mainNavLinks.forEach((link, index) => {
-    let section = document.getElementById(decodeURI(link.hash).substring(1));
-    let nextSection = null
-    if (mainNavLinks[index + 1]) {
-      nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-    }
-    if (section.offsetTop <= fromTop) {
-      if (nextSection) {
-        if (nextSection.offsetTop > fromTop) {
-          link.classList.add("current");
-        } else {
-          link.classList.remove("current");    
-        }
-      } else {
-        link.classList.add("current");
-      }
-    } else {
-      link.classList.remove("current");
-    }
-  });
-});
-
-
-document.addEventListener("DOMContentLoaded", function() {
-  var lazyImages = [].slice.call(document.querySelectorAll(".post-feature-image.lazy"));
-
-  if ("IntersectionObserver" in window) {
-    let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-          let lazyImage = entry.target
-          lazyImage.style.backgroundImage = `url(${lazyImage.dataset.bg})`
-          lazyImage.classList.remove("lazy")
-          lazyImageObserver.unobserve(lazyImage)
-        }
-      });
-    });
-
-    lazyImages.forEach(function(lazyImage) {
-      lazyImageObserver.observe(lazyImage)
-    })
-  } else {
-    // Possibly fall back to a more compatible method here
-  }
-});
-
-const menuContainer = document.querySelector('.menu-container')
-const menus = document.querySelectorAll('.menu-container .menu')
-const mask = document.querySelector('.mask')
-const contentWrapper = document.querySelector('.content-wrapper')
-const latestArticle = document.querySelector('.latest-article')
-const readMore = document.querySelector('.read-more')
-const indexPage = document.querySelector('.index-page')
-
-const isHome = location.pathname === '/'
-if (latestArticle) {
-  latestArticle.style.display = isHome ? 'block' : 'none'
-  readMore.style.display = isHome ? 'block' : 'none'
-  indexPage.style.display = isHome ? 'none' : 'block'
-}
-
-const openMenu = () => {
-  menuContainer.classList.add('open')
-  menus.forEach(menu => {
-    menu.classList.add('animated', 'fadeInLeft')
-  })
-  mask.classList.add('open')
-  contentWrapper.classList.add('is-second')
-}
-
-const closeMenu = () => {
-  menuContainer.classList.remove('open')
-  menus.forEach(menu => {
-    menu.classList.remove('animated', 'fadeInLeft')
-  })
-  mask.classList.remove('open')
-  contentWrapper.classList.remove('is-second')
-}
-</script>
+    <div class="main">
+      <div class="inner">
+        <div class="items">
   
+    <div class="item Article">
+      
+        <a class="item-image js-cover" data-src="https://i.loli.net/2019/10/23/SrcgKW2vjeOGs5A.png" href="https://fehey.com/post/gridea-v083-quan-xin-ti-yan-zhu-ni-miao-bi-sheng-hua" style="background-image:url('https://i.loli.net/2019/10/23/SrcgKW2vjeOGs5A.png');"></a>
+      
+      <a class="item-main" href="https://fehey.com/post/gridea-v083-quan-xin-ti-yan-zhu-ni-miao-bi-sheng-hua">
+        <div class="item-meta">
+          <time datetime="2019-09-21 11:39:39">2019-09-21</time>
+        </div>
+        <h2>Gridea v0.8.3 全新体验，助你妙笔生花</h2>
+      </a>
+    </div>
+  
+    <div class="item Article">
+      
+        <a class="item-image js-cover" data-src="https://i.loli.net/2019/10/23/bveJihEH6PyRY2M.jpg" href="https://fehey.com/post/markdown-test" style="background-image:url('https://i.loli.net/2019/10/23/bveJihEH6PyRY2M.jpg');"></a>
+      
+      <a class="item-main" href="https://fehey.com/post/markdown-test">
+        <div class="item-meta">
+          <time datetime="2019-07-18 22:17:43">2019-07-18</time>
+        </div>
+        <h2>Markdown 测试文章</h2>
+      </a>
+    </div>
+  
+    <div class="item Article">
+      
+        <a class="item-image js-cover" data-src="https://fehey.com/post-images/liqi.jpeg" href="https://fehey.com/post/liqi" style="background-image:url('https://fehey.com/post-images/liqi.jpeg');"></a>
+      
+      <a class="item-main" href="https://fehey.com/post/liqi">
+        <div class="item-meta">
+          <time datetime="2019-06-26 14:20:56">2019-06-26</time>
+        </div>
+        <h2>利器+</h2>
+      </a>
+    </div>
+  
+    <div class="item Article">
+      
+        <a class="item-image js-cover" data-src="https://fehey.com/post-images/meet-gridea.png" href="https://fehey.com/post/meet-gridea" style="background-image:url('https://fehey.com/post-images/meet-gridea.png');"></a>
+      
+      <a class="item-main" href="https://fehey.com/post/meet-gridea">
+        <div class="item-meta">
+          <time datetime="2019-04-23 18:48:57">2019-04-23</time>
+        </div>
+        <h2>Gridea 一个简单、开源、强大的静态博客写作客户端</h2>
+      </a>
+    </div>
+  
+    <div class="item Article">
+      
+        <a class="item-image js-cover" data-src="https://fehey.com/post-images/hve-notes-start.jpeg" href="https://fehey.com/post/hve-notes-start" style="background-image:url('https://fehey.com/post-images/hve-notes-start.jpeg');"></a>
+      
+      <a class="item-main" href="https://fehey.com/post/hve-notes-start">
+        <div class="item-meta">
+          <time datetime="2019-02-17 03:04:18">2019-02-17</time>
+        </div>
+        <h2>Gridea 小白上手教程</h2>
+      </a>
+    </div>
+  
+    <div class="item Article">
+      
+        <a class="item-image js-cover" data-src="https://fehey.com/post-images/markdown-yu-fa-jian-dan-jiao-cheng.jpg" href="https://fehey.com/post/markdown-yu-fa-jian-dan-jiao-cheng" style="background-image:url('https://fehey.com/post-images/markdown-yu-fa-jian-dan-jiao-cheng.jpg');"></a>
+      
+      <a class="item-main" href="https://fehey.com/post/markdown-yu-fa-jian-dan-jiao-cheng">
+        <div class="item-meta">
+          <time datetime="2019-01-25 05:45:08">2019-01-25</time>
+        </div>
+        <h2>Markdown 语法简单教程</h2>
+      </a>
+    </div>
+  
+    <div class="item Article">
+      
+        <a class="item-image js-cover" data-src="https://fehey.com/post-images/yu-jian-chuang-zuo-yu-jian-hve-notes.png" href="https://fehey.com/post/yu-jian-chuang-zuo-yu-jian-hve-notes" style="background-image:url('https://fehey.com/post-images/yu-jian-chuang-zuo-yu-jian-hve-notes.png');"></a>
+      
+      <a class="item-main" href="https://fehey.com/post/yu-jian-chuang-zuo-yu-jian-hve-notes">
+        <div class="item-meta">
+          <time datetime="2019-01-14 16:00:00">2019-01-14</time>
+        </div>
+        <h2>遇见创作，遇见Hve Notes</h2>
+      </a>
+    </div>
+  
+    <div class="item Article">
+      
+        <a class="item-image js-cover" data-src="https://fehey.com/post-images/2018-nian-zhong-zong-jie.png" href="https://fehey.com/post/2018-nian-zhong-zong-jie" style="background-image:url('https://fehey.com/post-images/2018-nian-zhong-zong-jie.png');"></a>
+      
+      <a class="item-main" href="https://fehey.com/post/2018-nian-zhong-zong-jie">
+        <div class="item-meta">
+          <time datetime="2019-01-14 00:00:00">2019-01-14</time>
+        </div>
+        <h2>2018 年终总结</h2>
+      </a>
+    </div>
+  
+    <div class="item Article">
+      
+        <a class="item-image js-cover" data-src="https://fehey.com/post-images/hve-notes-zhu-ye-shang-xian-la.png" href="https://fehey.com/post/hve-notes-zhu-ye-shang-xian-la" style="background-image:url('https://fehey.com/post-images/hve-notes-zhu-ye-shang-xian-la.png');"></a>
+      
+      <a class="item-main" href="https://fehey.com/post/hve-notes-zhu-ye-shang-xian-la">
+        <div class="item-meta">
+          <time datetime="2019-01-01 08:00:00">2019-01-01</time>
+        </div>
+        <h2>Hve Notes 主页上线啦</h2>
+      </a>
+    </div>
+  
+    <div class="item Article">
+      
+        <a class="item-image js-cover" data-src="https://fehey.com/post-images/hello-hve.png" href="https://fehey.com/post/hello-hve" style="background-image:url('https://fehey.com/post-images/hello-hve.png');"></a>
+      
+      <a class="item-main" href="https://fehey.com/post/hello-hve">
+        <div class="item-meta">
+          <time datetime="2018-12-12 00:00:00">2018-12-12</time>
+        </div>
+        <h2>Hello Hve Notes</h2>
+      </a>
+    </div>
+  
+</div>
+
+        <div class="navigation">
+  
+  
+</div>
+      </div>
+    </div>
+    <footer class="footer">
+  <div class="main">
+    <a href="https://fehey.com">
+      <img class="avatar" src="https://fehey.com/images/avatar.png?v=1571821651782" alt="海岛心hey">
+    </a>
+    <div class="footer__social">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <p class="footer__sosumi">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+    </p>
+    <a class="footer-rss" href="https://fehey.com/atom.xml">RSS</a>
+  </div>
+</footer>
+
+<script src="https://fehey.com/media/prism.js"></script>
+<script>
+  Prism.highlightAll()
+</script>
+
   </body>
 </html>

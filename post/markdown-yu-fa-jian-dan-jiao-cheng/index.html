@@ -2,143 +2,73 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>海岛心hey</title>
+<title>Markdown 语法简单教程 | 海岛心hey</title>
 <meta name="description" content="Every 🐦 has an 🦅's dream." />
-<link rel="shortcut icon" href="https://fehey.com/favicon.ico?v=1569169893868">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="shortcut icon" href="https://fehey.com/favicon.ico?v=1571821651782">
 <link href="https://cdn.remixicon.com/releases/v1.3.1/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
 <link rel="stylesheet" href="https://fehey.com/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="海岛心hey - Atom Feed" href="https://fehey.com/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="Markdown 语法简单教程 | 海岛心hey - Atom Feed" href="https://fehey.com/atom.xml">
 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113307620-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-113307620-1');
-</script>
 
 
   </head>
   <body>
-    <div id="app" class="main px-4 flex flex-col lg:flex-row">
-      <div id="sidebar" class="sidebar-wrapper lg:static lg:w-1/4">
-  <div class="lg:sticky top-0">
-    <div class="sidebar-content">
-      <div class="flex lg:block p-4 lg:px-0 items-center fixed lg:static lg:block top-0 right-0 left-0 bg-white z-50">
-        <i class="remixicon-menu-2-line lg:mt-4 text-2xl cursor-pointer animated fadeIn" onclick="openMenu()"></i>
-        <a href="https://fehey.com">
-          <img class="animated fadeInLeft avatar rounded-lg mx-4 lg:mt-32 lg:mx-0 mt-0 lg:w-24 lg:h-24 w-12 w-12" src="https://fehey.com/images/avatar.png?v=1569169893868" alt="">
-        </a>
-        <h1 class="animated fadeInLeft lg:text-4xl font-extrabold lg:mt-8 mt-0 text-xl" style="animation-delay: 0.2s">海岛心hey</h1>
+    <div class="site-nav has-cover">
+      <div class="head">
+  <div class="inner">
+    <a class="site-name" href="https://fehey.com">
+        <span>海岛心hey</span>
+    </a>
+    <label class="burger" for="burger"></label>
+    <input id="burger" type="checkbox">
+    <button class="burger">
+      <div>
+        <span></span>
+        <span></span>
       </div>
+    </button>
+    <nav class="info_nav">
       
-        <div class="animated fadeInLeft" style="animation-delay: 0.4s">
-          <p class="my-4 text-gray-600 font-light hidden lg:block">
-            文章目录
-          </p>
-          <div class="toc-container hidden lg:block">
-            <ul class="markdownIt-TOC">
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#1-%E6%96%9C%E4%BD%93%E5%92%8C%E7%B2%97%E4%BD%93">1. 斜体和粗体</a></li>
-<li><a href="#2-%E6%A0%87%E9%A2%98">2. 标题</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#%E4%B8%80%E7%BA%A7%E6%A0%87%E9%A2%98">一级标题</a>
-<ul>
-<li><a href="#%E4%BA%8C%E7%BA%A7%E6%A0%87%E9%A2%98">二级标题</a>
-<ul>
-<li><a href="#%E4%B8%89%E7%BA%A7%E6%A0%87%E9%A2%98">三级标题</a>
-<ul>
-<li><a href="#%E5%9B%9B%E7%BA%A7%E6%A0%87%E9%A2%98">四级标题</a>
-<ul>
-<li><a href="#%E4%BA%94%E7%BA%A7%E6%A0%87%E9%A2%98">五级标题</a>
-<ul>
-<li><a href="#%E5%85%AD%E7%BA%A7%E6%A0%87%E9%A2%98">六级标题</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#3-%E5%A4%96%E9%93%BE%E6%8E%A5">3. 外链接</a></li>
-<li><a href="#4-%E6%97%A0%E5%BA%8F%E5%88%97%E8%A1%A8">4. 无序列表</a></li>
-<li><a href="#5-%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8">5. 有序列表</a></li>
-<li><a href="#6-%E6%96%87%E5%AD%97%E5%BC%95%E7%94%A8">6. 文字引用</a></li>
-<li><a href="#7-%E8%A1%8C%E5%86%85%E4%BB%A3%E7%A0%81%E5%9D%97">7. 行内代码块</a></li>
-<li><a href="#8-%E4%BB%A3%E7%A0%81%E5%9D%97">8.  代码块</a></li>
-<li><a href="#9-%E6%8F%92%E5%85%A5%E5%9B%BE%E5%83%8F">9.  插入图像</a></li>
-</ul>
-</li>
-<li><a href="#%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81">测试代码</a></li>
-<li><a href="#%E8%A1%A8%E6%A0%BC%E7%A4%BA%E4%BE%8B">表格示例</a></li>
-</ul>
-</li>
-</ul>
-
-          </div>
-        </div>
+        
+          <a href="https://fehey.com">首页</a>
+        
       
+        
+          <a href="https://fehey.com/archives">归档</a>
+        
+      
+        
+          <a href="https://fehey.com/tags">标签</a>
+        
+      
+        
+          <a href="https://fehey.com/post/about/">关于</a>
+        
+      
+    </nav>
+  </div>
+</div>
     </div>
-  </div>
-</div>
-
-<div class="menu-container">
-  <i class="remixicon-arrow-left-line text-2xl cursor-pointer animated fadeIn close-menu-btn" onclick="closeMenu()"></i>
-  <div>
-    
+    <article role="main" class="hentry has-cover">
       
-        <a href="https://fehey.com" class="menu" style="animation-delay: 0s">
-          首页
-        </a>
-      
-    
-      
-        <a href="https://fehey.com/archives" class="menu" style="animation-delay: 0.2s">
-          归档
-        </a>
-      
-    
-      
-        <a href="https://fehey.com/tags" class="menu" style="animation-delay: 0.4s">
-          标签
-        </a>
-      
-    
-      
-        <a href="https://fehey.com/post/about/" class="menu" style="animation-delay: 0.6000000000000001s">
-          关于
-        </a>
-      
-    
-  </div>
-  <div class="site-footer">
-    <div class="py-4 text-gray-700">Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a></div>
-    <a class="rss" href="https://fehey.com/atom.xml" target="_blank">RSS</a>
-  </div>
-</div>
-<div class="mask" onclick="closeMenu()">
-</div>
-      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4 post-detail animated fadeIn">
-        <h1 class="text-3xl font-bold lg:mt-16">Markdown 语法简单教程</h1>
-        <div class="text-sm text-gray-700 lg:my-8">
-          2019-01-25 / 2 min read
+        <div class="entry-cover js-cover" data-src="https://fehey.com/post-images/markdown-yu-fa-jian-dan-jiao-cheng.jpg" data-width="900" data-height="423" style="background-image:url(https://fehey.com/post-images/markdown-yu-fa-jian-dan-jiao-cheng.jpg); height: 80vw;">
+          <h1 class="post-title">Markdown 语法简单教程</h1>
         </div>
-        
-          <img class="post-feature-image rounded-lg mx-auto my-4" src="https://fehey.com/post-images/markdown-yu-fa-jian-dan-jiao-cheng.jpg" alt="">
-        
-        <div class="post-content yue">
-          <h3 id="1-斜体和粗体">1. 斜体和粗体</h3>
+      
+      <h1 class="entry-title" itemprop="headline">Markdown 语法简单教程</h1>
+      <div class="entry-meta">
+        <time class="updated" datetime="2019-01-25 05:45:08">2019-01-25</time>
+        <span class="author vcard">
+          2 min read
+        </span>
+      </div>
+      <div class="post-content yue">
+        <h3 id="1-斜体和粗体">1. 斜体和粗体</h3>
 <p>使用 * 和 ** 表示斜体和粗体。</p>
 <p>示例：</p>
 <p>这是 <em>斜体</em>，这是 <strong>粗体</strong>。</p>
@@ -241,164 +171,73 @@ hello()
 </tbody>
 </table>
 
-        </div>
-
-        
-
-
-        <div class="flex justify-between py-8">
-          
-            <div class="prev-post">
-              <a href="https://fehey.com/post/hve-notes-start">
-                <h3 class="post-title">
-                  <i class="remixicon-arrow-left-line"></i>
-                  Gridea 小白上手教程
-                </h3>
-              </a>
-            </div>
-          
-
-          
-            <div class="next-post">
-              <a href="https://fehey.com/post/yu-jian-chuang-zuo-yu-jian-hve-notes">
-                <h3 class="post-title">
-                  遇见创作，遇见Hve Notes
-                  <i class="remixicon-arrow-right-line"></i>
-                </h3>
-              </a>
-            </div>
-          
-        </div>
-
-        
-          
-            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-
-<div id="gitalk-container"></div>
-
-<script>
-
-  var gitalk = new Gitalk({
-    clientID: 'd32f26feaa6fb3f5f4c0',
-    clientSecret: '155ee9e5b67d2a3c6b38680be835b3ecee225a0e',
-    repo: 'EryouHao.github.io',
-    owner: 'EryouHao',
-    admin: ['EryouHao'],
-    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false  // Facebook-like distraction free mode
-  })
-
-  gitalk.render('gitalk-container')
-
-</script>
-
-          
-
-          
-        
-
       </div>
+      <div class="entry-block">
+        <div class="entry-tags">
+          
+        </div>
+      </div>
+    </article>
+    
+      <section class="post-section prev-post">
+        <div class="inner">
+          <h3>前一篇</h3>
+          <a href="https://fehey.com/post/hve-notes-start">
+            <strong>Gridea 小白上手教程</strong>
+          </a>
+        </div>
+      </section>
+    
+    
+      <section class="post-section prev-post">
+        <div class="inner">
+          <h3>后一篇</h3>
+          <a href="https://fehey.com/post/yu-jian-chuang-zuo-yu-jian-hve-notes">
+            <strong>遇见创作，遇见Hve Notes</strong>
+          </a>
+        </div>
+      </section>
+    
+
+    <footer class="footer">
+  <div class="main">
+    <a href="https://fehey.com">
+      <img class="avatar" src="https://fehey.com/images/avatar.png?v=1571821651782" alt="海岛心hey">
+    </a>
+    <div class="footer__social">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     </div>
+    <p class="footer__sosumi">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+    </p>
+    <a class="footer-rss" href="https://fehey.com/atom.xml">RSS</a>
+  </div>
+</footer>
 
-    <script src="https://fehey.com/media/prism.js"></script>  
+<script src="https://fehey.com/media/prism.js"></script>
 <script>
-
-Prism.highlightAll()
-
-let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
-
-// This should probably be throttled.
-// Especially because it triggers during smooth scrolling.
-// https://lodash.com/docs/4.17.10#throttle
-// You could do like...
-// window.addEventListener("scroll", () => {
-//    _.throttle(doThatStuff, 100);
-// });
-// Only not doing it here to keep this Pen dependency-free.
-
-window.addEventListener("scroll", event => {
-  let fromTop = window.scrollY;
-
-  mainNavLinks.forEach((link, index) => {
-    let section = document.getElementById(decodeURI(link.hash).substring(1));
-    let nextSection = null
-    if (mainNavLinks[index + 1]) {
-      nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-    }
-    if (section.offsetTop <= fromTop) {
-      if (nextSection) {
-        if (nextSection.offsetTop > fromTop) {
-          link.classList.add("current");
-        } else {
-          link.classList.remove("current");    
-        }
-      } else {
-        link.classList.add("current");
-      }
-    } else {
-      link.classList.remove("current");
-    }
-  });
-});
-
-
-document.addEventListener("DOMContentLoaded", function() {
-  var lazyImages = [].slice.call(document.querySelectorAll(".post-feature-image.lazy"));
-
-  if ("IntersectionObserver" in window) {
-    let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-          let lazyImage = entry.target
-          lazyImage.style.backgroundImage = `url(${lazyImage.dataset.bg})`
-          lazyImage.classList.remove("lazy")
-          lazyImageObserver.unobserve(lazyImage)
-        }
-      });
-    });
-
-    lazyImages.forEach(function(lazyImage) {
-      lazyImageObserver.observe(lazyImage)
-    })
-  } else {
-    // Possibly fall back to a more compatible method here
-  }
-});
-
-const menuContainer = document.querySelector('.menu-container')
-const menus = document.querySelectorAll('.menu-container .menu')
-const mask = document.querySelector('.mask')
-const contentWrapper = document.querySelector('.content-wrapper')
-const latestArticle = document.querySelector('.latest-article')
-const readMore = document.querySelector('.read-more')
-const indexPage = document.querySelector('.index-page')
-
-const isHome = location.pathname === '/'
-if (latestArticle) {
-  latestArticle.style.display = isHome ? 'block' : 'none'
-  readMore.style.display = isHome ? 'block' : 'none'
-  indexPage.style.display = isHome ? 'none' : 'block'
-}
-
-const openMenu = () => {
-  menuContainer.classList.add('open')
-  menus.forEach(menu => {
-    menu.classList.add('animated', 'fadeInLeft')
-  })
-  mask.classList.add('open')
-  contentWrapper.classList.add('is-second')
-}
-
-const closeMenu = () => {
-  menuContainer.classList.remove('open')
-  menus.forEach(menu => {
-    menu.classList.remove('animated', 'fadeInLeft')
-  })
-  mask.classList.remove('open')
-  contentWrapper.classList.remove('is-second')
-}
+  Prism.highlightAll()
 </script>
-  
+
   </body>
 </html>
