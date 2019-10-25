@@ -1736,6 +1736,15 @@ a:hover {
   left: 4px;
   transition: all 0.2s ease;
 }
+#gitalk-container,
+#disqus_thread {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 760px;
+  padding-left: 18px;
+  padding-right: 18px;
+  margin-bottom: 32px;
+}
 .footer-rss {
   z-index: 1;
   position: relative;
