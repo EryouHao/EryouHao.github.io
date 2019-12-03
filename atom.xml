@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://fehey.com</id>
     <title>海岛心hey</title>
-    <updated>2019-11-25T09:39:53.747Z</updated>
+    <updated>2019-12-03T02:24:51.623Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://fehey.com"/>
     <link rel="self" href="https://fehey.com/atom.xml"/>
@@ -34,16 +34,16 @@
 </ul>
 <h3 id="全新的内置编辑器全新的编辑体验与快捷键">全新的内置编辑器，全新的编辑体验与快捷键</h3>
 <p>我们替换了 Gridea 内置编辑器，并进行了深度定制，以获得更流畅的 Markdown 写作体验。精心调教的间距控制，减缓长时间写作带来的疲劳；输入状态极简页面，集中注意力一气呵成，同时鼠标移动时会重新出现工具栏，提升易用性。相信在你熟悉了这套快捷键之后，可能再也不需要输入工具栏了。<br>
-<img src="https://i.loli.net/2019/09/21/pVWg3N6LOvyzaIi.png" alt="Gridea Editor"></p>
+<img src="https://i.loli.net/2019/09/21/pVWg3N6LOvyzaIi.png" alt="Gridea Editor" loading="lazy"></p>
 <blockquote>
 <p>同时，增加了 Markdown 渲染 Emoji 和 implict-figures 的支持，为主题创作者提供更多可能。</p>
 </blockquote>
 <h3 id="emoji-输入面板与文章信息统计">Emoji 输入面板与文章信息统计</h3>
 <p>是的，这个版本我们新增了这两个实用的小功能。相信丰富的 Emoji 能够让你的字里行间更生动活泼，更富表现力。<br>
-<img src="https://i.loli.net/2019/09/21/oC63QjmNhVDcdE5.png" alt="Emoji and info"></p>
+<img src="https://i.loli.net/2019/09/21/oC63QjmNhVDcdE5.png" alt="Emoji and info" loading="lazy"></p>
 <h3 id="未保存提示保障内容">未保存提示，保障内容</h3>
 <p>我们增加了返回时未保存提示，无论是文章的内容还是配置发生变动且未保存时，都会提示你，保存与否，你来决定。同时，文章内容的快速保存也可以使用快捷键 <code>Command</code> + <code>S</code> 操作。</p>
-<figure data-type="image" tabindex="1"><img src="https://i.loli.net/2019/09/21/TQEq7bUtIj1o5Gn.png" alt="Unsave"></figure>
+<figure data-type="image" tabindex="1"><img src="https://i.loli.net/2019/09/21/TQEq7bUtIj1o5Gn.png" alt="Unsave" loading="lazy"></figure>
 <h3 id="修复-bug更改预览模式">修复 BUG，更改预览模式</h3>
 <p>修复了创建文章多次保存时报 URL 冲突问题。修改预览时本地文件访问为静态 Server，为后面更好的预览体验做准备，是的，敬请期待吧。</p>
 <h3 id="增加-ga-统计为了更好的优化产品">增加 GA 统计，为了更好的优化产品</h3>
@@ -54,7 +54,7 @@
 <blockquote>
 <p>是的，定价依然是一顿早餐的价格，手工费，制作不易，且买且珍惜。</p>
 </blockquote>
-<figure data-type="image" tabindex="2"><img src="https://i.loli.net/2019/09/21/NOGhLpXBRT7bUHA.jpg" alt="Gridea Theme Tech"></figure>
+<figure data-type="image" tabindex="2"><img src="https://i.loli.net/2019/09/21/NOGhLpXBRT7bUHA.jpg" alt="Gridea Theme Tech" loading="lazy"></figure>
 <p>尽情享受写作的乐趣吧，相信，落笔处，尽是繁华。</p>
 <p>😘 Enjoy~</p>
 ]]></content>
@@ -92,9 +92,9 @@
 <p>这是去往<a href="https://gridea.dev">Gridea 主页链接</a>，这是一个行内代码<code>console.log('Hello World')</code>，这是<strong>强调文本</strong>，这是<em>斜体文本</em>，这是<s>删除文本</s>，下面是分割线</p>
 <hr>
 <p>下面是图片：</p>
-<figure data-type="image" tabindex="1"><img src="https://images.unsplash.com/photo-1563362375-684f5a29d125?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60" alt="图片描述"></figure>
+<figure data-type="image" tabindex="1"><img src="https://images.unsplash.com/photo-1563362375-684f5a29d125?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60" alt="图片描述" loading="lazy"></figure>
 <p>另一张设置宽高（200x120）的图片：</p>
-<figure data-type="image" tabindex="2"><img src="https://images.unsplash.com/photo-1563373262-1e074f7c30a0?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1300&amp;q=80" alt="设置固定宽高的图片，200 x 120" width="200" height="120"></figure>
+<figure data-type="image" tabindex="2"><img src="https://images.unsplash.com/photo-1563373262-1e074f7c30a0?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1300&amp;q=80" alt="设置固定宽高的图片，200 x 120" width="200" height="120" loading="lazy"></figure>
 <h2 id="块代码">块代码</h2>
 <pre><code class="language-javascript">function sayHello() {
 	console.log(&quot;Hello Wolrd&quot;);
@@ -145,10 +145,10 @@
 </table>
 <h2 id="任务列表">任务列表</h2>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-7189169"><label class="task-list-item-label" for="task-item-7189169"> 第一项任务</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8451652"><label class="task-list-item-label" for="task-item-8451652"> 第二项任务</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-5274023"><label class="task-list-item-label" for="task-item-5274023"> 第三项任务</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-7897159"><label class="task-list-item-label" for="task-item-7897159"> 第四项任务</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-7847702"><label class="task-list-item-label" for="task-item-7847702"> 第一项任务</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-1432320"><label class="task-list-item-label" for="task-item-1432320"> 第二项任务</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4545862"><label class="task-list-item-label" for="task-item-4545862"> 第三项任务</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-4465674"><label class="task-list-item-label" for="task-item-4465674"> 第四项任务</label></li>
 </ul>
 <h2 id="加强功能">加强功能</h2>
 <ul>
@@ -399,13 +399,13 @@ Mac 下的一个终端工具，功能非常强大，支持主题系统</p>
 <strong>注意：同步会覆盖掉仓库的文件，若仓库内有需要备份的，请手动备份</strong></p>
 <p>首先你需要一个 <a href="http://github.com">Github</a> 账号，如果没有的话，快去注册一个吧！</p>
 <p>登录 Github，然后进入到 <a href="https://github.com/settings/tokens/new">这里</a> 创建一个 <strong>Token</strong>，勾选上 <strong>repo</strong> 的相关权限即可，下面是对应的截图示例：<br>
-<img src="https://fehey.com/post-images/1550403256560.png" alt="Github Personal access tokesn"></p>
+<img src="https://fehey.com/post-images/1550403256560.png" alt="Github Personal access tokesn" loading="lazy"></p>
 <p>生成之后你可以复制 <strong>Token</strong> 到你可以再次找到的某个地方，因为一旦你关了这个网页就再也不会看到它了，稍后会在软件中使用</p>
-<figure data-type="image" tabindex="1"><img src="https://fehey.com/post-images/1550403732691.png" alt="Token示例"></figure>
+<figure data-type="image" tabindex="1"><img src="https://fehey.com/post-images/1550403732691.png" alt="Token示例" loading="lazy"></figure>
 <p>接下来你需要创建一个仓库，用来存放博客构建后的静态文件。我们建议你创建仓库名为 <strong>用户名.github.io</strong> 的仓库，因为 Github 会默认将此仓库设置成 <a href="https://pages.github.com/">Github Pages</a> 可访问类型，若不是用此命名的仓库，则不能默认使用 Github Pages，所以请认真确认。例如我的 Github 用户名为 <strong>EryouHao</strong>，则仓库名为 <strong>EryouHao.github.io</strong>。使用这种方式还有一个好处是，在没有自定义域名的情况下，使你的博客域名更短。当然如果想使用其他仓库来存放博客静态文件的话，也不是不可以，只不过，存放之后，若没有设置自定义域名，则访问地址将变成 <code>https://用户名.github.io/blog</code> （blog 为仓库名）这种二级目录的形式。</p>
 <h2 id="开始使用">开始使用</h2>
 <p>打开 <strong>Hve Notes</strong> 进入到<strong>配置</strong>页面，然后按照下面示例，输入相关配置并保存</p>
-<figure data-type="image" tabindex="2"><img src="https://fehey.com/post-images/1550405739647.png" alt="配置示例"></figure>
+<figure data-type="image" tabindex="2"><img src="https://fehey.com/post-images/1550405739647.png" alt="配置示例" loading="lazy"></figure>
 <p>在不开启文章评论的情况下，到此为止，你已经可以点击预览，点击同步进行博客部署啦，快去试试看吧！（当然在不同步的情况下）</p>
 <h2 id="开启文章评论">开启文章评论</h2>
 <p><strong>Hve Notes</strong> 目前提供了 <a href="https://github.com/gitalk/gitalk/blob/master/readme-cn.md">Gitalk</a> 和 <a href="">Disqus</a> 两种评论系统支持。</p>
@@ -414,11 +414,11 @@ Mac 下的一个终端工具，功能非常强大，支持主题系统</p>
 </blockquote>
 <p>你可以按照 <a href="https://github.com/gitalk/gitalk/blob/master/readme-cn.md">Gitalk 的文档</a> 进行相关字段配置，或者按照下面的步骤操作。</p>
 <p>首先你需要有一个 <strong>Github OAuth Application</strong>，点击<a href="https://github.com/settings/applications/new">这里</a>创建，字段填写可以参照下图</p>
-<figure data-type="image" tabindex="3"><img src="https://fehey.com/post-images/1550455713413.png" alt="Github OAuth"></figure>
+<figure data-type="image" tabindex="3"><img src="https://fehey.com/post-images/1550455713413.png" alt="Github OAuth" loading="lazy"></figure>
 <p>创建完成后可将 <strong>Client ID</strong> 和 <strong>Client Secret</strong>复制一下，保存到本地</p>
-<figure data-type="image" tabindex="4"><img src="https://fehey.com/post-images/1550455918492.png" alt=""></figure>
+<figure data-type="image" tabindex="4"><img src="https://fehey.com/post-images/1550455918492.png" alt="" loading="lazy"></figure>
 <p>接下来就可以去应用里面填写对应的信息，并开启评论</p>
-<figure data-type="image" tabindex="5"><img src="https://fehey.com/post-images/1550456148809.png" alt=""></figure>
+<figure data-type="image" tabindex="5"><img src="https://fehey.com/post-images/1550456148809.png" alt="" loading="lazy"></figure>
 <p>这样评论插件就设置好了，在预览时会在文章页显示评论模块，但不会显示具体的评论信息，因为这个是本地预览，而 <strong>Github OAuth</strong> 设置的域名为线上的域名。待博客同步到线上时就可以显示啦！</p>
 <p>快快开始你的创作吧！</p>
 ]]></content>
@@ -479,7 +479,7 @@ Mac 下的一个终端工具，功能非常强大，支持主题系统</p>
 <h3 id="9-插入图像">9.  插入图像</h3>
 <p>使用 ![描述](图片链接地址) 插入图像。</p>
 <p>示例：</p>
-<figure data-type="image" tabindex="1"><img src="https://avatars3.githubusercontent.com/u/46315806?s=200&amp;v=4" alt="我的头像"></figure>
+<figure data-type="image" tabindex="1"><img src="https://avatars3.githubusercontent.com/u/46315806?s=200&amp;v=4" alt="我的头像" loading="lazy"></figure>
 <h2 id="测试代码">测试代码</h2>
 <pre><code class="language-javascript">function hello() {
 	var username = 'xiaoming';
