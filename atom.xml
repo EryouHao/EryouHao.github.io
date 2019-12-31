@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://fehey.com</id>
     <title>海岛心hey</title>
-    <updated>2019-12-19T02:30:41.502Z</updated>
+    <updated>2019-12-31T05:45:37.298Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://fehey.com"/>
     <link rel="self" href="https://fehey.com/atom.xml"/>
@@ -11,7 +11,93 @@
     <icon>https://fehey.com/favicon.ico</icon>
     <rights>All rights reserved 2019, 海岛心hey</rights>
     <entry>
-        <title type="html"><![CDATA[Gridea v0.8.3 全新体验，助你妙笔生花]]></title>
+        <title type="html"><![CDATA[Gridea v0.9.0｜可以，写博客的那个劲儿又回来了]]></title>
+        <id>https://fehey.com/post/gridea-0.9.0</id>
+        <link href="https://fehey.com/post/gridea-0.9.0">
+        </link>
+        <updated>2019-12-31T09:56:43.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>可以，写博客的那个劲儿又回来了～<br>
+——来自一位使用 Gridea 的朋友</p>
+</blockquote>
+<figure data-type="image" tabindex="1"><img src="https://cdn.jsdelivr.net/gh/eryouhao/files@master/uPic/9dYsJ8.png" alt="Gridea v0.9.0" loading="lazy"></figure>
+<p>这里是 <a href="https://gridea.dev">Gridea</a> v0.9.0 版本的发布日志，如果你还没听说过它，不妨点击下面链接一探究竟吧！</p>
+<p><a href="https://gridea.dev">Gridea - 一个静态博客写作客户端</a></p>
+<p>本次更新中，我们增加了 <strong>SFTP 部署</strong>（许愿成功🎋），增加了一系列新功能与强化了自定义主题自定义能力，拓展了更多的可能性。</p>
+<p>如果你想立即尝鲜，可以直接去下载了 <a href="https://gridea.dev">Gridea 下载</a>。但是，如果你想知道更新了什么，继续阅读吧...</p>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>可以，写博客的那个劲儿又回来了～<br>
+——来自一位使用 Gridea 的朋友</p>
+</blockquote>
+<figure data-type="image" tabindex="1"><img src="https://cdn.jsdelivr.net/gh/eryouhao/files@master/uPic/9dYsJ8.png" alt="Gridea v0.9.0" loading="lazy"></figure>
+<p>这里是 <a href="https://gridea.dev">Gridea</a> v0.9.0 版本的发布日志，如果你还没听说过它，不妨点击下面链接一探究竟吧！</p>
+<p><a href="https://gridea.dev">Gridea - 一个静态博客写作客户端</a></p>
+<p>本次更新中，我们增加了 <strong>SFTP 部署</strong>（许愿成功🎋），增加了一系列新功能与强化了自定义主题自定义能力，拓展了更多的可能性。</p>
+<p>如果你想立即尝鲜，可以直接去下载了 <a href="https://gridea.dev">Gridea 下载</a>。但是，如果你想知道更新了什么，继续阅读吧...</p>
+<!-- more -->
+<hr>
+<p><strong>⚠️注意：若你之前有手动放置文件或文件夹到构建后文件夹（output 文件夹）本次升级有非兼容升级，请看下升级说明，若没有，可直接升级啦</strong></p>
+<p>升级说明：<br>
+需手动复制到博客源文件夹的 static 文件夹（若无此文件夹可新建一个，新版使用时会自动生成，有静态文件需求的可放在此文件夹，构建时会直接复制到 output 文件夹）</p>
+<h2 id="懒人目录">懒人目录</h2>
+<ul>
+<li>新增 <strong>SFTP 部署</strong></li>
+<li>新增<strong>文章置顶</strong>功能</li>
+<li>自定义配置支持<strong>图片</strong>类型和<strong>数组</strong>类型，增加<strong>文章数据卡片</strong>类型</li>
+<li>自定义<strong>归档路径前缀</strong></li>
+<li>文章页与标签页支持<strong>精简</strong> URL 与默认 URL</li>
+<li>新增<strong>菜单拖动</strong>排序</li>
+<li>支持<strong>自定义模板渲染</strong>，具体可见<a href="https://gridea.dev/docs">Gridea 文档</a></li>
+<li>新增<strong>默认 404 页面</strong></li>
+<li>修复更改文章 URL 大小写会删除文章的 bug</li>
+<li><strong>修复编辑器超出一屏后回车不会滚动的 bug</strong></li>
+<li>修复 Linux（Ubuntu）初始化配置时，检测远程链接失败的 BUG</li>
+<li>文章内<strong>图片支持懒加载</strong>（基于 chrome 的lazy loading）</li>
+<li>升级 Electron 至 7.x</li>
+<li>标签页支持渲染列表隐藏文章（<strong>break change⚠️</strong>）</li>
+<li>增加预览唤出快捷键（Ctrl + P）</li>
+<li>优化<strong>编辑器文字主题颜色</strong>与 <strong>Windows 下字体显示</strong></li>
+<li>增加渲染过程错误日志弹窗</li>
+<li>增加应用内通知系统</li>
+</ul>
+<hr>
+<p>更新的内容太多，随便选几个说一下吧。</p>
+<h2 id="sftp-部署许愿成功">🎋SFTP 部署，许愿成功</h2>
+<p>针对有自己服务器的小伙伴，可以使用自己的服务器来部署站点啦！提供一个配置的示例截图，以做参照。<br>
+<img src="https://cdn.jsdelivr.net/gh/eryouhao/files@master/uPic/XtiYXi.png" alt="Gridea SFTP" loading="lazy"></p>
+<h2 id="文章置顶手动推荐">🔝文章置顶，手动推荐</h2>
+<p>增加了文章置顶功能，置顶之后，文章会在文章列表页优先展示，同时可以配合文章的 <code>isTop</code> 字段进行主题样式的丰富，例如加一个 【TOP】 的小标记。<br>
+<img src="https://cdn.jsdelivr.net/gh/eryouhao/files@master/uPic/top.jpg" alt="Gridea top" loading="lazy"></p>
+<h2 id="支持自定义模版渲染与支持图片类型和数组类型增加文章数据卡片类型">🔥支持自定义模版渲染与支持图片类型和数组类型，增加文章数据卡片类型</h2>
+<p>这几个更新有什么使用场景呢？举几个例子：</p>
+<ul>
+<li>若主题有图片类型资源，如侧边栏背景图，顶部背景图等，之前若是想替换，需要手动去找到对应资源文件夹，然后手工替换，现在可以主题直接提供替换的自定义配置了<br>
+<img src="https://cdn.jsdelivr.net/gh/eryouhao/files@master/uPic/IZQpcT.jpg" alt="Theme upload" loading="lazy"></li>
+<li>创建单独的友链页面。创建一个自定义模版 <code>friends.ejs</code>，然后配合数组类型的自定义配置即可。下面是一个自定义文档页面的示例。<br>
+<img src="https://cdn.jsdelivr.net/gh/eryouhao/files@master/uPic/wp6FBm.png" alt="Theme array" loading="lazy"><br>
+细心的你一定发现了，竟然有个文章数据卡片。对的，你可以使用卡片来提供文章数据 URL 的选择。</li>
+</ul>
+<blockquote>
+<p>更多关于主题自定义内容请查看文档：<a href="https://gridea.dev/docs/">https://gridea.dev/docs/</a></p>
+</blockquote>
+<h2 id="新增默认-404-页面">新增默认 404 页面</h2>
+<p>当使用新版本 Gridea 进行部署后，会自动生成一个 <code>404.html</code> 的页面，若想自定义，可使用自定义模版 <code>404.ejs</code> 或直接修改 <code>static/404.html</code> 即可。</p>
+<p>另外还更新了很多应用的 UI 细节，具体都有哪些，<a href="https://gridea.dev/">下载</a>一下便知道啦～</p>
+<h2 id="写在后面">写在后面</h2>
+<p>更新了这么多，为了能够让你找回当年写博客的那个劲儿，又或者在这个快、短社交时代，能够有一个独立的地方，一个属于自己的地方来记录下一些内容。能够让自己的声音不会随着各种信息流而流逝。</p>
+<p>Made with ❤️</p>
+<hr>
+<p><a href="https://gridea.dev/">Gridea 官网</a><br>
+<a href="https://github.com/getgridea/gridea">GitHub</a><br>
+<a href="https://t.me/joinchat/IDY0ahRqb8NPodv95BNpBg">Telegram 群组</a><br>
+<a href="https://t.me/joinchat/AAAAAEj82_lma0Y1wmyqUQ">Telegram 频道</a><br>
+<a href="https://twitter.com/EryouHao">作者推特</a><br>
+Gridea 的朋友们 QQ 2 群：923131213</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Gridea v0.8.3｜全新体验，助你妙笔生花]]></title>
         <id>https://fehey.com/post/gridea-v083-quan-xin-ti-yan-zhu-ni-miao-bi-sheng-hua</id>
         <link href="https://fehey.com/post/gridea-v083-quan-xin-ti-yan-zhu-ni-miao-bi-sheng-hua">
         </link>
@@ -89,7 +175,7 @@
 <li>第三项内容，带 <code>code</code>文本</li>
 </ul>
 <h2 id="其他内容">其他内容</h2>
-<p>这是去往<a href="https://gridea.dev">Gridea 主页链接</a>，这是一个行内代码<code>console.log('Hello World')</code>，这是<strong>强调文本</strong>，这是<em>斜体文本</em>，这是<s>删除文本</s>，下面是分割线</p>
+<p>这是去往<a href="https://gridea.dev">Gridea 主页链接</a>，这是一个行内代码<code>console.log('Hello World')</code>，这是<strong>强调文本</strong>，__强调文本__这是<em>斜体文本</em>，这是<s>删除文本</s>，下面是分割线</p>
 <hr>
 <p>下面是图片：</p>
 <figure data-type="image" tabindex="1"><img src="https://images.unsplash.com/photo-1563362375-684f5a29d125?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60" alt="图片描述" loading="lazy"></figure>
@@ -145,80 +231,12 @@
 </table>
 <h2 id="任务列表">任务列表</h2>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-5715367"><label class="task-list-item-label" for="task-item-5715367"> 第一项任务</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-32500"><label class="task-list-item-label" for="task-item-32500"> 第二项任务</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6574189"><label class="task-list-item-label" for="task-item-6574189"> 第三项任务</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-3386774"><label class="task-list-item-label" for="task-item-3386774"> 第四项任务</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-8203336"><label class="task-list-item-label" for="task-item-8203336"> 第一项任务</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-852844"><label class="task-list-item-label" for="task-item-852844"> 第二项任务</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4254684"><label class="task-list-item-label" for="task-item-4254684"> 第三项任务</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-4308209"><label class="task-list-item-label" for="task-item-4308209"> 第四项任务</label></li>
 </ul>
 <h2 id="加强功能">加强功能</h2>
-<ul>
-<li>KaTeX 行内公式<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msqrt><mrow><mn>3</mn><mi>x</mi><mo>−</mo><mn>1</mn></mrow></msqrt><mo>+</mo><mo>(</mo><mn>1</mn><mo>+</mo><mi>x</mi><msup><mo>)</mo><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\sqrt{3x-1}+(1+x)^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.04em;vertical-align:-0.17444499999999996em;"></span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8655550000000001em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord" style="padding-left:0.833em;"><span class="mord">3</span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">1</span></span></span><span style="top:-2.825555em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em;"><svg width='400em' height='1.08em' viewBox='0 0 400000 1080' preserveAspectRatio='xMinYMin slice'><path d='M95,702c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,
--10,-9.5,-14c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54c44.2,-33.3,65.8,
--50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10s173,378,173,378c0.7,0,
-35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429c69,-144,104.5,-217.7,106.5,
--221c5.3,-9.3,12,-14,20,-14H400000v40H845.2724s-225.272,467,-225.272,467
-s-235,486,-235,486c-2.7,4.7,-9,7,-19,7c-6,0,-10,-1,-12,-3s-194,-422,-194,-422
-s-65,47,-65,47z M834 80H400000v40H845z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.17444499999999996em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord mathdefault">x</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span></li>
-<li>KaTeX 块级公式</li>
-</ul>
-<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mtable><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mi mathvariant="normal">∇</mi><mo>×</mo><mover accent="true"><mi mathvariant="bold">B</mi><mo>⃗</mo></mover><mo>−</mo><mtext> </mtext><mfrac><mn>1</mn><mi>c</mi></mfrac><mtext> </mtext><mfrac><mrow><mi mathvariant="normal">∂</mi><mover accent="true"><mi mathvariant="bold">E</mi><mo>⃗</mo></mover></mrow><mrow><mi mathvariant="normal">∂</mi><mi>t</mi></mrow></mfrac></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mo>=</mo><mfrac><mrow><mn>4</mn><mi>π</mi></mrow><mi>c</mi></mfrac><mover accent="true"><mi mathvariant="bold">j</mi><mo>⃗</mo></mover><mi mathvariant="normal">∇</mi><mo>⋅</mo><mover accent="true"><mi mathvariant="bold">E</mi><mo>⃗</mo></mover></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mo>=</mo><mn>4</mn><mi>π</mi><mi>ρ</mi></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mi mathvariant="normal">∇</mi><mo>×</mo><mover accent="true"><mi mathvariant="bold">E</mi><mo>⃗</mo></mover><mtext> </mtext><mo>+</mo><mtext> </mtext><mfrac><mn>1</mn><mi>c</mi></mfrac><mtext> </mtext><mfrac><mrow><mi mathvariant="normal">∂</mi><mover accent="true"><mi mathvariant="bold">B</mi><mo>⃗</mo></mover></mrow><mrow><mi mathvariant="normal">∂</mi><mi>t</mi></mrow></mfrac></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mo>=</mo><mover accent="true"><mn mathvariant="bold">0</mn><mo>⃗</mo></mover></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mi mathvariant="normal">∇</mi><mo>⋅</mo><mover accent="true"><mi mathvariant="bold">B</mi><mo>⃗</mo></mover></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mo>=</mo><mn>0</mn></mrow></mstyle></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{array}{c}
-
-\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &amp;
-= \frac{4\pi}{c}\vec{\mathbf{j}}    \nabla \cdot \vec{\mathbf{E}} &amp; = 4 \pi \rho \\
-
-\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} &amp; = \vec{\mathbf{0}} \\
-
-\nabla \cdot \vec{\mathbf{B}} &amp; = 0
-
-\end{array}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:4.1938640000000005em;vertical-align:-1.846932em;"></span><span class="mord"><span class="mtable"><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.3469320000000002em;"><span style="top:-4.346932000000001em;"><span class="pstrut" style="height:3.072377em;"></span><span class="mord"><span class="mord">∇</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9691099999999999em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathbf">B</span></span></span></span><span style="top:-3.25511em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.15216em;"><span class="overlay" style="height:0.714em;width:0.471em;"><svg width='0.471em' height='0.714em' style='width:0.471em' viewBox='0 0 471 714' preserveAspectRatio='xMinYMin'><path d='M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5
-3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11
-10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63
--1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1
--7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59
-H213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359
-c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.845108em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">c</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.072377em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight" style="margin-right:0.05556em;">∂</span><span class="mord mathdefault mtight">t</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight" style="margin-right:0.05556em;">∂</span><span class="mord accent mtight"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9691099999999999em;"><span style="top:-2.714em;"><span class="pstrut" style="height:2.714em;"></span><span class="mord mtight"><span class="mord mtight"><span class="mord mathbf mtight">E</span></span></span></span><span style="top:-2.96911em;"><span class="pstrut" style="height:2.714em;"></span><span class="accent-body" style="left:-0.15216em;"><span class="overlay mtight" style="height:0.714em;width:0.471em;"><svg width='0.471em' height='0.714em' style='width:0.471em' viewBox='0 0 471 714' preserveAspectRatio='xMinYMin'><path d='M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5
-3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11
-10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63
--1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1
--7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59
-H213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359
-c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span><span style="top:-2.9145549999999996em;"><span class="pstrut" style="height:3.072377em;"></span><span class="mord"><span class="mord">∇</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9691099999999999em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathbf">E</span></span></span></span><span style="top:-3.25511em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.15216em;"><span class="overlay" style="height:0.714em;width:0.471em;"><svg width='0.471em' height='0.714em' style='width:0.471em' viewBox='0 0 471 714' preserveAspectRatio='xMinYMin'><path d='M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5
-3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11
-10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63
--1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1
--7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59
-H213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359
-c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.845108em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">c</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.072377em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight" style="margin-right:0.05556em;">∂</span><span class="mord mathdefault mtight">t</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight" style="margin-right:0.05556em;">∂</span><span class="mord accent mtight"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9691099999999999em;"><span style="top:-2.714em;"><span class="pstrut" style="height:2.714em;"></span><span class="mord mtight"><span class="mord mtight"><span class="mord mathbf mtight">B</span></span></span></span><span style="top:-2.96911em;"><span class="pstrut" style="height:2.714em;"></span><span class="accent-body" style="left:-0.15216em;"><span class="overlay mtight" style="height:0.714em;width:0.471em;"><svg width='0.471em' height='0.714em' style='width:0.471em' viewBox='0 0 471 714' preserveAspectRatio='xMinYMin'><path d='M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5
-3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11
-10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63
--1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1
--7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59
-H213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359
-c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span><span style="top:-1.585445em;"><span class="pstrut" style="height:3.072377em;"></span><span class="mord"><span class="mord">∇</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9691099999999999em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathbf">B</span></span></span></span><span style="top:-3.25511em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.15216em;"><span class="overlay" style="height:0.714em;width:0.471em;"><svg width='0.471em' height='0.714em' style='width:0.471em' viewBox='0 0 471 714' preserveAspectRatio='xMinYMin'><path d='M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5
-3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11
-10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63
--1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1
--7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59
-H213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359
-c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.846932em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.3469320000000002em;"><span style="top:-4.346932000000001em;"><span class="pstrut" style="height:3.072377em;"></span><span class="mord"><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.845108em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">c</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">4</span><span class="mord mathdefault mtight" style="margin-right:0.03588em;">π</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9774399999999999em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathbf">j</span></span></span></span><span style="top:-3.26344em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.2355em;"><span class="overlay" style="height:0.714em;width:0.471em;"><svg width='0.471em' height='0.714em' style='width:0.471em' viewBox='0 0 471 714' preserveAspectRatio='xMinYMin'><path d='M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5
-3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11
-10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63
--1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1
--7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59
-H213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359
-c-16-25.333-24-45-24-59z'/></svg></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.19444em;"><span></span></span></span></span></span><span class="mord">∇</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9691099999999999em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathbf">E</span></span></span></span><span style="top:-3.25511em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.15216em;"><span class="overlay" style="height:0.714em;width:0.471em;"><svg width='0.471em' height='0.714em' style='width:0.471em' viewBox='0 0 471 714' preserveAspectRatio='xMinYMin'><path d='M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5
-3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11
-10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63
--1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1
--7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59
-H213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359
-c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></span></span></span><span style="top:-2.9145549999999996em;"><span class="pstrut" style="height:3.072377em;"></span><span class="mord"><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.92744em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathbf">0</span></span></span></span><span style="top:-3.21344em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.2355em;"><span class="overlay" style="height:0.714em;width:0.471em;"><svg width='0.471em' height='0.714em' style='width:0.471em' viewBox='0 0 471 714' preserveAspectRatio='xMinYMin'><path d='M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5
-3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11
-10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63
--1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1
--7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59
-H213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359
-c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></span></span></span><span style="top:-1.585445em;"><span class="pstrut" style="height:3.072377em;"></span><span class="mord"><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mord">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.846932em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:2.3469320000000002em;"><span style="top:-4.346932000000001em;"><span class="pstrut" style="height:3.072377em;"></span><span class="mord"><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mord">4</span><span class="mord mathdefault" style="margin-right:0.03588em;">π</span><span class="mord mathdefault">ρ</span></span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span></span></span></span></span></span></span></p>
 <ul>
 <li>高亮文本示例<mark>高亮文本</mark></li>
 <li>29<sup>th</sup></li>
@@ -616,28 +634,6 @@ hello()
 <p>主页网站 用了 <a href="https://vuepress.vuejs.org/zh/">Vuepress</a> 快速搭建，搭配了 <a href="http://fehey.com/live/">Live UI</a> 一起食用</p>
 <p>你可以再这里找到文档，快速上手 Hve Notes</p>
 <p>未来，即将丰富的主题、备份同步等功能都将更新在文档中</p>
-<p>😘 Enjoy~</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hello Hve Notes]]></title>
-        <id>https://fehey.com/post/hello-hve</id>
-        <link href="https://fehey.com/post/hello-hve">
-        </link>
-        <updated>2018-12-11T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>👏 欢迎使用 <strong>Hve</strong> ！</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>👏 欢迎使用 <strong>Hve</strong> ！</p>
-<!-- more -->
-<p>🌈 <strong>Hve</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-<h4 id="在这里">在这里👇</h4>
-<p>📝  你可以使用最酷的 <code>Markdown</code> 语法，进行快速创作<br>
-🌉  你可以在文章的任意位置插入图片和文章封面图<br>
-🏷️  你可以对文章进行标签分组<br>
-📋 你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>🌱 当然 <strong>Hve</strong> 还很年轻，有很多不足，但请相信，它会不停向前🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
 <p>😘 Enjoy~</p>
 ]]></content>
     </entry>
