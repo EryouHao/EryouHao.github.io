@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://fehey.com</id>
     <title>海岛心hey</title>
-    <updated>2020-01-17T05:13:26.936Z</updated>
+    <updated>2020-01-20T10:55:26.892Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://fehey.com"/>
     <link rel="self" href="https://fehey.com/atom.xml"/>
@@ -10,6 +10,52 @@
     <logo>https://fehey.com/images/avatar.png</logo>
     <icon>https://fehey.com/favicon.ico</icon>
     <rights>All rights reserved 2020, 海岛心hey</rights>
+    <entry>
+        <title type="html"><![CDATA[PWA 在 2020]]></title>
+        <id>https://fehey.com/post/pwa-2020</id>
+        <link href="https://fehey.com/post/pwa-2020">
+        </link>
+        <updated>2020-01-20T08:11:31.000Z</updated>
+        <content type="html"><![CDATA[<p>从 <a href="https://www.youtube.com/watch?v=ZlE7dzoD6GA&amp;feature=emb_title">Steve Jobs 最初提出的 Web 应用程序的想法 “看起来和使用起来完全想本地应用程序”</a>，已经过去 12 年了。并且从 <a href="https://medium.com/@slightlylate/progressive-apps-escaping-tabs-without-losing-our-soul-3b93a8561955">“PWA” 术语</a>被创造出来已经 4 年多了。在 2020 年刚开始的时间点，渐进式 Web 应用程序看起来怎么样了？在 2019 年添加了你可能不知道的内容到这个生态系统？让我们一起来看看吧！</p>
+<h2 id="定义">定义</h2>
+<p>PWA 的定义从来都不是一成不变的，每个开发者都有所不同。就我而言，我在 2020 年将 PWA 定义为一种设计模式，使其具有不同 API 的网络技术开发应用程序体验，例如用于资源管理的 Service Worker，用于浏览器安装的 Web App Manifest，用于 Play 商店发行的 Trusted Web Activities，等等。<br>
+<img src="https://cdn.jsdelivr.net/gh/eryouhao/files@master/uPic/W2KGtt.jpg" alt="" loading="lazy"></p>
+<blockquote>
+<p>我的 <a href="https://firt.mobi/talks">JSConf Europe 2019 演讲</a>中的现代 PWA 速查表</p>
+</blockquote>
+<h2 id="使用">🎖使用</h2>
+<p>获得有关有多少公司正在开发 PWA 或用户如何对 PWA 进行安装的信息是不太容易的，我对 2019 年新增使用 PWA 的公司或更多使用它的公司没有特别的感觉。有一些利基市场<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>，例如人们寻求删除本季应用程序的隐私，但是这并不是一个大市场。</p>
+<p>我们看到在 2019 年，全球访问量最大的网站之一且提供 PWA：YouPorn，但是我们没有使用情况信息。你可以在此处查看有关 <a href="https://venturebeat.com/2019/02/19/youporn-goes-progressive-with-new-mobile-web-apps-for-android-and-ios/">YP PWA</a> 的信息（连接中没有色情内容，请放心打开）</p>
+<figure data-type="image" tabindex="1"><img src="https://cdn.jsdelivr.net/gh/eryouhao/files@master/uPic/sZLHWo.jpg" alt="" loading="lazy"></figure>
+<blockquote>
+<p>世界上访问量最大的网站之一，现在提供了 PWA</p>
+</blockquote>
+<p>可以在桌面上安装 PWA 仍然是新功能（对于开发人员，网站所有者和用户而言）。我还没有看到那么多针对桌面优化的 PWA，但是从 2020 年开始，随着微软推出新的 Edge，我们可能会看到这种增长。在 2019 年期间，星巴克和 Uber 花了一些时间谈论他们在桌面上运行 PWA，例如在<a href="https://eng.uber.com/web-booking-flow/">为 Uber 建立更无缝的预定流程</a>中。</p>
+<figure data-type="image" tabindex="2"><img src="https://cdn.jsdelivr.net/gh/eryouhao/files@master/uPic/Rk6kSq.png" alt="" loading="lazy"></figure>
+<blockquote>
+<p>Produck 是我发现于 2019 年初发布的首批针对桌面优化的 PWA 之一</p>
+</blockquote>
+<p>我们仅有的有关 PWA 的最新数据来自三星浏览器</p>
+<figure data-type="image" tabindex="3"><img src="https://cdn.jsdelivr.net/gh/eryouhao/files@master/uPic/EHEVVK.png" alt="" loading="lazy"></figure>
+<p>因此，在 2019 年 4 月至 12 月期间，我们有 80,000 个不同来源的内部至少有一个 PWA；虽然不能准确地计算出不同的 PWA，但这是一个很好的近似值。三星浏览器占用户的 6%，因此，这样来看代表整个网络的用户数量很多。</p>
+<p>你可能说，与 Play Store 中的 290 万个 APP 或 App Store 中的 390 万个 APP 相比，它并不是很理想。但是，我们不知道在过去 9 个月中有多少应用至少安装了一次，才能进行比较。另外我们拥有域名信息，而不是不同的 PWA，因此最好将 80,000 与商店中不同发行者的数量进行比较，其中 Play Store 中约为 800,000 个，App Store 中为 792,000 个。以这个数量来看，我们可以说与原生应用相比，可能有 10% 的 PWA。但是我们需要记得，商店中 <a href="https://techcrunch.com/2019/11/21/the-top-1-of-app-store-publishers-drive-80-of-new-downloads/">80% 的新下载内容仅来自 1% 的发行商</a>。现在，有了 Google Play Store，比较将变得更加困难。</p>
+<h2 id="平台">⊹ 平台</h2>
+<p>有 <strong>93% 的用户使用的浏览器</strong>中，已经全面支持了 PWA（包括 service workers）</p>
+<p><strong>有 86% 的用户可以使用浏览器安装 PWA</strong>（82% 浏览器安装，4% 仅来自商店，而不是其当前使用的浏览器）</p>
+<p>我们可以安装 PWA 在 <strong>Android, iOS, iPadOS, Windows 10 (and future 10X), Windows 7, Windows 8.x, Xbox One, macOS, Linux 64 bits, Chrome OS and kaiOS</strong>。</p>
+<p><strong>还没翻译完...</strong></p>
+<blockquote>
+<p>原文地址：https://medium.com/@firt/progressive-web-apps-in-2020-c15018c9931c</p>
+</blockquote>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>利基市场：指由已有市场绝对优势的企业所忽略的某些细分市场，并且在此市场尚未完善提供服务。利基：较小的一块区域（较狭窄的顾客群），有利润而又专门性的市场。 <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[聊聊我在用的编程字体]]></title>
         <id>https://fehey.com/post/coding-font</id>
@@ -260,10 +306,10 @@ Gridea 的朋友们 QQ 2 群：923131213</p>
 </table>
 <h2 id="任务列表">任务列表</h2>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-9906279"><label class="task-list-item-label" for="task-item-9906279"> 第一项任务</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3019656"><label class="task-list-item-label" for="task-item-3019656"> 第二项任务</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-1472138"><label class="task-list-item-label" for="task-item-1472138"> 第三项任务</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-3644066"><label class="task-list-item-label" for="task-item-3644066"> 第四项任务</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-4375248"><label class="task-list-item-label" for="task-item-4375248"> 第一项任务</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-665675"><label class="task-list-item-label" for="task-item-665675"> 第二项任务</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-2686149"><label class="task-list-item-label" for="task-item-2686149"> 第三项任务</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-1323620"><label class="task-list-item-label" for="task-item-1323620"> 第四项任务</label></li>
 </ul>
 <h2 id="加强功能">加强功能</h2>
 <ul>
@@ -616,36 +662,6 @@ hello()
 <p>目前，<strong>Hve Notes</strong> 已经更新到了 v0.7.0 版本，基本已经可以满足日常使用。当然还有很大的成长空间，例如文章和标签的 <code>slug</code> 格式定制和可编辑，个性化的页面增加与配置，赋予用户更强的扩展能力，更丰富的主题等等。</p>
 <p>在此，也欢迎感兴趣的朋友可以加入我们，提出建议或共同开发，也欢迎加入我们的 <a href="https://t.me/joinchat/IDY0ahRqb8NPodv95BNpBg">Telegram 群组</a></p>
 <p>如果您觉得此项目还不错，欢迎 <a href="https://github.com/hve-notes/hve-notes">Star</a> 支持作者，也欢迎体验之后提出您最宝贵的建议到 <a href="https://github.com/hve-notes/hve-notes/issues">Issue</a></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2018 年终总结]]></title>
-        <id>https://fehey.com/post/2018-nian-zhong-zong-jie</id>
-        <link href="https://fehey.com/post/2018-nian-zhong-zong-jie">
-        </link>
-        <updated>2019-01-13T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>📃又到了一年一度的<strong>年终总结</strong>，这是参加工作的第一个完整年。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>📃又到了一年一度的<strong>年终总结</strong>，这是参加工作的第一个完整年。</p>
-<!-- more -->
-<p>🥺这一年总体来说，<strong>滑水较多</strong>，产出较少，尤其是文字方面，可怜巴巴。读过不少文章，写过不少代码，需提升、待吸收的知识一把一把。</p>
-<p>🏫毕业快两年了，这一年多来遇到了许多贵人，使我成长了很多，对事情的看法和对世界的认知也清晰了很多。单是技术方面也不像从前那么迷茫与焦虑，学会了循序渐进，稳扎稳打，时间总会给准备的人最好的答案。</p>
-<p><em>说说这一年的经历吧，除了在公司做的工作以外，当然公司的工作也锻炼了很多其他的东西。</em></p>
-<p>⏱有一部分时间里，在思考使用 Vue.js 在工程化的最佳实践，如何组织前端项目代码，如何组织组件，如何抽象，如何管理依赖等等。</p>
-<p>⏱有一部分时间里，写了一个“烂尾”的 Vue.js 组件库：<a href="https://github.com/EryouHao/live">Live UI</a>，实现了<strong>14</strong>个常用的 UI 组件，虽然部分组件可能存在 bug，但是每实现一个新组件，总能学到一些新东西也是极好的。对 Vue.js 的理解又加深了一些，能够思考如何提供 API，哪些 API 是这个组件最需要提供给用户使用的过程也是不错的。</p>
-<p>⏱有一部分时间里，写了一个 VSCode 浅色主题：<a href="https://github.com/EryouHao/brackets-light-pro">Brackets Light Pro</a>，当然这个 Repo 始于 2017，截止此文写作时已经有了 <strong>12,456 installs</strong> 和 <strong>28,544 downloads</strong>，很早就把主力编辑器换成了 VSCode，自己又比较偏好浅色主题，尤其是我大部分编程时间都在白天，所以就写了这样一个主题，希望你也喜欢「比心」。</p>
-<p>⏱有一部分时间里，写了一个静态博客写作客户端：<a href="https://github.com/hve-notes/hve-notes">Hve Notes</a> 。是的，这篇文章的创作即使用此工具完成。这是一个可以使用 <code>Markdown</code> 来进行记录生活、心情、知识、笔记、创意的跨平台（Windows &amp; MacOS）工具。这大概是目前为止对我来说实现程度最高的一个开源项目吧，写代码、写文档、设计 Logo、打包发版、写主题，处理反馈等等，在一个编程新手的阶段来体验与尝试自己感兴趣的东西，也算是一种幸福吧。</p>
-<p>⏱有一部分时间里，学习和实践新技术。使用 <code>TypeScript</code> + <code>Egg</code>  + <code>Vue</code> + <code>TypeORM</code> + <code>PostgreSQL</code> + <code>Puppeteer</code> 写了一个小全栈项目。从新知识的学习到写点实际的东西，从开发到部署上线，整套开发体验还算不错，对于工程化的实践又多了一些。另外将自己的获取和学习主渠道更多地向国外倾斜，Twitter，Youtube，Medium，还有其他地一些网站、个博等等，蛮不错。</p>
-<p>⏱有一部分时间里，关注与练习设计。在推特上关注了 <strong>Steve Schoger</strong>，个人觉得他的一些 Tips 很简单也很实用。可能在这之后或之前，更加关心前端Web 设计。尤其是在一些 UI 设计并不重的场合，比如一些内部使用的中后台系统，去尝试和融入自己的一点点学习，甚至将 UI 设计师的设计稿进行二次设计然后进行“设计交流”（好像最后气氛变成了投票和战队，这不是我想要的），这些尝试个人感觉还是蛮好的，不断试错，不断提升。</p>
-<p><em>接下来说说，对于刚刚到来的 2019 的一些想法。</em></p>
-<p>🧐保持不断学习，保持好奇心。<br>
-✍️用心做好每一个个人项目，比如 <a href="https://github.com/hve-notes/hve-notes">Hve Notes</a><br>
-🗞努力提升英语水平，能够在第一次英文介绍自己的时候，说出 「Vue点儿JS」还是有点尴尬😅<br>
-💻更新自己的技术栈<br>
-👻结交新朋友<br>
-💏照顾好亲人和女票<br>
-🍲争取做好每一道菜，像写好每一行代码一样<br>
-🏃运动</p>
 ]]></content>
     </entry>
 </feed>
