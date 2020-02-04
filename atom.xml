@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://fehey.com</id>
     <title>海岛心hey</title>
-    <updated>2020-01-20T10:55:26.892Z</updated>
+    <updated>2020-02-04T00:44:32.378Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://fehey.com"/>
     <link rel="self" href="https://fehey.com/atom.xml"/>
@@ -43,6 +43,27 @@
 <p>有 <strong>93% 的用户使用的浏览器</strong>中，已经全面支持了 PWA（包括 service workers）</p>
 <p><strong>有 86% 的用户可以使用浏览器安装 PWA</strong>（82% 浏览器安装，4% 仅来自商店，而不是其当前使用的浏览器）</p>
 <p>我们可以安装 PWA 在 <strong>Android, iOS, iPadOS, Windows 10 (and future 10X), Windows 7, Windows 8.x, Xbox One, macOS, Linux 64 bits, Chrome OS and kaiOS</strong>。</p>
+<p>我们还可以说，不能以任何方式在智能手表，智能电视， Apple TV，Chromecast，Android TV，特斯拉汽车（是的，该汽车带有浏览器），另外还有游戏机，数字助理如 Facebook Portal，Nest Home 或 Amazon Echo 或 VR/AR 二级（例如 Oculus 耳机）等中安装 PWA。</p>
+<p>我看到了 PWA 在 VR/AR 头戴设备，数字助理和事件游戏上的潜力，但它们也将与公司内部政治作斗争。</p>
+<p>让我们看看可以在 2020 年 1 月 安装 PWA 的平台。</p>
+<h2 id="android">Android</h2>
+<p>我们可以使用以下方法在 Android 设备（手机和平板电脑）上安装 PWA：</p>
+<ul>
+<li><strong>浏览器安装</strong>：Chrome（WebAPK）/Firefox/Samsung Internet（仅 Samsung 设备上的 WebAPK）/UC/Edge/Opera/Brave/百度。其他浏览器也可能有此选项（主要是因为它们基于 Chromium），但是哪里错误太多了。<br>
+你<strong>无法</strong>安从 Facebook 移动浏览器，Firefox 预览，WebvView，自定义选项卡或 Chrome 浏览器为 DayDream（VR 模式）安装 PWA。另外，如果手机没有主屏幕应用程序（例如在 Kiosk 模式下），则根据浏览器会发生奇怪的事情。</li>
+</ul>
+<figure data-type="image" tabindex="4"><img src="https://cdn.jsdelivr.net/gh/EryouHao/files@master/uPic/rBCuLt.jpg" alt="" loading="lazy"></figure>
+<blockquote>
+<p>Android 仍然是唯一支持 Web App Manifest 规范中的三个“app”模式的平台</p>
+</blockquote>
+<ul>
+<li>
+<p><strong>企业发行版</strong>：使用<a href="https://developers.google.com/android/work/play/emm-api/managed-play-iframe">托管的 Google Play iframe</a>，这是 Play Store 团队的一项服务，使用 WebAPK 提供的服务，并且与 Chrome 团队没有关系（Google I 中的政策有说明）</p>
+</li>
+<li>
+<p><strong>App Stores</strong>：通过将 URL 提交到将使用 WebAPK Samsung Minting</p>
+</li>
+</ul>
 <p><strong>还没翻译完...</strong></p>
 <blockquote>
 <p>原文地址：https://medium.com/@firt/progressive-web-apps-in-2020-c15018c9931c</p>
@@ -306,10 +327,10 @@ Gridea 的朋友们 QQ 2 群：923131213</p>
 </table>
 <h2 id="任务列表">任务列表</h2>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-4375248"><label class="task-list-item-label" for="task-item-4375248"> 第一项任务</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-665675"><label class="task-list-item-label" for="task-item-665675"> 第二项任务</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-2686149"><label class="task-list-item-label" for="task-item-2686149"> 第三项任务</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-1323620"><label class="task-list-item-label" for="task-item-1323620"> 第四项任务</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-7452665"><label class="task-list-item-label" for="task-item-7452665"> 第一项任务</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-2401330"><label class="task-list-item-label" for="task-item-2401330"> 第二项任务</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8516941"><label class="task-list-item-label" for="task-item-8516941"> 第三项任务</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-137849"><label class="task-list-item-label" for="task-item-137849"> 第四项任务</label></li>
 </ul>
 <h2 id="加强功能">加强功能</h2>
 <ul>
