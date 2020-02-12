@@ -1,83 +1,109 @@
-<html>
-  <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Markdown 语法简单教程 | 海岛心hey</title>
-<meta name="description" content="Every 🐦 has an 🦅's dream." />
-<link rel="shortcut icon" href="https://fehey.com/favicon.ico?v=1580777032012">
-<link href="https://cdn.remixicon.com/releases/v1.3.1/remixicon.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markdown 语法简单教程 - 海岛心hey</title>
+<link rel="shortcut icon" href="https://fehey.com/favicon.ico">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
+<link rel="stylesheet" href="https://fehey.com/media/css/tailwind.css">
 <link rel="stylesheet" href="https://fehey.com/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="Markdown 语法简单教程 | 海岛心hey - Atom Feed" href="https://fehey.com/atom.xml">
-
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+<link rel="alternate" type="application/atom+xml" title="Markdown 语法简单教程 - 海岛心hey - Atom Feed" href="https://fehey.com/atom.xml">
 
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113307620-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113307620-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'UA-113307620-1');
+  </script>
+    
 
-  gtag('config', 'UA-113307620-1');
-</script>
+  <meta name="description" content="1. 斜体和粗体
+使用 * 和 ** 表示斜体和粗体。
+示例：
+这是 斜体，这是 粗体。
+2. 标题
+使用 #加空格表示一级标题，同理，##加空格表示二级标题
+一级标题
+二级标题
+三级标题
+四级标题
+五级标题
+六级标题
+3. 外链接
+使用 ..." />
+  <meta property="og:title" content="Markdown 语法简单教程 - 海岛心hey">
+  <meta property="og:description" content="1. 斜体和粗体
+使用 * 和 ** 表示斜体和粗体。
+示例：
+这是 斜体，这是 粗体。
+2. 标题
+使用 #加空格表示一级标题，同理，##加空格表示二级标题
+一级标题
+二级标题
+三级标题
+四级标题
+五级标题
+六级标题
+3. 外链接
+使用 ..." />
+  <meta property="og:type" content="articles">
+  <meta property="og:url" content="https://fehey.com/post/markdown-yu-fa-jian-dan-jiao-cheng/" />
+  <meta property="og:image" content="https://fehey.com/post-images/markdown-yu-fa-jian-dan-jiao-cheng.jpg">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:width" content="1200">
+  <meta name="twitter:title" content="Markdown 语法简单教程 - 海岛心hey">
+  <meta name="twitter:description" content="1. 斜体和粗体
+使用 * 和 ** 表示斜体和粗体。
+示例：
+这是 斜体，这是 粗体。
+2. 标题
+使用 #加空格表示一级标题，同理，##加空格表示二级标题
+一级标题
+二级标题
+三级标题
+四级标题
+五级标题
+六级标题
+3. 外链接
+使用 ...">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://fehey.com/post/markdown-yu-fa-jian-dan-jiao-cheng/">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css">
+ 
+  
+    <link rel="stylesheet" href="https://fehey.com/media/css/prism-atom-dark.css">
+  
 
-  </head>
-  <body>
-    <div class="site-nav has-cover">
-      <div class="head">
-  <div class="inner">
-    <a class="site-name" href="https://fehey.com">
-        <span>海岛心hey</span>
+  
+</head>
+
+<body>
+  <div class="antialiased flex flex-col min-h-screen" id="app">
+    <a href="https://fehey.com" class="fixed top-0 left-0 mt-4 bg-black text-white dark:text-gray-700 dark:bg-yellow-50 dark:hover:bg-black dark:hover:text-white inline-flex p-2 pl-8 hover:text-gray-700 hover:bg-yellow-50 font-bold z-10 transition-fast animated fadeInLeft">
+      海岛心hey
     </a>
-    <label class="burger" for="burger"></label>
-    <input id="burger" type="checkbox">
-    <button class="burger">
-      <div>
-        <span></span>
-        <span></span>
-      </div>
-    </button>
-    <nav class="info_nav">
-      
+    <div class="max-w-4xl w-full mx-auto">
+      <div class="shadow-box bg-white dark:bg-gray-600 rounded-lg pt-32 md:pt-64 px-4 md:px-8 pb-8 animated fadeIn mb-8">
+        <h1 class="text-5xl font-semibold leading-normal pb-8 mb-8 border-b-8 border-gray-700">
+          Markdown 语法简单教程
+        </h1>
         
-          <a href="https://fehey.com">首页</a>
+          <img src="https://fehey.com/post-images/markdown-yu-fa-jian-dan-jiao-cheng.jpg" alt="Markdown 语法简单教程" class="block w-full mb-8">
         
-      
-        
-          <a href="https://fehey.com/archives">归档</a>
-        
-      
-        
-          <a href="https://fehey.com/tags">标签</a>
-        
-      
-        
-          <a href="https://fehey.com/post/about/">关于</a>
-        
-      
-    </nav>
-  </div>
-</div>
-    </div>
-    <article role="main" class="hentry has-cover">
-      
-        <div class="entry-cover js-cover" data-src="https://fehey.com/post-images/markdown-yu-fa-jian-dan-jiao-cheng.jpg" data-width="900" data-height="423" style="background-image:url(https://fehey.com/post-images/markdown-yu-fa-jian-dan-jiao-cheng.jpg); height: 80vw;">
-          <h1 class="post-title">Markdown 语法简单教程</h1>
+        <div class="mb-8 flex flex-wrap">
+          <div class="text-gray-400 text-sm mr-4">2019-01-25 · 2 min read</div>
+          
         </div>
-      
-      <h1 class="entry-title" itemprop="headline">Markdown 语法简单教程</h1>
-      <div class="entry-meta">
-        <time class="updated" datetime="2019-01-25 05:45:08">2019-01-25</time>
-        <span class="author vcard">
-          2 min read
-        </span>
-      </div>
-      <div class="post-content yue">
-        <h3 id="1-斜体和粗体">1. 斜体和粗体</h3>
+        <div class="markdown mb-8" v-pre>
+          <h3 id="1-斜体和粗体">1. 斜体和粗体</h3>
 <p>使用 * 和 ** 表示斜体和粗体。</p>
 <p>示例：</p>
 <p>这是 <em>斜体</em>，这是 <strong>粗体</strong>。</p>
@@ -180,42 +206,32 @@ hello()
 </tbody>
 </table>
 
-      </div>
-      <div class="entry-block">
-        <div class="entry-tags">
-          
+        </div>
+        <!-- Share to Twitter, Weibo, Telegram -->
+        <div class="flex items-center">
+          <div class="mr-4 flex items-center">
+            <i class="ri-share-forward-line text-gray-500"></i>
+          </div>
+          <div class="px-4 cursor-pointer text-blue-500 hover:bg-blue-100 dark:hover:bg-gray-600 inline-flex" @click="shareToTwitter">
+            <i class="ri-twitter-line"></i>
+          </div>
+          <div class="px-4 cursor-pointer text-red-500 hover:bg-red-100 dark:hover:bg-gray-600 inline-flex" @click="shareToWeibo">
+            <i class="ri-weibo-line"></i>
+          </div>
+          <div class="px-4 cursor-pointer text-indigo-500 hover:bg-indigo-100 dark:hover:bg-gray-600 inline-flex" @click="shareToTelegram">
+            <i class="ri-telegram-line"></i>
+          </div>
         </div>
       </div>
-    </article>
-    
-      <section class="post-section prev-post">
-        <div class="inner">
-          <h3>前一篇</h3>
-          <a href="https://fehey.com/post/hve-notes-start">
-            <strong>Gridea 小白上手教程</strong>
-          </a>
-        </div>
-      </section>
-    
-    
-      <section class="post-section prev-post">
-        <div class="inner">
-          <h3>后一篇</h3>
-          <a href="https://fehey.com/post/yu-jian-chuang-zuo-yu-jian-hve-notes">
-            <strong>遇见创作，遇见Hve Notes</strong>
-          </a>
-        </div>
-      </section>
-    
 
-    
       
-        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+        
+          <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script type="application/javascript" src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 
 <div id="gitalk-container"></div>
 
-<script>
+<script type="application/javascript">
 
   var gitalk = new Gitalk({
     clientID: 'd32f26feaa6fb3f5f4c0',
@@ -231,56 +247,232 @@ hello()
 
 </script>
 
+        
+
+        
       
 
       
-    
 
-    <footer class="footer">
-  <div class="main">
-    <a href="https://fehey.com">
-      <img class="avatar" src="https://fehey.com/images/avatar.png?v=1580777032012" alt="海岛心hey">
-    </a>
-    <div class="footer__social">
-      
-        
-          <a href="https://github.com/EryouHao" target="_blank"><i class="remixicon-github-line"></i></a>
-        
-      
-        
-          <a href="https://twitter.com/EryouHao" target="_blank"><i class="remixicon-twitter-line"></i></a>
-        
-      
-        
-          <a href="https://weibo.com/u/3799576961" target="_blank"><i class="remixicon-weibo-line"></i></a>
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-    <p class="footer__sosumi">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-    </p>
-    <a class="footer-rss" href="https://fehey.com/atom.xml">RSS</a>
-  </div>
+      <footer class="py-12 text-center px-4 md:px-0" v-pre>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
 </footer>
+    </div>
 
-<script src="https://fehey.com/media/prism.js"></script>
-<script>
-  Prism.highlightAll()
-</script>
+    <!-- TOC Container -->
+    <div class="fixed right-0 bottom-0 mb-16 mr-4 shadow w-8 h-8 rounded-full flex justify-center items-center z-10 cursor-pointer bg-white dark:bg-gray-500 dark:text-gray-200 hover:shadow-lg transition-all animated fadeInRight" @click="showToc = true">
+      <i class="ri-file-list-line"></i>
+    </div>
 
-  </body>
+    <div class="fixed right-0 top-0 bottom-0 overflow-y-auto w-64 bg-white dark:bg-gray-800 p-4 border-l border-gray-100 dark:border-gray-600 z-10 transition-fast" :class="{ '-mr-64': !showToc }">
+      <div class="flex mb-4 justify-end">
+        <div class="w-8 h-8 inline-flex justify-center items-center rounded-full cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-600 transition-fast" @click="showToc = false">
+          <i class="ri-close-line text-lg"></i>
+        </div>
+      </div>
+      <div class="post-toc-container">
+        <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#1-%E6%96%9C%E4%BD%93%E5%92%8C%E7%B2%97%E4%BD%93">1. 斜体和粗体</a></li>
+<li><a href="#2-%E6%A0%87%E9%A2%98">2. 标题</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E4%B8%80%E7%BA%A7%E6%A0%87%E9%A2%98">一级标题</a>
+<ul>
+<li><a href="#%E4%BA%8C%E7%BA%A7%E6%A0%87%E9%A2%98">二级标题</a>
+<ul>
+<li><a href="#%E4%B8%89%E7%BA%A7%E6%A0%87%E9%A2%98">三级标题</a>
+<ul>
+<li><a href="#%E5%9B%9B%E7%BA%A7%E6%A0%87%E9%A2%98">四级标题</a>
+<ul>
+<li><a href="#%E4%BA%94%E7%BA%A7%E6%A0%87%E9%A2%98">五级标题</a>
+<ul>
+<li><a href="#%E5%85%AD%E7%BA%A7%E6%A0%87%E9%A2%98">六级标题</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#3-%E5%A4%96%E9%93%BE%E6%8E%A5">3. 外链接</a></li>
+<li><a href="#4-%E6%97%A0%E5%BA%8F%E5%88%97%E8%A1%A8">4. 无序列表</a></li>
+<li><a href="#5-%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8">5. 有序列表</a></li>
+<li><a href="#6-%E6%96%87%E5%AD%97%E5%BC%95%E7%94%A8">6. 文字引用</a></li>
+<li><a href="#7-%E8%A1%8C%E5%86%85%E4%BB%A3%E7%A0%81%E5%9D%97">7. 行内代码块</a></li>
+<li><a href="#8-%E4%BB%A3%E7%A0%81%E5%9D%97">8.  代码块</a></li>
+<li><a href="#9-%E6%8F%92%E5%85%A5%E5%9B%BE%E5%83%8F">9.  插入图像</a></li>
+</ul>
+</li>
+<li><a href="#%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81">测试代码</a></li>
+<li><a href="#%E8%A1%A8%E6%A0%BC%E7%A4%BA%E4%BE%8B">表格示例</a></li>
+</ul>
+</li>
+</ul>
+
+      </div>
+    </div>
+
+    <!-- Back to top -->
+    <div class="fixed right-0 bottom-0 mb-4 mr-4 shadow w-8 h-8 rounded-full flex justify-center items-center z-10 cursor-pointer bg-white hover:shadow-lg transition-all dark:bg-gray-500 dark:text-gray-200" @click="backToUp" v-show="scrolled">
+      <i class="ri-arrow-up-line"></i>
+    </div>
+  </div>
+
+  <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+  <!-- Background of PhotoSwipe. 
+        It's a separate element as animating opacity is faster than rgba(). -->
+  <div class="pswp__bg">
+  </div>
+  <!-- Slides wrapper with overflow:hidden. -->
+  <div class="pswp__scroll-wrap">
+    <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+    <div class="pswp__container">
+      <div class="pswp__item">
+      </div>
+      <div class="pswp__item">
+      </div>
+      <div class="pswp__item">
+      </div>
+    </div>
+    <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+    <div class="pswp__ui pswp__ui--hidden">
+      <div class="pswp__top-bar">
+        <!--  Controls are self-explanatory. Order can be changed. -->
+        <div class="pswp__counter">
+        </div>
+        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+        <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+        <!-- element will get class pswp__preloader--active when preloader is running -->
+        <div class="pswp__preloader">
+          <div class="pswp__preloader__icn">
+            <div class="pswp__preloader__cut">
+              <div class="pswp__preloader__donut">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+        <div class="pswp__share-tooltip">
+        </div>
+      </div>
+      <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+      </button>
+      <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+      </button>
+      <div class="pswp__caption">
+        <div class="pswp__caption__center">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://fehey.com/media/scripts/main.js"></script>
+  
+  <!-- Code Highlight -->
+  
+    <script src="https://fehey.com/media/prism.js"></script>
+    <script>
+      Prism.highlightAll()
+    </script>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+  <script>
+    //拿到预览框架，也就是上面的html代码
+    var pswpElement = document.querySelectorAll('.pswp')[0];
+    //定义图片数组变量
+    var imgitems;
+    /**
+    * 用于显示预览界面
+    * @param index 图片数组下标
+    */
+    function viewImg(index) {
+      //其它选项这里不做过多阐述，详情见官网
+      var pswpoptions = {
+        index: parseInt(index, 10), // 开始幻灯片索引。0是第一张幻灯片。必须是整数，而不是字符串。
+        bgOpacity: 0.7, // 背景透明度，0-1
+        maxSpreadZoom: 3, // 缩放级别，不要太大
+      };
+      //初始化并打开PhotoSwipe，pswpElement对应上面预览框架，PhotoSwipeUI_Default为皮肤，imgitems为图片数组，pswpoptions为选项
+      var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, imgitems, pswpoptions);
+      gallery.init()
+    }
+    /**
+    * 用于添加图片点击事件
+    * @param img 图片元素
+    * @param index 所属下标（在imgitems中的位置）
+    */
+    function addImgClick(img, index) {
+      img.onclick = function() {
+        viewImg(index)
+      }
+    }
+    /**
+    * 轮询所有图片，获取src、width、height等数据，加入imgitems，并给图片元素添加事件
+    * 最好在onload中执行该方法，本站因放在最底部，所以直接初始化
+    * 异步加载图片可在图片元素创建完成后调用此方法
+    */
+    function initImg() {
+      //重置图片数组
+      imgitems = [];
+      //查找class:markdown 下的所有img元素并遍历
+      var imgs = document.querySelectorAll('.markdown img');
+      for (var i = 0; i < imgs.length; i++) {
+        var img = imgs[i];
+        //本站相册初始为loading图片，真实图片放在data-src
+        var ds = img.getAttribute("data-src");
+        //创建image对象，用于获取图片宽高
+        var imgtemp = new Image();
+        //判断是否存在data-src
+        if (ds != null && ds.length > 0) {
+          imgtemp.src = ds
+        } else {
+          imgtemp.src = img.src
+        }
+        //判断是否存在缓存
+        if (imgtemp.complete) {
+          var imgobj = {
+            "src": imgtemp.src,
+            "w": imgtemp.width,
+            "h": imgtemp.height,
+          };
+          imgitems[i] = imgobj;
+          addImgClick(img, i);
+        } else {
+          console.log('进来了2')
+          imgtemp.index = i;
+          imgtemp.img = img;
+          imgtemp.onload = function() {
+            var imgobj = {
+              "src": this.src,
+              "w": this.width,
+              "h": this.height,
+            };
+            //不要使用push，因为onload前后顺序会不同
+            imgitems[this.index] = imgobj
+            //添加点击事件
+            addImgClick(this.img, this.index);
+          }
+        }
+      }
+    }
+    //初始化
+    initImg();
+  </script>
+</body>
+
 </html>

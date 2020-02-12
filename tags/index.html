@@ -1,149 +1,99 @@
-<html>
-  <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>海岛心hey</title>
-<meta name="description" content="Every 🐦 has an 🦅's dream." />
-<link rel="shortcut icon" href="https://fehey.com/favicon.ico?v=1580777032012">
-<link href="https://cdn.remixicon.com/releases/v1.3.1/remixicon.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
-
+<link rel="shortcut icon" href="https://fehey.com/favicon.ico">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
+<link rel="stylesheet" href="https://fehey.com/media/css/tailwind.css">
 <link rel="stylesheet" href="https://fehey.com/styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="海岛心hey - Atom Feed" href="https://fehey.com/atom.xml">
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113307620-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'UA-113307620-1');
+  </script>
+    
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113307620-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-113307620-1');
-</script>
-
-
-  </head>
-  <body>
-    <div class="head">
-  <div class="inner">
-    <a class="site-name" href="https://fehey.com">
-        <span>海岛心hey</span>
-    </a>
-    <label class="burger" for="burger"></label>
-    <input id="burger" type="checkbox">
-    <button class="burger">
-      <div>
-        <span></span>
-        <span></span>
-      </div>
-    </button>
-    <nav class="info_nav">
-      
-        
-          <a href="https://fehey.com">首页</a>
-        
-      
-        
-          <a href="https://fehey.com/archives">归档</a>
-        
-      
-        
-          <a href="https://fehey.com/tags">标签</a>
-        
-      
-        
-          <a href="https://fehey.com/post/about/">关于</a>
-        
-      
-    </nav>
+  <meta name="description" content="Every 🐦 has an 🦅's dream." />
+</head>
+<body>
+  <div class="antialiased flex flex-col min-h-screen" id="app">
+    <div class="nav py-3 md:py-8 fixed w-full z-10 bg-gray-50 dark:bg-gray-700 transition-all duration-300" :class="{ 'scroll': scrolled }">
+  <div class="flex justify-end px-4">
+    <div class="w-8 h-8 flex justify-center items-center rounded-full md:hidden" @click="showMenu = !showMenu">
+      <i class="ri-close-line" v-show="showMenu"></i>
+      <i class="ri-menu-3-line" v-show="!showMenu"></i>
+    </div>
   </div>
+  <nav class="max-w-4xl w-full mx-auto text-center flex flex-col md:flex-row justify-center md:block" :class="`${ showMenu ? 'block' : 'hidden' }`">
+    
+      <a href="https://fehey.com" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        首页
+      </a>
+    
+      <a href="https://fehey.com/archives" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        归档
+      </a>
+    
+      <a href="https://fehey.com/tags" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        标签
+      </a>
+    
+      <a href="https://fehey.com/post/about/" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        关于
+      </a>
+    
+    <a href="https://fehey.com/atom.xml" target="_blank" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+      RSS
+    </a>
+  </nav>
 </div>
-    <div class="info _site">
-      <div class="inner">
-        <div class="info_main">
-          <h1 class="info_title"><i class="remixicon-price-tag-3-line"></i> 目前共计 4 个标签</h1>
-        </div>
+    <div class="max-w-4xl w-full mx-auto pt-32">
+      <div class="py-8 shadow-box bg-white dark:bg-gray-600 border-gray-300 rounded-none md:rounded-lg -mx-1 md:mx-0 md:px-0">
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://fehey.com/tag/sclpwuhUZ/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              Gridea（2）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://fehey.com/tag/Bu586Fh91/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              利器（1）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://fehey.com/tag/hve/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              Hve（3）
+            </a>
+          </div>
+        
+          <div class="px-8 pb-5 inline-flex relative overflow-hidden">
+            <a href="https://fehey.com/tag/nian-zhong-zong-jie/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+              <i class="ri-hashtag"></i>
+              年终总结（1）
+            </a>
+          </div>
+        
       </div>
-    </div>
-    <div class="main">
-      <div class="inner">
-        <div class="tags">
-          
-            <a class="tag" href="https://fehey.com/tag/sclpwuhUZ">
-              <div class="tag-name">Gridea</div>
-              <div class="tag-count">2</div>
-              <i class="remixicon-price-tag-3-line icon"></i>
-            </a>
-          
-            <a class="tag" href="https://fehey.com/tag/Bu586Fh91">
-              <div class="tag-name">利器</div>
-              <div class="tag-count">1</div>
-              <i class="remixicon-price-tag-3-line icon"></i>
-            </a>
-          
-            <a class="tag" href="https://fehey.com/tag/hve">
-              <div class="tag-name">Hve</div>
-              <div class="tag-count">3</div>
-              <i class="remixicon-price-tag-3-line icon"></i>
-            </a>
-          
-            <a class="tag" href="https://fehey.com/tag/nian-zhong-zong-jie">
-              <div class="tag-name">年终总结</div>
-              <div class="tag-count">1</div>
-              <i class="remixicon-price-tag-3-line icon"></i>
-            </a>
-          
-        </div>
-      </div>
-    </div>
-    <footer class="footer">
-  <div class="main">
-    <a href="https://fehey.com">
-      <img class="avatar" src="https://fehey.com/images/avatar.png?v=1580777032012" alt="海岛心hey">
-    </a>
-    <div class="footer__social">
-      
-        
-          <a href="https://github.com/EryouHao" target="_blank"><i class="remixicon-github-line"></i></a>
-        
-      
-        
-          <a href="https://twitter.com/EryouHao" target="_blank"><i class="remixicon-twitter-line"></i></a>
-        
-      
-        
-          <a href="https://weibo.com/u/3799576961" target="_blank"><i class="remixicon-weibo-line"></i></a>
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-    <p class="footer__sosumi">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-    </p>
-    <a class="footer-rss" href="https://fehey.com/atom.xml">RSS</a>
-  </div>
+      <footer class="py-12 text-center px-4 md:px-0" v-pre>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
 </footer>
-
-<script src="https://fehey.com/media/prism.js"></script>
-<script>
-  Prism.highlightAll()
-</script>
-
-  </body>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://fehey.com/media/scripts/main.js"></script>
+</body>
 </html>

@@ -1,300 +1,400 @@
-<html>
-  <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>海岛心hey</title>
-<meta name="description" content="Every 🐦 has an 🦅's dream." />
-<link rel="shortcut icon" href="https://fehey.com/favicon.ico?v=1580777032012">
-<link href="https://cdn.remixicon.com/releases/v1.3.1/remixicon.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
-
+<link rel="shortcut icon" href="https://fehey.com/favicon.ico">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
+<link rel="stylesheet" href="https://fehey.com/media/css/tailwind.css">
 <link rel="stylesheet" href="https://fehey.com/styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="海岛心hey - Atom Feed" href="https://fehey.com/atom.xml">
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113307620-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'UA-113307620-1');
+  </script>
+    
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113307620-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <meta name="description" content="Every 🐦 has an 🦅's dream." />
+</head>
+<body>
+  <div class="antialiased flex flex-col min-h-screen" id="app">
 
-  gtag('config', 'UA-113307620-1');
-</script>
-
-
-  </head>
-  <body>
-    <div class="homepage">
-      <div class="head">
-  <div class="inner">
-    <a class="site-name" href="https://fehey.com">
-        <span>海岛心hey</span>
-    </a>
-    <label class="burger" for="burger"></label>
-    <input id="burger" type="checkbox">
-    <button class="burger">
-      <div>
-        <span></span>
-        <span></span>
-      </div>
-    </button>
-    <nav class="info_nav">
-      
-        
-          <a href="https://fehey.com">首页</a>
-        
-      
-        
-          <a href="https://fehey.com/archives">归档</a>
-        
-      
-        
-          <a href="https://fehey.com/tags">标签</a>
-        
-      
-        
-          <a href="https://fehey.com/post/about/">关于</a>
-        
-      
-    </nav>
+    <div class="nav py-3 md:py-8 fixed w-full z-10 bg-gray-50 dark:bg-gray-700 transition-all duration-300" :class="{ 'scroll': scrolled }">
+  <div class="flex justify-end px-4">
+    <div class="w-8 h-8 flex justify-center items-center rounded-full md:hidden" @click="showMenu = !showMenu">
+      <i class="ri-close-line" v-show="showMenu"></i>
+      <i class="ri-menu-3-line" v-show="!showMenu"></i>
+    </div>
   </div>
-</div>
-    </div>
-    <div class="info _site">
-      <div class="inner">
-        <div class="info_main">
-          
-            <h1 class="info_title"><a href="https://fehey.com">海岛心hey</a></h1>
-            <h2 class="info_subtitle">Every 🐦 has an 🦅's dream.</h2>
-            <nav class="info_nav">
-              
-                
-                  <a href="https://fehey.com">首页</a>
-                
-              
-                
-                  <a href="https://fehey.com/archives">归档</a>
-                
-              
-                
-                  <a href="https://fehey.com/tags">标签</a>
-                
-              
-                
-                  <a href="https://fehey.com/post/about/">关于</a>
-                
-              
-            </nav>
-          
-        </div>
-      </div>
-    </div>
-    <div class="main">
-      <div class="inner">
-        <div class="items">
-  
-    <div class="item Article">
-      
-        <a class="item-image js-cover" data-src="https://cdn.jsdelivr.net/gh/eryouhao/files@master/uPic/XjzUa1.jpg" href="https://fehey.com/post/pwa-2020" style="background-image:url('https://cdn.jsdelivr.net/gh/eryouhao/files@master/uPic/XjzUa1.jpg');"></a>
-      
-      <a class="item-main" href="https://fehey.com/post/pwa-2020">
-        <div class="item-meta">
-          <time datetime="2020-01-20 16:11:31">2020-01-20</time>
-        </div>
-        <h2>PWA 在 2020</h2>
+  <nav class="max-w-4xl w-full mx-auto text-center flex flex-col md:flex-row justify-center md:block" :class="`${ showMenu ? 'block' : 'hidden' }`">
+    
+      <a href="https://fehey.com" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        首页
       </a>
-    </div>
-  
-    <div class="item Article">
-      
-        <a class="item-image js-cover" data-src="https://cdn.jsdelivr.net/gh/eryouhao/files@master/uPic/SNYOMa.png" href="https://fehey.com/post/coding-font" style="background-image:url('https://cdn.jsdelivr.net/gh/eryouhao/files@master/uPic/SNYOMa.png');"></a>
-      
-      <a class="item-main" href="https://fehey.com/post/coding-font">
-        <div class="item-meta">
-          <time datetime="2020-01-17 10:05:06">2020-01-17</time>
-        </div>
-        <h2>聊聊我在用的编程字体</h2>
+    
+      <a href="https://fehey.com/archives" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        归档
       </a>
-    </div>
-  
-    <div class="item Article">
-      
-        <a class="item-image js-cover" data-src="https://cdn.jsdelivr.net/gh/eryouhao/files@master/uPic/BDp6Dy.jpg" href="https://fehey.com/post/gridea-0.9.0" style="background-image:url('https://cdn.jsdelivr.net/gh/eryouhao/files@master/uPic/BDp6Dy.jpg');"></a>
-      
-      <a class="item-main" href="https://fehey.com/post/gridea-0.9.0">
-        <div class="item-meta">
-          <time datetime="2019-12-31 17:56:43">2019-12-31</time>
-        </div>
-        <h2>Gridea v0.9.0｜可以，写博客的那个劲儿又回来了</h2>
+    
+      <a href="https://fehey.com/tags" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        标签
       </a>
-    </div>
-  
-    <div class="item Article">
-      
-        <a class="item-image js-cover" data-src="https://i.loli.net/2019/10/23/SrcgKW2vjeOGs5A.png" href="https://fehey.com/post/gridea-v083-quan-xin-ti-yan-zhu-ni-miao-bi-sheng-hua" style="background-image:url('https://i.loli.net/2019/10/23/SrcgKW2vjeOGs5A.png');"></a>
-      
-      <a class="item-main" href="https://fehey.com/post/gridea-v083-quan-xin-ti-yan-zhu-ni-miao-bi-sheng-hua">
-        <div class="item-meta">
-          <time datetime="2019-09-21 11:39:39">2019-09-21</time>
-        </div>
-        <h2>Gridea v0.8.3｜全新体验，助你妙笔生花</h2>
+    
+      <a href="https://fehey.com/post/about/" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        关于
       </a>
-    </div>
-  
-    <div class="item Article">
-      
-        <a class="item-image js-cover" data-src="https://i.loli.net/2019/10/23/bveJihEH6PyRY2M.jpg" href="https://fehey.com/post/markdown-test" style="background-image:url('https://i.loli.net/2019/10/23/bveJihEH6PyRY2M.jpg');"></a>
-      
-      <a class="item-main" href="https://fehey.com/post/markdown-test">
-        <div class="item-meta">
-          <time datetime="2019-07-18 22:17:43">2019-07-18</time>
-        </div>
-        <h2>Markdown 测试文章</h2>
-      </a>
-    </div>
-  
-    <div class="item Article">
-      
-        <a class="item-image js-cover" data-src="https://fehey.com/post-images/liqi.jpeg" href="https://fehey.com/post/liqi" style="background-image:url('https://fehey.com/post-images/liqi.jpeg');"></a>
-      
-      <a class="item-main" href="https://fehey.com/post/liqi">
-        <div class="item-meta">
-          <time datetime="2019-06-26 14:20:56">2019-06-26</time>
-        </div>
-        <h2>利器+</h2>
-      </a>
-    </div>
-  
-    <div class="item Article">
-      
-        <a class="item-image js-cover" data-src="https://fehey.com/post-images/meet-gridea.png" href="https://fehey.com/post/meet-gridea" style="background-image:url('https://fehey.com/post-images/meet-gridea.png');"></a>
-      
-      <a class="item-main" href="https://fehey.com/post/meet-gridea">
-        <div class="item-meta">
-          <time datetime="2019-04-23 18:48:57">2019-04-23</time>
-        </div>
-        <h2>Gridea 一个简单、开源、强大的静态博客写作客户端</h2>
-      </a>
-    </div>
-  
-    <div class="item Article">
-      
-        <a class="item-image js-cover" data-src="https://fehey.com/post-images/hve-notes-start.jpeg" href="https://fehey.com/post/hve-notes-start" style="background-image:url('https://fehey.com/post-images/hve-notes-start.jpeg');"></a>
-      
-      <a class="item-main" href="https://fehey.com/post/hve-notes-start">
-        <div class="item-meta">
-          <time datetime="2019-02-17 03:04:18">2019-02-17</time>
-        </div>
-        <h2>Gridea 小白上手教程</h2>
-      </a>
-    </div>
-  
-    <div class="item Article">
-      
-        <a class="item-image js-cover" data-src="https://fehey.com/post-images/markdown-yu-fa-jian-dan-jiao-cheng.jpg" href="https://fehey.com/post/markdown-yu-fa-jian-dan-jiao-cheng" style="background-image:url('https://fehey.com/post-images/markdown-yu-fa-jian-dan-jiao-cheng.jpg');"></a>
-      
-      <a class="item-main" href="https://fehey.com/post/markdown-yu-fa-jian-dan-jiao-cheng">
-        <div class="item-meta">
-          <time datetime="2019-01-25 05:45:08">2019-01-25</time>
-        </div>
-        <h2>Markdown 语法简单教程</h2>
-      </a>
-    </div>
-  
-    <div class="item Article">
-      
-        <a class="item-image js-cover" data-src="https://fehey.com/post-images/yu-jian-chuang-zuo-yu-jian-hve-notes.png" href="https://fehey.com/post/yu-jian-chuang-zuo-yu-jian-hve-notes" style="background-image:url('https://fehey.com/post-images/yu-jian-chuang-zuo-yu-jian-hve-notes.png');"></a>
-      
-      <a class="item-main" href="https://fehey.com/post/yu-jian-chuang-zuo-yu-jian-hve-notes">
-        <div class="item-meta">
-          <time datetime="2019-01-14 16:00:00">2019-01-14</time>
-        </div>
-        <h2>遇见创作，遇见Hve Notes</h2>
-      </a>
-    </div>
-  
-    <div class="item Article">
-      
-        <a class="item-image js-cover" data-src="https://fehey.com/post-images/2018-nian-zhong-zong-jie.png" href="https://fehey.com/post/2018-nian-zhong-zong-jie" style="background-image:url('https://fehey.com/post-images/2018-nian-zhong-zong-jie.png');"></a>
-      
-      <a class="item-main" href="https://fehey.com/post/2018-nian-zhong-zong-jie">
-        <div class="item-meta">
-          <time datetime="2019-01-14 00:00:00">2019-01-14</time>
-        </div>
-        <h2>2018 年终总结</h2>
-      </a>
-    </div>
-  
-    <div class="item Article">
-      
-        <a class="item-image js-cover" data-src="https://fehey.com/post-images/hve-notes-zhu-ye-shang-xian-la.png" href="https://fehey.com/post/hve-notes-zhu-ye-shang-xian-la" style="background-image:url('https://fehey.com/post-images/hve-notes-zhu-ye-shang-xian-la.png');"></a>
-      
-      <a class="item-main" href="https://fehey.com/post/hve-notes-zhu-ye-shang-xian-la">
-        <div class="item-meta">
-          <time datetime="2019-01-01 08:00:00">2019-01-01</time>
-        </div>
-        <h2>Hve Notes 主页上线啦</h2>
-      </a>
-    </div>
-  
+    
+    <a href="https://fehey.com/atom.xml" target="_blank" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+      RSS
+    </a>
+  </nav>
 </div>
 
-        
-          <div class="navigation">
-            <a href="https://fehey.com/page/2" style="padding-right: 0.5em;">阅读更多 <i class="remixicon-arrow-right-line"></i></a>
-          </div>
-        
+    <div class="max-w-4xl w-full mx-auto ">
+      
+        <header class="flex py-16 md:py-32 mt-12 flex-col md:flex-row px-4 md:px-0 animated fadeIn">
+  <div class="flex-1 order-2 md:order-1 md:pr-16">
+    <div class="text-4xl font-bold text-center md:text-left">
+      海岛心hey
+    </div>
+    <div class="text-xl text-gray-500 mt-4 text-center md:text-left">
+      Every 🐦 has an 🦅's dream.
+    </div>
+    
+      <div class="mt-8 text-center md:text-left">
+        <a
+          href="/post/about/" 
+          arget="_blank"
+          class="text-sm bg-yellow-50 dark:bg-indigo-500 dark:text-gray-700 font-semibold px-4 py-2 inline-block yellow-btn transition-fast rounded"
+        >LET&#39;S TALK!</a>
       </div>
-    </div>
-
-    <footer class="footer">
-  <div class="main">
-    <a href="https://fehey.com">
-      <img class="avatar" src="https://fehey.com/images/avatar.png?v=1580777032012" alt="海岛心hey">
-    </a>
-    <div class="footer__social">
-      
-        
-          <a href="https://github.com/EryouHao" target="_blank"><i class="remixicon-github-line"></i></a>
-        
-      
-        
-          <a href="https://twitter.com/EryouHao" target="_blank"><i class="remixicon-twitter-line"></i></a>
-        
-      
-        
-          <a href="https://weibo.com/u/3799576961" target="_blank"><i class="remixicon-weibo-line"></i></a>
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-    <p class="footer__sosumi">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-    </p>
-    <a class="footer-rss" href="https://fehey.com/atom.xml">RSS</a>
+    
+    
   </div>
+  <div class="md:mx-8 flex-shrink-0 self-start rounded-full border-4 border-dotted border-transparent hover:border-yellow-50 p-2 w-32 h-32 order-1 md:order-2 mx-auto s3-dotted">
+    <img class="rounded-full object-cover" src="https://fehey.com/images/avatar.png?v=1581512168645" alt="海岛心hey" width="100%" height="100%">
+  </div>
+</header>
+      
+
+      <div class="shadow-box bg-white dark:bg-gray-600 border-gray-300 rounded-none md:rounded-lg -mx-1 md:mx-0 md:px-0">
+        
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://fehey.com/post/pwa-2020/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          PWA 在 2020
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2020-01-20</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        从 Steve Jobs 最初提出的 Web 应用程序的想法 “看起来和使用起来完全想本地应用程序”，已经过去 12 年了。并且从 “PWA” 术语被创造出来已经 4 年多了。在 2020 年刚开始的时间点，渐进式 Web 应用程序看起来怎...
+      </div>
+      <a href="https://fehey.com/post/pwa-2020/" class="btn">
+        Read more
+      </a>
+    </div>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://cdn.jsdelivr.net/gh/eryouhao/files@master/uPic/XjzUa1.jpg" alt="PWA 在 2020">
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://fehey.com/post/coding-font/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          聊聊我在用的编程字体
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2020-01-17</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        <p>最近，微软和 JetBrains 纷纷推出了自己的编程字体，你现在在用哪款呢？</p>
+
+      </div>
+      <a href="https://fehey.com/post/coding-font/" class="btn">
+        Read more
+      </a>
+    </div>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://cdn.jsdelivr.net/gh/eryouhao/files@master/uPic/SNYOMa.png" alt="聊聊我在用的编程字体">
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://fehey.com/post/gridea-0.9.0/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          Gridea v0.9.0｜可以，写博客的那个劲儿又回来了
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2019-12-31</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        
+可以，写博客的那个劲儿又回来了～
+——来自一位使用 Gridea 的朋友
+
+
+这里是 Gridea v0.9.0 版本的发布日志，如果你还没听说过它，不妨点击下面链接一探究竟吧！
+Gridea - 一个静态博客写作客户端
+本次更新中，我们...
+      </div>
+      <a href="https://fehey.com/post/gridea-0.9.0/" class="btn">
+        Read more
+      </a>
+    </div>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://cdn.jsdelivr.net/gh/eryouhao/files@master/uPic/BDp6Dy.jpg" alt="Gridea v0.9.0｜可以，写博客的那个劲儿又回来了">
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://fehey.com/post/gridea-v083-quan-xin-ti-yan-zhu-ni-miao-bi-sheng-hua/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          Gridea v0.8.3｜全新体验，助你妙笔生花
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2019-09-21</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        这里 Gridea 是 v0.8.3 版本的发布日志，如果你还没听说过它，不妨点击下面链接一探究竟吧！
+Gridea - 一个静态博客写作客户端
+时隔两个多月，Gridea 迎来了它的第 5 个版本，我们在这次更新中，尝试新的编辑体验，在保...
+      </div>
+      <a href="https://fehey.com/post/gridea-v083-quan-xin-ti-yan-zhu-ni-miao-bi-sheng-hua/" class="btn">
+        Read more
+      </a>
+    </div>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://i.loli.net/2019/10/23/SrcgKW2vjeOGs5A.png" alt="Gridea v0.8.3｜全新体验，助你妙笔生花">
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://fehey.com/post/markdown-test/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          Markdown 测试文章
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2019-07-18</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        <p>Markdown是一种轻量级标记语言，创始人为约翰·格鲁伯（英语：John Gruber）。它允许人们“使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML（或者HTML）文档”。</p>
+
+      </div>
+      <a href="https://fehey.com/post/markdown-test/" class="btn">
+        Read more
+      </a>
+    </div>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://i.loli.net/2019/10/23/bveJihEH6PyRY2M.jpg" alt="Markdown 测试文章">
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://fehey.com/post/liqi/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          利器+
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2019-06-26</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        介绍一下你自己和所做的工作
+我是海岛心hey，93 年生人，目前是一名前端工程师，喜欢 Web 设计相关，业余独立开发，
+Gridea（一个静态博客写作客户端）作者，近期活跃在 Twitter 上（@EryouHao）。
+你的职业生涯的转折...
+      </div>
+      <a href="https://fehey.com/post/liqi/" class="btn">
+        Read more
+      </a>
+    </div>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://fehey.com/post-images/liqi.jpeg" alt="利器+">
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://fehey.com/post/meet-gridea/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          Gridea 一个简单、开源、强大的静态博客写作客户端
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2019-04-23</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        想当时，博客兴起的年代，成千上万的人挑选各种平台去搭建一个属于自己的博客。从新浪博客、博客园到 Wordpress、Hexo，越来越多的人选择了静态博客，越来越趋于轻量化。
+今天，为大家带来了一款用心打造的产品——Gridea。
+是什么？
+...
+      </div>
+      <a href="https://fehey.com/post/meet-gridea/" class="btn">
+        Read more
+      </a>
+    </div>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://fehey.com/post-images/meet-gridea.png" alt="Gridea 一个简单、开源、强大的静态博客写作客户端">
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://fehey.com/post/hve-notes-start/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          Gridea 小白上手教程
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2019-02-17</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        <p>如果你使用过 <strong>Hexo</strong> 等工具基于 <strong>Github</strong> 做个人博客，那么恭喜你，你可以很轻松的上手使用<strong>Gridea</strong><br>
+如果你以前没有使用过，那么希望这篇文章可以帮助你顺利的完成博客搭建。话不多说，Let's Go!</p>
+
+      </div>
+      <a href="https://fehey.com/post/hve-notes-start/" class="btn">
+        Read more
+      </a>
+    </div>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://fehey.com/post-images/hve-notes-start.jpeg" alt="Gridea 小白上手教程">
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://fehey.com/post/markdown-yu-fa-jian-dan-jiao-cheng/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          Markdown 语法简单教程
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2019-01-25</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        1. 斜体和粗体
+使用 * 和 ** 表示斜体和粗体。
+示例：
+这是 斜体，这是 粗体。
+2. 标题
+使用 #加空格表示一级标题，同理，##加空格表示二级标题
+一级标题
+二级标题
+三级标题
+四级标题
+五级标题
+六级标题
+3. 外链接
+使用 ...
+      </div>
+      <a href="https://fehey.com/post/markdown-yu-fa-jian-dan-jiao-cheng/" class="btn">
+        Read more
+      </a>
+    </div>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://fehey.com/post-images/markdown-yu-fa-jian-dan-jiao-cheng.jpg" alt="Markdown 语法简单教程">
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://fehey.com/post/yu-jian-chuang-zuo-yu-jian-hve-notes/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          遇见创作，遇见Hve Notes
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2019-01-14</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        <p>作为一个技术人，你是否喜欢创作，或是怀念过往又或是畅想未来，或是总结技术又或是记录生活？</p>
+
+      </div>
+      <a href="https://fehey.com/post/yu-jian-chuang-zuo-yu-jian-hve-notes/" class="btn">
+        Read more
+      </a>
+    </div>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://fehey.com/post-images/yu-jian-chuang-zuo-yu-jian-hve-notes.png" alt="遇见创作，遇见Hve Notes">
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://fehey.com/post/2018-nian-zhong-zong-jie/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          2018 年终总结
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2019-01-14</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        <p>📃又到了一年一度的<strong>年终总结</strong>，这是参加工作的第一个完整年。</p>
+
+      </div>
+      <a href="https://fehey.com/post/2018-nian-zhong-zong-jie/" class="btn">
+        Read more
+      </a>
+    </div>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://fehey.com/post-images/2018-nian-zhong-zong-jie.png" alt="2018 年终总结">
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://fehey.com/post/hve-notes-zhu-ye-shang-xian-la/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          Hve Notes 主页上线啦
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2019-01-01</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        <p>铛铛铛，喜大普奔，Hve Notes 主页上线啦！</p>
+
+      </div>
+      <a href="https://fehey.com/post/hve-notes-zhu-ye-shang-xian-la/" class="btn">
+        Read more
+      </a>
+    </div>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://fehey.com/post-images/hve-notes-zhu-ye-shang-xian-la.png" alt="Hve Notes 主页上线啦">
+    
+  </div>
+  
+      </div>
+
+      
+  <div class="my-4 flex justify-between px-4 md:px-0">
+    
+    
+      <a href="https://fehey.com/page/2" class="btn btn-white">
+        下一页
+        <i class="ri-arrow-right-line ml-4"></i>
+      </a>
+    
+  </div>
+
+      <footer class="py-12 text-center px-4 md:px-0" v-pre>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
 </footer>
 
-<script src="https://fehey.com/media/prism.js"></script>
-<script>
-  Prism.highlightAll()
-</script>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://fehey.com/media/scripts/main.js"></script>
+</body>
 
-  </body>
 </html>

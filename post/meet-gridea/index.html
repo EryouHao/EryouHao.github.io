@@ -1,83 +1,79 @@
-<html>
-  <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Gridea 一个简单、开源、强大的静态博客写作客户端 | 海岛心hey</title>
-<meta name="description" content="Every 🐦 has an 🦅's dream." />
-<link rel="shortcut icon" href="https://fehey.com/favicon.ico?v=1580777032012">
-<link href="https://cdn.remixicon.com/releases/v1.3.1/remixicon.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Gridea 一个简单、开源、强大的静态博客写作客户端 - 海岛心hey</title>
+<link rel="shortcut icon" href="https://fehey.com/favicon.ico">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
+<link rel="stylesheet" href="https://fehey.com/media/css/tailwind.css">
 <link rel="stylesheet" href="https://fehey.com/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="Gridea 一个简单、开源、强大的静态博客写作客户端 | 海岛心hey - Atom Feed" href="https://fehey.com/atom.xml">
-
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+<link rel="alternate" type="application/atom+xml" title="Gridea 一个简单、开源、强大的静态博客写作客户端 - 海岛心hey - Atom Feed" href="https://fehey.com/atom.xml">
 
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113307620-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113307620-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'UA-113307620-1');
+  </script>
+    
 
-  gtag('config', 'UA-113307620-1');
-</script>
+  <meta name="description" content="想当时，博客兴起的年代，成千上万的人挑选各种平台去搭建一个属于自己的博客。从新浪博客、博客园到 Wordpress、Hexo，越来越多的人选择了静态博客，越来越趋于轻量化。
+今天，为大家带来了一款用心打造的产品——Gridea。
+是什么？
+..." />
+  <meta property="og:title" content="Gridea 一个简单、开源、强大的静态博客写作客户端 - 海岛心hey">
+  <meta property="og:description" content="想当时，博客兴起的年代，成千上万的人挑选各种平台去搭建一个属于自己的博客。从新浪博客、博客园到 Wordpress、Hexo，越来越多的人选择了静态博客，越来越趋于轻量化。
+今天，为大家带来了一款用心打造的产品——Gridea。
+是什么？
+..." />
+  <meta property="og:type" content="articles">
+  <meta property="og:url" content="https://fehey.com/post/meet-gridea/" />
+  <meta property="og:image" content="https://fehey.com/post-images/meet-gridea.png">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:width" content="1200">
+  <meta name="twitter:title" content="Gridea 一个简单、开源、强大的静态博客写作客户端 - 海岛心hey">
+  <meta name="twitter:description" content="想当时，博客兴起的年代，成千上万的人挑选各种平台去搭建一个属于自己的博客。从新浪博客、博客园到 Wordpress、Hexo，越来越多的人选择了静态博客，越来越趋于轻量化。
+今天，为大家带来了一款用心打造的产品——Gridea。
+是什么？
+...">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://fehey.com/post/meet-gridea/">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css">
+ 
+  
+    <link rel="stylesheet" href="https://fehey.com/media/css/prism-atom-dark.css">
+  
 
-  </head>
-  <body>
-    <div class="site-nav has-cover">
-      <div class="head">
-  <div class="inner">
-    <a class="site-name" href="https://fehey.com">
-        <span>海岛心hey</span>
+  
+</head>
+
+<body>
+  <div class="antialiased flex flex-col min-h-screen" id="app">
+    <a href="https://fehey.com" class="fixed top-0 left-0 mt-4 bg-black text-white dark:text-gray-700 dark:bg-yellow-50 dark:hover:bg-black dark:hover:text-white inline-flex p-2 pl-8 hover:text-gray-700 hover:bg-yellow-50 font-bold z-10 transition-fast animated fadeInLeft">
+      海岛心hey
     </a>
-    <label class="burger" for="burger"></label>
-    <input id="burger" type="checkbox">
-    <button class="burger">
-      <div>
-        <span></span>
-        <span></span>
-      </div>
-    </button>
-    <nav class="info_nav">
-      
+    <div class="max-w-4xl w-full mx-auto">
+      <div class="shadow-box bg-white dark:bg-gray-600 rounded-lg pt-32 md:pt-64 px-4 md:px-8 pb-8 animated fadeIn mb-8">
+        <h1 class="text-5xl font-semibold leading-normal pb-8 mb-8 border-b-8 border-gray-700">
+          Gridea 一个简单、开源、强大的静态博客写作客户端
+        </h1>
         
-          <a href="https://fehey.com">首页</a>
+          <img src="https://fehey.com/post-images/meet-gridea.png" alt="Gridea 一个简单、开源、强大的静态博客写作客户端" class="block w-full mb-8">
         
-      
-        
-          <a href="https://fehey.com/archives">归档</a>
-        
-      
-        
-          <a href="https://fehey.com/tags">标签</a>
-        
-      
-        
-          <a href="https://fehey.com/post/about/">关于</a>
-        
-      
-    </nav>
-  </div>
-</div>
-    </div>
-    <article role="main" class="hentry has-cover">
-      
-        <div class="entry-cover js-cover" data-src="https://fehey.com/post-images/meet-gridea.png" data-width="900" data-height="423" style="background-image:url(https://fehey.com/post-images/meet-gridea.png); height: 80vw;">
-          <h1 class="post-title">Gridea 一个简单、开源、强大的静态博客写作客户端</h1>
+        <div class="mb-8 flex flex-wrap">
+          <div class="text-gray-400 text-sm mr-4">2019-04-23 · 3 min read</div>
+          
         </div>
-      
-      <h1 class="entry-title" itemprop="headline">Gridea 一个简单、开源、强大的静态博客写作客户端</h1>
-      <div class="entry-meta">
-        <time class="updated" datetime="2019-04-23 18:48:57">2019-04-23</time>
-        <span class="author vcard">
-          3 min read
-        </span>
-      </div>
-      <div class="post-content yue">
-        <p>想当时，博客兴起的年代，成千上万的人挑选各种平台去搭建一个属于自己的博客。从新浪博客、博客园到 Wordpress、Hexo，越来越多的人选择了静态博客，越来越趋于轻量化。</p>
+        <div class="markdown mb-8" v-pre>
+          <p>想当时，博客兴起的年代，成千上万的人挑选各种平台去搭建一个属于自己的博客。从新浪博客、博客园到 Wordpress、Hexo，越来越多的人选择了静态博客，越来越趋于轻量化。</p>
 <p>今天，为大家带来了一款用心打造的产品——<strong>Gridea</strong>。</p>
 <h2 id="是什么">是什么？</h2>
 <p>Gridea 是一个简单的（Easy），开源的(Open Source)、强大的（Powerful）静态博客写作客户端。目前已具备了博客所需的基本功能，并且还在不断完善。</p>
@@ -109,42 +105,32 @@
 <h2 id="下一步计划呢">下一步计划呢？</h2>
 <p>插件系统、主题市场、RSS等等。</p>
 
-      </div>
-      <div class="entry-block">
-        <div class="entry-tags">
-          
+        </div>
+        <!-- Share to Twitter, Weibo, Telegram -->
+        <div class="flex items-center">
+          <div class="mr-4 flex items-center">
+            <i class="ri-share-forward-line text-gray-500"></i>
+          </div>
+          <div class="px-4 cursor-pointer text-blue-500 hover:bg-blue-100 dark:hover:bg-gray-600 inline-flex" @click="shareToTwitter">
+            <i class="ri-twitter-line"></i>
+          </div>
+          <div class="px-4 cursor-pointer text-red-500 hover:bg-red-100 dark:hover:bg-gray-600 inline-flex" @click="shareToWeibo">
+            <i class="ri-weibo-line"></i>
+          </div>
+          <div class="px-4 cursor-pointer text-indigo-500 hover:bg-indigo-100 dark:hover:bg-gray-600 inline-flex" @click="shareToTelegram">
+            <i class="ri-telegram-line"></i>
+          </div>
         </div>
       </div>
-    </article>
-    
-      <section class="post-section prev-post">
-        <div class="inner">
-          <h3>前一篇</h3>
-          <a href="https://fehey.com/post/liqi">
-            <strong>利器+</strong>
-          </a>
-        </div>
-      </section>
-    
-    
-      <section class="post-section prev-post">
-        <div class="inner">
-          <h3>后一篇</h3>
-          <a href="https://fehey.com/post/hve-notes-start">
-            <strong>Gridea 小白上手教程</strong>
-          </a>
-        </div>
-      </section>
-    
 
-    
       
-        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+        
+          <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script type="application/javascript" src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 
 <div id="gitalk-container"></div>
 
-<script>
+<script type="application/javascript">
 
   var gitalk = new Gitalk({
     clientID: 'd32f26feaa6fb3f5f4c0',
@@ -160,56 +146,212 @@
 
 </script>
 
+        
+
+        
       
 
       
-    
 
-    <footer class="footer">
-  <div class="main">
-    <a href="https://fehey.com">
-      <img class="avatar" src="https://fehey.com/images/avatar.png?v=1580777032012" alt="海岛心hey">
-    </a>
-    <div class="footer__social">
-      
-        
-          <a href="https://github.com/EryouHao" target="_blank"><i class="remixicon-github-line"></i></a>
-        
-      
-        
-          <a href="https://twitter.com/EryouHao" target="_blank"><i class="remixicon-twitter-line"></i></a>
-        
-      
-        
-          <a href="https://weibo.com/u/3799576961" target="_blank"><i class="remixicon-weibo-line"></i></a>
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-    <p class="footer__sosumi">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-    </p>
-    <a class="footer-rss" href="https://fehey.com/atom.xml">RSS</a>
-  </div>
+      <footer class="py-12 text-center px-4 md:px-0" v-pre>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
 </footer>
+    </div>
 
-<script src="https://fehey.com/media/prism.js"></script>
-<script>
-  Prism.highlightAll()
-</script>
+    <!-- TOC Container -->
+    <div class="fixed right-0 bottom-0 mb-16 mr-4 shadow w-8 h-8 rounded-full flex justify-center items-center z-10 cursor-pointer bg-white dark:bg-gray-500 dark:text-gray-200 hover:shadow-lg transition-all animated fadeInRight" @click="showToc = true">
+      <i class="ri-file-list-line"></i>
+    </div>
 
-  </body>
+    <div class="fixed right-0 top-0 bottom-0 overflow-y-auto w-64 bg-white dark:bg-gray-800 p-4 border-l border-gray-100 dark:border-gray-600 z-10 transition-fast" :class="{ '-mr-64': !showToc }">
+      <div class="flex mb-4 justify-end">
+        <div class="w-8 h-8 inline-flex justify-center items-center rounded-full cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-600 transition-fast" @click="showToc = false">
+          <i class="ri-close-line text-lg"></i>
+        </div>
+      </div>
+      <div class="post-toc-container">
+        <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E6%98%AF%E4%BB%80%E4%B9%88">是什么？</a></li>
+<li><a href="#%E9%83%BD%E6%9C%89%E5%95%A5">都有啥？</a>
+<ul>
+<li><a href="#markdown">Markdown</a></li>
+<li><a href="#%E5%B0%81%E9%9D%A2%E5%9B%BE">封面图</a></li>
+<li><a href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A0%87%E7%AD%BE">自定义标签</a></li>
+<li><a href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E8%8F%9C%E5%8D%95">自定义菜单</a></li>
+<li><a href="#%E5%A4%9A%E4%B8%BB%E9%A2%98">多主题</a></li>
+<li><a href="#%E8%B7%A8%E8%AE%BE%E5%A4%87">跨设备</a></li>
+<li><a href="#%E5%A4%9A%E5%B9%B3%E5%8F%B0">多平台</a></li>
+<li><a href="#%E5%A4%9A%E8%AF%84%E8%AE%BA">多评论</a></li>
+<li><a href="#%E5%A4%9A%E8%AF%AD%E8%A8%80">多语言</a></li>
+</ul>
+</li>
+<li><a href="#%E5%B0%B1%E8%BF%99%E4%BA%9B">就这些？</a></li>
+<li><a href="#%E4%B8%8B%E4%B8%80%E6%AD%A5%E8%AE%A1%E5%88%92%E5%91%A2">下一步计划呢？</a></li>
+</ul>
+</li>
+</ul>
+
+      </div>
+    </div>
+
+    <!-- Back to top -->
+    <div class="fixed right-0 bottom-0 mb-4 mr-4 shadow w-8 h-8 rounded-full flex justify-center items-center z-10 cursor-pointer bg-white hover:shadow-lg transition-all dark:bg-gray-500 dark:text-gray-200" @click="backToUp" v-show="scrolled">
+      <i class="ri-arrow-up-line"></i>
+    </div>
+  </div>
+
+  <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+  <!-- Background of PhotoSwipe. 
+        It's a separate element as animating opacity is faster than rgba(). -->
+  <div class="pswp__bg">
+  </div>
+  <!-- Slides wrapper with overflow:hidden. -->
+  <div class="pswp__scroll-wrap">
+    <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+    <div class="pswp__container">
+      <div class="pswp__item">
+      </div>
+      <div class="pswp__item">
+      </div>
+      <div class="pswp__item">
+      </div>
+    </div>
+    <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+    <div class="pswp__ui pswp__ui--hidden">
+      <div class="pswp__top-bar">
+        <!--  Controls are self-explanatory. Order can be changed. -->
+        <div class="pswp__counter">
+        </div>
+        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+        <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+        <!-- element will get class pswp__preloader--active when preloader is running -->
+        <div class="pswp__preloader">
+          <div class="pswp__preloader__icn">
+            <div class="pswp__preloader__cut">
+              <div class="pswp__preloader__donut">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+        <div class="pswp__share-tooltip">
+        </div>
+      </div>
+      <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+      </button>
+      <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+      </button>
+      <div class="pswp__caption">
+        <div class="pswp__caption__center">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://fehey.com/media/scripts/main.js"></script>
+  
+  <!-- Code Highlight -->
+  
+    <script src="https://fehey.com/media/prism.js"></script>
+    <script>
+      Prism.highlightAll()
+    </script>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+  <script>
+    //拿到预览框架，也就是上面的html代码
+    var pswpElement = document.querySelectorAll('.pswp')[0];
+    //定义图片数组变量
+    var imgitems;
+    /**
+    * 用于显示预览界面
+    * @param index 图片数组下标
+    */
+    function viewImg(index) {
+      //其它选项这里不做过多阐述，详情见官网
+      var pswpoptions = {
+        index: parseInt(index, 10), // 开始幻灯片索引。0是第一张幻灯片。必须是整数，而不是字符串。
+        bgOpacity: 0.7, // 背景透明度，0-1
+        maxSpreadZoom: 3, // 缩放级别，不要太大
+      };
+      //初始化并打开PhotoSwipe，pswpElement对应上面预览框架，PhotoSwipeUI_Default为皮肤，imgitems为图片数组，pswpoptions为选项
+      var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, imgitems, pswpoptions);
+      gallery.init()
+    }
+    /**
+    * 用于添加图片点击事件
+    * @param img 图片元素
+    * @param index 所属下标（在imgitems中的位置）
+    */
+    function addImgClick(img, index) {
+      img.onclick = function() {
+        viewImg(index)
+      }
+    }
+    /**
+    * 轮询所有图片，获取src、width、height等数据，加入imgitems，并给图片元素添加事件
+    * 最好在onload中执行该方法，本站因放在最底部，所以直接初始化
+    * 异步加载图片可在图片元素创建完成后调用此方法
+    */
+    function initImg() {
+      //重置图片数组
+      imgitems = [];
+      //查找class:markdown 下的所有img元素并遍历
+      var imgs = document.querySelectorAll('.markdown img');
+      for (var i = 0; i < imgs.length; i++) {
+        var img = imgs[i];
+        //本站相册初始为loading图片，真实图片放在data-src
+        var ds = img.getAttribute("data-src");
+        //创建image对象，用于获取图片宽高
+        var imgtemp = new Image();
+        //判断是否存在data-src
+        if (ds != null && ds.length > 0) {
+          imgtemp.src = ds
+        } else {
+          imgtemp.src = img.src
+        }
+        //判断是否存在缓存
+        if (imgtemp.complete) {
+          var imgobj = {
+            "src": imgtemp.src,
+            "w": imgtemp.width,
+            "h": imgtemp.height,
+          };
+          imgitems[i] = imgobj;
+          addImgClick(img, i);
+        } else {
+          console.log('进来了2')
+          imgtemp.index = i;
+          imgtemp.img = img;
+          imgtemp.onload = function() {
+            var imgobj = {
+              "src": this.src,
+              "w": this.width,
+              "h": this.height,
+            };
+            //不要使用push，因为onload前后顺序会不同
+            imgitems[this.index] = imgobj
+            //添加点击事件
+            addImgClick(this.img, this.index);
+          }
+        }
+      }
+    }
+    //初始化
+    initImg();
+  </script>
+</body>
+
 </html>

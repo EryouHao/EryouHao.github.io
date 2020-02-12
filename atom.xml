@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://fehey.com</id>
     <title>海岛心hey</title>
-    <updated>2020-02-04T00:44:32.378Z</updated>
+    <updated>2020-02-12T12:56:41.551Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://fehey.com"/>
     <link rel="self" href="https://fehey.com/atom.xml"/>
@@ -12,8 +12,8 @@
     <rights>All rights reserved 2020, 海岛心hey</rights>
     <entry>
         <title type="html"><![CDATA[PWA 在 2020]]></title>
-        <id>https://fehey.com/post/pwa-2020</id>
-        <link href="https://fehey.com/post/pwa-2020">
+        <id>https://fehey.com/post/pwa-2020/</id>
+        <link href="https://fehey.com/post/pwa-2020/">
         </link>
         <updated>2020-01-20T08:11:31.000Z</updated>
         <content type="html"><![CDATA[<p>从 <a href="https://www.youtube.com/watch?v=ZlE7dzoD6GA&amp;feature=emb_title">Steve Jobs 最初提出的 Web 应用程序的想法 “看起来和使用起来完全想本地应用程序”</a>，已经过去 12 年了。并且从 <a href="https://medium.com/@slightlylate/progressive-apps-escaping-tabs-without-losing-our-soul-3b93a8561955">“PWA” 术语</a>被创造出来已经 4 年多了。在 2020 年刚开始的时间点，渐进式 Web 应用程序看起来怎么样了？在 2019 年添加了你可能不知道的内容到这个生态系统？让我们一起来看看吧！</p>
@@ -79,8 +79,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[聊聊我在用的编程字体]]></title>
-        <id>https://fehey.com/post/coding-font</id>
-        <link href="https://fehey.com/post/coding-font">
+        <id>https://fehey.com/post/coding-font/</id>
+        <link href="https://fehey.com/post/coding-font/">
         </link>
         <updated>2020-01-17T02:05:06.000Z</updated>
         <summary type="html"><![CDATA[<p>最近，微软和 JetBrains 纷纷推出了自己的编程字体，你现在在用哪款呢？</p>
@@ -108,20 +108,10 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Gridea v0.9.0｜可以，写博客的那个劲儿又回来了]]></title>
-        <id>https://fehey.com/post/gridea-0.9.0</id>
-        <link href="https://fehey.com/post/gridea-0.9.0">
+        <id>https://fehey.com/post/gridea-0.9.0/</id>
+        <link href="https://fehey.com/post/gridea-0.9.0/">
         </link>
         <updated>2019-12-31T09:56:43.000Z</updated>
-        <summary type="html"><![CDATA[<blockquote>
-<p>可以，写博客的那个劲儿又回来了～<br>
-——来自一位使用 Gridea 的朋友</p>
-</blockquote>
-<figure data-type="image" tabindex="1"><img src="https://cdn.jsdelivr.net/gh/eryouhao/files@master/uPic/9dYsJ8.png" alt="Gridea v0.9.0" loading="lazy"></figure>
-<p>这里是 <a href="https://gridea.dev">Gridea</a> v0.9.0 版本的发布日志，如果你还没听说过它，不妨点击下面链接一探究竟吧！</p>
-<p><a href="https://gridea.dev">Gridea - 一个静态博客写作客户端</a></p>
-<p>本次更新中，我们增加了 <strong>SFTP 部署</strong>（许愿成功🎋），增加了一系列新功能与强化了自定义主题自定义能力，拓展了更多的可能性。</p>
-<p>如果你想立即尝鲜，可以直接去下载了 <a href="https://gridea.dev">Gridea 下载</a>。但是，如果你想知道更新了什么，继续阅读吧...</p>
-]]></summary>
         <content type="html"><![CDATA[<blockquote>
 <p>可以，写博客的那个劲儿又回来了～<br>
 ——来自一位使用 Gridea 的朋友</p>
@@ -131,7 +121,6 @@
 <p><a href="https://gridea.dev">Gridea - 一个静态博客写作客户端</a></p>
 <p>本次更新中，我们增加了 <strong>SFTP 部署</strong>（许愿成功🎋），增加了一系列新功能与强化了自定义主题自定义能力，拓展了更多的可能性。</p>
 <p>如果你想立即尝鲜，可以直接去下载了 <a href="https://gridea.dev">Gridea 下载</a>。但是，如果你想知道更新了什么，继续阅读吧...</p>
-<!-- more -->
 <hr>
 <p><strong>⚠️注意：若你之前有手动放置文件或文件夹到构建后文件夹（output 文件夹）本次升级有非兼容升级，请看下升级说明，若没有，可直接升级啦</strong></p>
 <p>升级说明：<br>
@@ -194,8 +183,8 @@ Gridea 的朋友们 QQ 2 群：923131213</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[Gridea v0.8.3｜全新体验，助你妙笔生花]]></title>
-        <id>https://fehey.com/post/gridea-v083-quan-xin-ti-yan-zhu-ni-miao-bi-sheng-hua</id>
-        <link href="https://fehey.com/post/gridea-v083-quan-xin-ti-yan-zhu-ni-miao-bi-sheng-hua">
+        <id>https://fehey.com/post/gridea-v083-quan-xin-ti-yan-zhu-ni-miao-bi-sheng-hua/</id>
+        <link href="https://fehey.com/post/gridea-v083-quan-xin-ti-yan-zhu-ni-miao-bi-sheng-hua/">
         </link>
         <updated>2019-09-21T03:39:39.000Z</updated>
         <content type="html"><![CDATA[<p>这里 <a href="https://gridea.dev">Gridea</a> 是 v0.8.3 版本的发布日志，如果你还没听说过它，不妨点击下面链接一探究竟吧！</p>
@@ -243,8 +232,8 @@ Gridea 的朋友们 QQ 2 群：923131213</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[Markdown 测试文章]]></title>
-        <id>https://fehey.com/post/markdown-test</id>
-        <link href="https://fehey.com/post/markdown-test">
+        <id>https://fehey.com/post/markdown-test/</id>
+        <link href="https://fehey.com/post/markdown-test/">
         </link>
         <updated>2019-07-18T14:17:43.000Z</updated>
         <summary type="html"><![CDATA[<p>Markdown是一种轻量级标记语言，创始人为约翰·格鲁伯（英语：John Gruber）。它允许人们“使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML（或者HTML）文档”。</p>
@@ -327,10 +316,10 @@ Gridea 的朋友们 QQ 2 群：923131213</p>
 </table>
 <h2 id="任务列表">任务列表</h2>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-7452665"><label class="task-list-item-label" for="task-item-7452665"> 第一项任务</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-2401330"><label class="task-list-item-label" for="task-item-2401330"> 第二项任务</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8516941"><label class="task-list-item-label" for="task-item-8516941"> 第三项任务</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-137849"><label class="task-list-item-label" for="task-item-137849"> 第四项任务</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-214216"><label class="task-list-item-label" for="task-item-214216"> 第一项任务</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6949663"><label class="task-list-item-label" for="task-item-6949663"> 第二项任务</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-2791284"><label class="task-list-item-label" for="task-item-2791284"> 第三项任务</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-667348"><label class="task-list-item-label" for="task-item-667348"> 第四项任务</label></li>
 </ul>
 <h2 id="加强功能">加强功能</h2>
 <ul>
@@ -377,8 +366,8 @@ Gridea 的朋友们 QQ 2 群：923131213</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[利器+]]></title>
-        <id>https://fehey.com/post/liqi</id>
-        <link href="https://fehey.com/post/liqi">
+        <id>https://fehey.com/post/liqi/</id>
+        <link href="https://fehey.com/post/liqi/">
         </link>
         <updated>2019-06-26T06:20:56.000Z</updated>
         <content type="html"><![CDATA[<h2 id="介绍一下你自己和所做的工作">介绍一下你自己和所做的工作</h2>
@@ -455,8 +444,8 @@ Mac 下的一个终端工具，功能非常强大，支持主题系统</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[Gridea 一个简单、开源、强大的静态博客写作客户端]]></title>
-        <id>https://fehey.com/post/meet-gridea</id>
-        <link href="https://fehey.com/post/meet-gridea">
+        <id>https://fehey.com/post/meet-gridea/</id>
+        <link href="https://fehey.com/post/meet-gridea/">
         </link>
         <updated>2019-04-23T10:48:57.000Z</updated>
         <content type="html"><![CDATA[<p>想当时，博客兴起的年代，成千上万的人挑选各种平台去搭建一个属于自己的博客。从新浪博客、博客园到 Wordpress、Hexo，越来越多的人选择了静态博客，越来越趋于轻量化。</p>
@@ -494,8 +483,8 @@ Mac 下的一个终端工具，功能非常强大，支持主题系统</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[Gridea 小白上手教程]]></title>
-        <id>https://fehey.com/post/hve-notes-start</id>
-        <link href="https://fehey.com/post/hve-notes-start">
+        <id>https://fehey.com/post/hve-notes-start/</id>
+        <link href="https://fehey.com/post/hve-notes-start/">
         </link>
         <updated>2019-02-16T19:04:18.000Z</updated>
         <summary type="html"><![CDATA[<p>如果你使用过 <strong>Hexo</strong> 等工具基于 <strong>Github</strong> 做个人博客，那么恭喜你，你可以很轻松的上手使用<strong>Gridea</strong><br>
@@ -539,8 +528,8 @@ Mac 下的一个终端工具，功能非常强大，支持主题系统</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[Markdown 语法简单教程]]></title>
-        <id>https://fehey.com/post/markdown-yu-fa-jian-dan-jiao-cheng</id>
-        <link href="https://fehey.com/post/markdown-yu-fa-jian-dan-jiao-cheng">
+        <id>https://fehey.com/post/markdown-yu-fa-jian-dan-jiao-cheng/</id>
+        <link href="https://fehey.com/post/markdown-yu-fa-jian-dan-jiao-cheng/">
         </link>
         <updated>2019-01-24T21:45:08.000Z</updated>
         <content type="html"><![CDATA[<h3 id="1-斜体和粗体">1. 斜体和粗体</h3>
@@ -649,8 +638,8 @@ hello()
     </entry>
     <entry>
         <title type="html"><![CDATA[遇见创作，遇见Hve Notes]]></title>
-        <id>https://fehey.com/post/yu-jian-chuang-zuo-yu-jian-hve-notes</id>
-        <link href="https://fehey.com/post/yu-jian-chuang-zuo-yu-jian-hve-notes">
+        <id>https://fehey.com/post/yu-jian-chuang-zuo-yu-jian-hve-notes/</id>
+        <link href="https://fehey.com/post/yu-jian-chuang-zuo-yu-jian-hve-notes/">
         </link>
         <updated>2019-01-14T08:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>作为一个技术人，你是否喜欢创作，或是怀念过往又或是畅想未来，或是总结技术又或是记录生活？</p>
