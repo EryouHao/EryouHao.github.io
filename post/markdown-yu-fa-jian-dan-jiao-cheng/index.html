@@ -7,7 +7,7 @@
 <title>Markdown 语法简单教程 - 海岛心hey</title>
 <link rel="shortcut icon" href="https://fehey.com/favicon.ico">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"> -->
 <link rel="stylesheet" href="https://fehey.com/media/css/tailwind.css">
 <link rel="stylesheet" href="https://fehey.com/styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="Markdown 语法简单教程 - 海岛心hey - Atom Feed" href="https://fehey.com/atom.xml">
@@ -234,8 +234,8 @@ hello()
 <script type="application/javascript">
 
   var gitalk = new Gitalk({
-    clientID: 'd32f26feaa6fb3f5f4c0',
-    clientSecret: '155ee9e5b67d2a3c6b38680be835b3ecee225a0e',
+    clientID: 'c5a2fd74df5b03d89c6c',
+    clientSecret: 'f5bb496a8f53e81017ddb2a4a960018ec6def56b',
     repo: 'EryouHao.github.io',
     owner: 'EryouHao',
     admin: ['EryouHao'],
@@ -252,7 +252,7 @@ hello()
         
       
 
-      
+      <div id="vlaine-comment"></div>
 
       <footer class="py-12 text-center px-4 md:px-0" v-pre>
   Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
@@ -472,6 +472,35 @@ hello()
     }
     //初始化
     initImg();
+  </script>
+  <script type="application/javascript" src="https://fehey.com/media/scripts/valine.min.js"></script>
+  <script type="application/javascript">
+  
+    // var valine = new Valine();
+    // valine.init({
+    //   el: '#vlaine-comment',
+    //   appId: '',
+    //   appKey: '',
+    //   notify: false,
+    //   avatar: 'mp',
+    //   verify: true,
+    //   placeholder: '来都来了，不妨评论一下',
+    //   visitor: false,
+    //   highlight: false,
+    //   recordIP: false,
+    // })
+  
+    var valine = new Valine();
+    valine.init({
+      el: '#vlaine-comment',
+      appId: '',
+      appKey: '',
+      notify: false,
+      verify: false,
+      visitor: true,
+      avatar: 'mp',
+      placeholder: '加入讨论...'
+    })
   </script>
 </body>
 
